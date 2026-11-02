@@ -1,0 +1,125 @@
+1792660345.837887 [77]      rviz2: selected interface "lo" is not multicast-capable: disabling multicast
+[INFO] [1792660346.168897903] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792660346.168974338] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1792660346.191598440] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792660346.371372053] [handeye_calibration_frame.tf_visual_tools]: TFVisualTools Ready.
+[INFO] [1792660346.375759543] [handeye_calibration_frame]: handeye calibration gui created.
+[INFO] [1792660346.377021156] [handeye_calibration_frame.rviz_visual_tools]: Topic /moveit_visual_tools waiting 5 seconds for subscriber.
+[WARN] [1792660351.380615582] [handeye_calibration_frame.rviz_visual_tools]: Topic /moveit_visual_tools unable to connect to any subscribers within 5 sec. It is possible initially published visual messages will be lost.
+[INFO] [1792660351.380680865] [handeye_calibration_frame.rviz_visual_tools]: Topic /moveit_visual_tools waiting 5 seconds for subscriber.
+[WARN] [1792660356.383819601] [handeye_calibration_frame.rviz_visual_tools]: Topic /moveit_visual_tools unable to connect to any subscribers within 5 sec. It is possible initially published visual messages will be lost.
+[ERROR] [1792660356.384794433] [moveit_handeye_calibration_target]: CameraInfo msg is NULL.
+[INFO] [1792660356.411041299] [handeye_calibration_frame]: handeye calibration gui loaded.
+[INFO] [1792660356.441085228] [rviz2]: Stereo is NOT SUPPORTED
+[WARN] [1792660451.920044404] [handeye_calibration_frame]: Reprojection error:
+0.0209102 m, 0.00652465 rad
+[INFO] [1792660451.920124886] [handeye_calibration_frame]: Publish camera transformation
+  0.175617  -0.347552   0.921068 -0.0999863
+ -0.984385 -0.0505913     0.1686  0.0503534
+-0.0119992  -0.936295   -0.35101 -0.0609444
+         0          0          0          0
+from eef frame 'gripper_center'to sensor frame 'handeye_color_optical'
+[WARN] [1792660465.156002668] [handeye_calibration_frame]: Reprojection error:
+0.0182186 m, 0.00448913 rad
+[INFO] [1792660465.156112814] [handeye_calibration_frame]: Publish camera transformation
+-0.0181707  -0.338652   0.940736 -0.0992605
+ -0.999772  0.0166692 -0.0133103  0.0154306
+-0.0111737  -0.940764  -0.338878  0.0590071
+         0          0          0          0
+from eef frame 'gripper_center'to sensor frame 'handeye_color_optical'
+[WARN] [1792660472.917265977] [handeye_calibration_frame]: Reprojection error:
+0.0169481 m, 0.00614899 rad
+[INFO] [1792660472.917329937] [handeye_calibration_frame]: Publish camera transformation
+ -0.0214168   -0.328625    0.944217  -0.0963387
+  -0.999757   0.0120338  -0.0184883   0.0184086
+-0.00528676   -0.944384   -0.328803   0.0527205
+          0           0           0           0
+from eef frame 'gripper_center'to sensor frame 'handeye_color_optical'
+[WARN] [1792660481.398953585] [handeye_calibration_frame]: Reprojection error:
+0.0159188 m, 0.00518926 rad
+[INFO] [1792660481.399016172] [handeye_calibration_frame]: Publish camera transformation
+ -0.0191347   -0.333791    0.942453   -0.101111
+  -0.999811    0.009508  -0.0169318   0.0157958
+-0.00330917   -0.942599    -0.33391   0.0600706
+          0           0           0           0
+from eef frame 'gripper_center'to sensor frame 'handeye_color_optical'
+[WARN] [1792660490.926585909] [handeye_calibration_frame]: Reprojection error:
+0.0170039 m, 0.00534726 rad
+[INFO] [1792660490.926674315] [handeye_calibration_frame]: Publish camera transformation
+-0.00822381   -0.332554    0.943048  -0.0998031
+  -0.999926   0.0111784 -0.00477788   0.0137807
+-0.00895291   -0.943018   -0.332621   0.0610742
+          0           0           0           0
+from eef frame 'gripper_center'to sensor frame 'handeye_color_optical'
+[WARN] [1792660516.536025313] [handeye_calibration_frame]: Reprojection error:
+0.0229331 m, 0.00949732 rad
+[INFO] [1792660516.536079294] [handeye_calibration_frame]: Publish camera transformation
+-0.00914245    -0.32908    0.944258  -0.0958205
+  -0.999898   0.0133552 -0.00502679    0.013226
+ -0.0109565   -0.944208   -0.329168   0.0592769
+          0           0           0           0
+from eef frame 'gripper_center'to sensor frame 'handeye_color_optical'
+[WARN] [1792660521.647114022] [handeye_calibration_frame]: Reprojection error:
+0.0235514 m, 0.0112286 rad
+[INFO] [1792660521.647180887] [handeye_calibration_frame]: Publish camera transformation
+-0.0110711  -0.328772   0.944344 -0.0870785
+ -0.999889 -0.0057854 -0.0137365  0.0166456
+0.00997959  -0.944392  -0.328672  0.0582794
+         0          0          0          0
+from eef frame 'gripper_center'to sensor frame 'handeye_color_optical'
+[WARN] [1792660526.350002265] [handeye_calibration_frame]: Reprojection error:
+0.0237539 m, 0.0112406 rad
+[INFO] [1792660526.350168015] [handeye_calibration_frame]: Publish camera transformation
+  -0.010679   -0.328676    0.944382  -0.0859212
+  -0.999942  0.00474957 -0.00965426   0.0140934
+-0.00131228   -0.944431   -0.328707    0.057233
+          0           0           0           0
+from eef frame 'gripper_center'to sensor frame 'handeye_color_optical'
+[WARN] [1792660539.409648574] [handeye_calibration_frame]: Reprojection error:
+0.0260641 m, 0.0131458 rad
+[INFO] [1792660539.409727101] [handeye_calibration_frame]: Publish camera transformation
+ -0.0050334   -0.328821    0.944379  -0.0842438
+  -0.999961  0.00849408 -0.00237211   0.0122624
+-0.00724163   -0.944354   -0.328851   0.0582673
+          0           0           0           0
+from eef frame 'gripper_center'to sensor frame 'handeye_color_optical'
+[WARN] [1792660547.879433181] [handeye_calibration_frame]: Reprojection error:
+0.0252637 m, 0.0126814 rad
+[INFO] [1792660547.879496049] [handeye_calibration_frame]: Publish camera transformation
+-0.00468351    -0.32742    0.944867  -0.0861721
+  -0.999942   0.0106798 -0.00125568   0.0117825
+ -0.0096799   -0.944819   -0.327451   0.0562208
+          0           0           0           0
+from eef frame 'gripper_center'to sensor frame 'handeye_color_optical'
+[WARN] [1792660553.786639259] [handeye_calibration_frame]: Reprojection error:
+0.0279242 m, 0.0138319 rad
+[INFO] [1792660553.786688140] [handeye_calibration_frame]: Publish camera transformation
+  -0.010174   -0.330593    0.943719  -0.0869758
+  -0.999943  0.00631825 -0.00856676   0.0139827
+-0.00313054   -0.943752   -0.330638   0.0595753
+          0           0           0           0
+from eef frame 'gripper_center'to sensor frame 'handeye_color_optical'
+[WARN] [1792660559.075609777] [handeye_calibration_frame]: Reprojection error:
+0.0279018 m, 0.0138459 rad
+[INFO] [1792660559.075697821] [handeye_calibration_frame]: Publish camera transformation
+ -0.00274495    -0.326976     0.945029    -0.086797
+   -0.999996  0.000973729   -0.0025677    0.0126283
+-8.06263e-05    -0.945032    -0.326977    0.0591931
+           0            0            0            0
+from eef frame 'gripper_center'to sensor frame 'handeye_color_optical'
+[WARN] [1792660567.454152839] [handeye_calibration_frame]: Reprojection error:
+0.0281384 m, 0.0137982 rad
+[INFO] [1792660567.454239371] [handeye_calibration_frame]: Publish camera transformation
+ -0.0038722    -0.32652    0.945182  -0.0849784
+  -0.999988 -0.00148092 -0.00460832   0.0132455
+ 0.00290445   -0.945189   -0.326511    0.058796
+          0           0           0           0
+from eef frame 'gripper_center'to sensor frame 'handeye_color_optical'
+[WARN] [1792660664.464046484] [handeye_calibration_frame]: Reprojection error:
+0.0281384 m, 0.0137982 rad
+[INFO] [1792660664.464116025] [handeye_calibration_frame]: Publish camera transformation
+ -0.0038722    -0.32652    0.945182  -0.0849784
+  -0.999988 -0.00148092 -0.00460832   0.0132455
+ 0.00290445   -0.945189   -0.326511    0.058796
+          0           0           0           0
+from eef frame 'gripper_center'to sensor frame 'handeye_color_optical'

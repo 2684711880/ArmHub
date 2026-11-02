@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "source": "historical_recorded_rgbd",
+  "recorded_wall_time": 1792152083.9808948,
+  "center_optical_m": [
+    -0.08016437005785415,
+    -0.01597717143804676,
+    0.4269073170213323
+  ],
+  "normal_optical": [
+    -0.060723795189184235,
+    0.15206168608561593,
+    -0.9865038592537897
+  ],
+  "diameter_m": 0.09004716947674751,
+  "plane_rms_m": 0.0014494500817608732,
+  "arm_connected": false,
+  "camera_opened": false,
+  "motion_sent": false,
+  "preview": "/home/a/ArmHub/validation/hole_approach/recorded_preview.png"
+}

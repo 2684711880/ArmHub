@@ -1,0 +1,12 @@
+numpy==2.2.6
+pin==3.8.0
+cmeel-urdfdom==4.0.1
+cmeel-tinyxml2==10.0.0
+opencv-python-headless<4.12
+torch==2.7.1
+torchvision==0.22.1
+torchcodec==0.5.0
+scipy==1.15.3
+PyQt5==5.15.11
+ruckig==0.12.2
+matplotlib==3.9.4

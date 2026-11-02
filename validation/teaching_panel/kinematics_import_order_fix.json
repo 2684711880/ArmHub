@@ -1,0 +1,11 @@
+{
+  "status": "software_checks_passed",
+  "reproduction": "lerobot SDK imported before offline kinematics",
+  "fix": "initialize actual gripper_center frame on OfflineSDK",
+  "real_sdk_import_orders_tested": 2,
+  "fk_matches_pinocchio_frame": true,
+  "saved_prepared_pose_matches": true,
+  "collision_geometry_check": "passed",
+  "hardware_connected": false,
+  "physical_motion_executed": false
+}

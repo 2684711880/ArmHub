@@ -1,0 +1,35 @@
+{
+  "robot_id": "panthera_ht",
+  "name": "Panthera-HT 六轴机械臂",
+  "joint_names": [
+    "joint1",
+    "joint2",
+    "joint3",
+    "joint4",
+    "joint5",
+    "joint6"
+  ],
+  "mock_position_bounds_rad": [
+    -0.2,
+    0.2
+  ],
+  "references": {
+    "project": "/home/a/Panthera-HT",
+    "official_sdk": "vendor/panthera/sdk/",
+    "official_ros2": "/home/a/Panthera-HT/vendor/Panthera-HT_ROS2",
+    "binding": "/home/a/Panthera-HT/hardware_ws/src/python_sdk/bindings.cpp",
+    "simulation_controller": "/arm_controller/follow_joint_trajectory"
+  },
+  "status": {
+    "mock": "implemented",
+    "simulation": "implemented_see_validation",
+    "hardware": "single_joint_verified_cartesian_preview_verified",
+    "reference_hardware": "用户确认旧 Panthera-HT 工程已测试实物；不代表 ArmHub 适配器已验收",
+    "model": "独立模型与 MoveIt 配置：robots/panthera_ht/",
+    "hardware_scope": "2026-10-19: seven-motor fresh feedback, bounded J6 and hold-stop verified; official IK Cartesian implemented, offline and read-only hardware preview verified; physical Cartesian execution pending user test; trajectories pending",
+    "gravity_compensation": "user_reported_hardware_test_passed",
+    "home": "implemented_offline_tested_physical_execution_pending",
+    "smoothing": "ruckig_default_for_move_to_and_home_offline_verified_hardware_pending",
+    "vision_task": "migrated_offline_verified_live_camera_and_hardware_pending"
+  }
+}

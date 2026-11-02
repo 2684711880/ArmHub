@@ -1,0 +1,16 @@
+{
+  "hardware_connected": false,
+  "policy_checkpoint": "outputs/lerobot/blue_to_box_act_v1/checkpoints/last/pretrained_model",
+  "offline_tests": 10,
+  "gpu_inference": "passed finite shape (1,7), stored dataset first sample",
+  "scope": "bounded first trial only; self collision and base-frame TCP height; no environment collision model",
+  "command_document": "docs/policy_first_trial.md",
+  "speed_spike_change": {
+    "freeze_target_above_rad_s": 0.6,
+    "immediate_trip_rad_s": 1.2,
+    "sustained_duration_s": 0.12,
+    "minimum_consecutive_samples": 3,
+    "fault_torque_nonfinite": "immediate trip unchanged"
+  },
+  "hardware_observation": "old trial sent three frames then generic feedback guard failure; triggering state not logged; root trigger unknown"
+}

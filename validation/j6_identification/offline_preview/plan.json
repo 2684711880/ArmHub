@@ -1,0 +1,1047 @@
+[
+  {
+    "kind": "transit",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.4
+    ]
+  },
+  {
+    "kind": "transit",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      -0.17595865315812875
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      -0.1235987755982988
+    ],
+    "group": 0,
+    "role": "train",
+    "direction": "positive",
+    "j3_offset_deg": 0.0,
+    "j6_offset_deg": -30.0,
+    "pose_id": "g0_positive_-30",
+    "predicted_gravity_link6_m_s2": [
+      0.9356239014741556,
+      1.4905916178420713,
+      -9.650846830398319
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.05093414960113413
+    ],
+    "group": 0,
+    "role": "train",
+    "direction": "positive",
+    "j3_offset_deg": 0.0,
+    "j6_offset_deg": -20.0,
+    "pose_id": "g0_positive_-20",
+    "predicted_gravity_link6_m_s2": [
+      0.9356239014741556,
+      -0.20790578321545627,
+      -9.763067299793434
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.22546707480056707
+    ],
+    "group": 0,
+    "role": "train",
+    "direction": "positive",
+    "j3_offset_deg": 0.0,
+    "j6_offset_deg": -10.0,
+    "pose_id": "g0_positive_-10",
+    "predicted_gravity_link6_m_s2": [
+      0.9356239014741556,
+      -1.900086072255385,
+      -9.578641909634758
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.4
+    ],
+    "group": 0,
+    "role": "train",
+    "direction": "positive",
+    "j3_offset_deg": 0.0,
+    "j6_offset_deg": 0.0,
+    "pose_id": "g0_positive_0",
+    "predicted_gravity_link6_m_s2": [
+      0.9356239014741556,
+      -3.5345332074797793,
+      -9.10317433207851
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.574532925199433
+    ],
+    "group": 0,
+    "role": "train",
+    "direction": "positive",
+    "j3_offset_deg": 0.0,
+    "j6_offset_deg": 10.0,
+    "pose_id": "g0_positive_10",
+    "predicted_gravity_link6_m_s2": [
+      0.9356239014741556,
+      -5.061585339755002,
+      -8.35111140887053
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.7490658503988659
+    ],
+    "group": 0,
+    "role": "train",
+    "direction": "positive",
+    "j3_offset_deg": 0.0,
+    "j6_offset_deg": 20.0,
+    "pose_id": "g0_positive_20",
+    "predicted_gravity_link6_m_s2": [
+      0.9356239014741556,
+      -6.434843762767536,
+      -7.345304191370297
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.9235987755982988
+    ],
+    "group": 0,
+    "role": "train",
+    "direction": "positive",
+    "j3_offset_deg": 0.0,
+    "j6_offset_deg": 30.0,
+    "pose_id": "g0_positive_30",
+    "predicted_gravity_link6_m_s2": [
+      0.9356239014741556,
+      -7.612582714236437,
+      -6.11631362291854
+    ]
+  },
+  {
+    "kind": "transit",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.9759586531581288
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.9235987755982988
+    ],
+    "group": 0,
+    "role": "train",
+    "direction": "negative",
+    "j3_offset_deg": 0.0,
+    "j6_offset_deg": 30.0,
+    "pose_id": "g0_negative_30",
+    "predicted_gravity_link6_m_s2": [
+      0.9356239014741556,
+      -7.612582714236437,
+      -6.11631362291854
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.7490658503988659
+    ],
+    "group": 0,
+    "role": "train",
+    "direction": "negative",
+    "j3_offset_deg": 0.0,
+    "j6_offset_deg": 20.0,
+    "pose_id": "g0_negative_20",
+    "predicted_gravity_link6_m_s2": [
+      0.9356239014741556,
+      -6.434843762767536,
+      -7.345304191370297
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.574532925199433
+    ],
+    "group": 0,
+    "role": "train",
+    "direction": "negative",
+    "j3_offset_deg": 0.0,
+    "j6_offset_deg": 10.0,
+    "pose_id": "g0_negative_10",
+    "predicted_gravity_link6_m_s2": [
+      0.9356239014741556,
+      -5.061585339755002,
+      -8.35111140887053
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.4
+    ],
+    "group": 0,
+    "role": "train",
+    "direction": "negative",
+    "j3_offset_deg": 0.0,
+    "j6_offset_deg": 0.0,
+    "pose_id": "g0_negative_0",
+    "predicted_gravity_link6_m_s2": [
+      0.9356239014741556,
+      -3.5345332074797793,
+      -9.10317433207851
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.22546707480056707
+    ],
+    "group": 0,
+    "role": "train",
+    "direction": "negative",
+    "j3_offset_deg": 0.0,
+    "j6_offset_deg": -10.0,
+    "pose_id": "g0_negative_-10",
+    "predicted_gravity_link6_m_s2": [
+      0.9356239014741556,
+      -1.900086072255385,
+      -9.578641909634758
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.05093414960113413
+    ],
+    "group": 0,
+    "role": "train",
+    "direction": "negative",
+    "j3_offset_deg": 0.0,
+    "j6_offset_deg": -20.0,
+    "pose_id": "g0_negative_-20",
+    "predicted_gravity_link6_m_s2": [
+      0.9356239014741556,
+      -0.20790578321545627,
+      -9.763067299793434
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      -0.1235987755982988
+    ],
+    "group": 0,
+    "role": "train",
+    "direction": "negative",
+    "j3_offset_deg": 0.0,
+    "j6_offset_deg": -30.0,
+    "pose_id": "g0_negative_-30",
+    "predicted_gravity_link6_m_s2": [
+      0.9356239014741556,
+      1.4905916178420713,
+      -9.650846830398319
+    ]
+  },
+  {
+    "kind": "transit",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.4
+    ]
+  },
+  {
+    "kind": "transit",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.4
+    ]
+  },
+  {
+    "kind": "transit",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      -0.17595865315812875
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      -0.1235987755982988
+    ],
+    "group": 1,
+    "role": "train",
+    "direction": "positive",
+    "j3_offset_deg": 10.0,
+    "j6_offset_deg": -30.0,
+    "pose_id": "g1_positive_-30",
+    "predicted_gravity_link6_m_s2": [
+      -0.6978649225956728,
+      0.9918333835764889,
+      -9.734749667507316
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.05093414960113413
+    ],
+    "group": 1,
+    "role": "train",
+    "direction": "positive",
+    "j3_offset_deg": 10.0,
+    "j6_offset_deg": -20.0,
+    "pose_id": "g1_positive_-20",
+    "predicted_gravity_link6_m_s2": [
+      -0.6978649225956728,
+      -0.7136563339639435,
+      -9.7590870058015
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.22546707480056707
+    ],
+    "group": 1,
+    "role": "train",
+    "direction": "positive",
+    "j3_offset_deg": 10.0,
+    "j6_offset_deg": -10.0,
+    "pose_id": "g1_positive_-10",
+    "predicted_gravity_link6_m_s2": [
+      -0.6978649225956728,
+      -2.3974619649244113,
+      -9.486899423760713
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.4
+    ],
+    "group": 1,
+    "role": "train",
+    "direction": "positive",
+    "j3_offset_deg": 10.0,
+    "j6_offset_deg": 0.0,
+    "pose_id": "g1_positive_0",
+    "predicted_gravity_link6_m_s2": [
+      -0.6978649225956728,
+      -4.008421927254942,
+      -8.926457203331697
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.574532925199433
+    ],
+    "group": 1,
+    "role": "train",
+    "direction": "positive",
+    "j3_offset_deg": 10.0,
+    "j6_offset_deg": 10.0,
+    "pose_id": "g1_positive_10",
+    "predicted_gravity_link6_m_s2": [
+      -0.6978649225956728,
+      -5.497588017685196,
+      -8.094789097784743
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.7490658503988659
+    ],
+    "group": 1,
+    "role": "train",
+    "direction": "positive",
+    "j3_offset_deg": 10.0,
+    "j6_offset_deg": 20.0,
+    "pose_id": "g1_positive_20",
+    "predicted_gravity_link6_m_s2": [
+      -0.6978649225956728,
+      -6.819712678111852,
+      -7.017164921662525
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.9235987755982988
+    ],
+    "group": 1,
+    "role": "train",
+    "direction": "positive",
+    "j3_offset_deg": 10.0,
+    "j6_offset_deg": 30.0,
+    "pose_id": "g1_positive_30",
+    "predicted_gravity_link6_m_s2": [
+      -0.6978649225956728,
+      -7.934623819755208,
+      -5.726327740252374
+    ]
+  },
+  {
+    "kind": "transit",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.9759586531581288
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.9235987755982988
+    ],
+    "group": 1,
+    "role": "train",
+    "direction": "negative",
+    "j3_offset_deg": 10.0,
+    "j6_offset_deg": 30.0,
+    "pose_id": "g1_negative_30",
+    "predicted_gravity_link6_m_s2": [
+      -0.6978649225956728,
+      -7.934623819755208,
+      -5.726327740252374
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.7490658503988659
+    ],
+    "group": 1,
+    "role": "train",
+    "direction": "negative",
+    "j3_offset_deg": 10.0,
+    "j6_offset_deg": 20.0,
+    "pose_id": "g1_negative_20",
+    "predicted_gravity_link6_m_s2": [
+      -0.6978649225956728,
+      -6.819712678111852,
+      -7.017164921662525
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.574532925199433
+    ],
+    "group": 1,
+    "role": "train",
+    "direction": "negative",
+    "j3_offset_deg": 10.0,
+    "j6_offset_deg": 10.0,
+    "pose_id": "g1_negative_10",
+    "predicted_gravity_link6_m_s2": [
+      -0.6978649225956728,
+      -5.497588017685196,
+      -8.094789097784743
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.4
+    ],
+    "group": 1,
+    "role": "train",
+    "direction": "negative",
+    "j3_offset_deg": 10.0,
+    "j6_offset_deg": 0.0,
+    "pose_id": "g1_negative_0",
+    "predicted_gravity_link6_m_s2": [
+      -0.6978649225956728,
+      -4.008421927254942,
+      -8.926457203331697
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.22546707480056707
+    ],
+    "group": 1,
+    "role": "train",
+    "direction": "negative",
+    "j3_offset_deg": 10.0,
+    "j6_offset_deg": -10.0,
+    "pose_id": "g1_negative_-10",
+    "predicted_gravity_link6_m_s2": [
+      -0.6978649225956728,
+      -2.3974619649244113,
+      -9.486899423760713
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.05093414960113413
+    ],
+    "group": 1,
+    "role": "train",
+    "direction": "negative",
+    "j3_offset_deg": 10.0,
+    "j6_offset_deg": -20.0,
+    "pose_id": "g1_negative_-20",
+    "predicted_gravity_link6_m_s2": [
+      -0.6978649225956728,
+      -0.7136563339639435,
+      -9.7590870058015
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      -0.1235987755982988
+    ],
+    "group": 1,
+    "role": "train",
+    "direction": "negative",
+    "j3_offset_deg": 10.0,
+    "j6_offset_deg": -30.0,
+    "pose_id": "g1_negative_-30",
+    "predicted_gravity_link6_m_s2": [
+      -0.6978649225956728,
+      0.9918333835764889,
+      -9.734749667507316
+    ]
+  },
+  {
+    "kind": "transit",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.774532925199433,
+      -0.2,
+      0.3,
+      0.4
+    ]
+  },
+  {
+    "kind": "transit",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      0.4
+    ]
+  },
+  {
+    "kind": "transit",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      -0.17595865315812875
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      -0.1235987755982988
+    ],
+    "group": 2,
+    "role": "validation",
+    "direction": "positive",
+    "j3_offset_deg": 20.0,
+    "j6_offset_deg": -30.0,
+    "pose_id": "g2_positive_-30",
+    "predicted_gravity_link6_m_s2": [
+      -2.310149474129118,
+      0.46293879384284475,
+      -9.522867061990118
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      0.05093414960113413
+    ],
+    "group": 2,
+    "role": "validation",
+    "direction": "positive",
+    "j3_offset_deg": 20.0,
+    "j6_offset_deg": -20.0,
+    "pose_id": "g2_positive_-20",
+    "predicted_gravity_link6_m_s2": [
+      -2.310149474129118,
+      -1.197722798132465,
+      -9.458581791474593
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      0.22546707480056707
+    ],
+    "group": 2,
+    "role": "validation",
+    "direction": "positive",
+    "j3_offset_deg": 20.0,
+    "j6_offset_deg": -10.0,
+    "pose_id": "g2_positive_-10",
+    "predicted_gravity_link6_m_s2": [
+      -2.310149474129118,
+      -2.8219921889635,
+      -9.106902299498438
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      0.4
+    ],
+    "group": 2,
+    "role": "validation",
+    "direction": "positive",
+    "j3_offset_deg": 20.0,
+    "j6_offset_deg": 0.0,
+    "pose_id": "g2_positive_0",
+    "predicted_gravity_link6_m_s2": [
+      -2.310149474129118,
+      -4.3605167751298275,
+      -8.478514189466946
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      0.574532925199433
+    ],
+    "group": 2,
+    "role": "validation",
+    "direction": "positive",
+    "j3_offset_deg": 20.0,
+    "j6_offset_deg": 10.0,
+    "pose_id": "g2_positive_10",
+    "predicted_gravity_link6_m_s2": [
+      -2.310149474129118,
+      -5.766549265611792,
+      -7.592510716123691
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      0.7490658503988659
+    ],
+    "group": 2,
+    "role": "validation",
+    "direction": "positive",
+    "j3_offset_deg": 20.0,
+    "j6_offset_deg": 20.0,
+    "pose_id": "g2_positive_20",
+    "predicted_gravity_link6_m_s2": [
+      -2.310149474129118,
+      -6.997368074672866,
+      -6.47581264666682
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      0.9235987755982988
+    ],
+    "group": 2,
+    "role": "validation",
+    "direction": "positive",
+    "j3_offset_deg": 20.0,
+    "j6_offset_deg": 30.0,
+    "pose_id": "g2_positive_30",
+    "predicted_gravity_link6_m_s2": [
+      -2.310149474129118,
+      -8.0155753956241,
+      -5.162350286860291
+    ]
+  },
+  {
+    "kind": "transit",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      0.9759586531581288
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      0.9235987755982988
+    ],
+    "group": 2,
+    "role": "validation",
+    "direction": "negative",
+    "j3_offset_deg": 20.0,
+    "j6_offset_deg": 30.0,
+    "pose_id": "g2_negative_30",
+    "predicted_gravity_link6_m_s2": [
+      -2.310149474129118,
+      -8.0155753956241,
+      -5.162350286860291
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      0.7490658503988659
+    ],
+    "group": 2,
+    "role": "validation",
+    "direction": "negative",
+    "j3_offset_deg": 20.0,
+    "j6_offset_deg": 20.0,
+    "pose_id": "g2_negative_20",
+    "predicted_gravity_link6_m_s2": [
+      -2.310149474129118,
+      -6.997368074672866,
+      -6.47581264666682
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      0.574532925199433
+    ],
+    "group": 2,
+    "role": "validation",
+    "direction": "negative",
+    "j3_offset_deg": 20.0,
+    "j6_offset_deg": 10.0,
+    "pose_id": "g2_negative_10",
+    "predicted_gravity_link6_m_s2": [
+      -2.310149474129118,
+      -5.766549265611792,
+      -7.592510716123691
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      0.4
+    ],
+    "group": 2,
+    "role": "validation",
+    "direction": "negative",
+    "j3_offset_deg": 20.0,
+    "j6_offset_deg": 0.0,
+    "pose_id": "g2_negative_0",
+    "predicted_gravity_link6_m_s2": [
+      -2.310149474129118,
+      -4.3605167751298275,
+      -8.478514189466946
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      0.22546707480056707
+    ],
+    "group": 2,
+    "role": "validation",
+    "direction": "negative",
+    "j3_offset_deg": 20.0,
+    "j6_offset_deg": -10.0,
+    "pose_id": "g2_negative_-10",
+    "predicted_gravity_link6_m_s2": [
+      -2.310149474129118,
+      -2.8219921889635,
+      -9.106902299498438
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      0.05093414960113413
+    ],
+    "group": 2,
+    "role": "validation",
+    "direction": "negative",
+    "j3_offset_deg": 20.0,
+    "j6_offset_deg": -20.0,
+    "pose_id": "g2_negative_-20",
+    "predicted_gravity_link6_m_s2": [
+      -2.310149474129118,
+      -1.197722798132465,
+      -9.458581791474593
+    ]
+  },
+  {
+    "kind": "sample",
+    "target_rad": [
+      0.1,
+      0.5,
+      0.9490658503988658,
+      -0.2,
+      0.3,
+      -0.1235987755982988
+    ],
+    "group": 2,
+    "role": "validation",
+    "direction": "negative",
+    "j3_offset_deg": 20.0,
+    "j6_offset_deg": -30.0,
+    "pose_id": "g2_negative_-30",
+    "predicted_gravity_link6_m_s2": [
+      -2.310149474129118,
+      0.46293879384284475,
+      -9.522867061990118
+    ]
+  }
+]

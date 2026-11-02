@@ -1,0 +1,30 @@
+{
+  "robot_id": "nero7",
+  "name": "NERO 七轴单臂（官方模型）",
+  "joint_names": [
+    "joint1",
+    "joint2",
+    "joint3",
+    "joint4",
+    "joint5",
+    "joint6",
+    "joint7"
+  ],
+  "mock_position_bounds_rad": [
+    -0.2,
+    0.2
+  ],
+  "references": {
+    "project": "/home/a/Nero-7",
+    "official_sdk": "/home/a/Nero-7/third_party/pyAgxArm",
+    "official_ros2": "/home/a/Nero-7/third_party/agx_arm_ros",
+    "simulation_controller": "/arm_controller/follow_joint_trajectory"
+  },
+  "status": {
+    "mock": "implemented",
+    "simulation": "implemented_see_validation",
+    "hardware": "pending",
+    "reference_hardware": "用户表示旧 Nero-7 实物效果未知；未验证",
+    "model": "独立模型与 MoveIt 配置：robots/nero7/"
+  }
+}

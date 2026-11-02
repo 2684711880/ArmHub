@@ -1,0 +1,37 @@
+{
+  "T_tcp_camera": [
+    [
+      -0.02312200672988851,
+      -0.5011949634667647,
+      0.8650254224011752,
+      -0.06897502298294943
+    ],
+    [
+      -0.9989288021179696,
+      0.04627349444052675,
+      0.00010959662906205285,
+      0.034210957756304915
+    ],
+    [
+      -0.040082678352893905,
+      -0.8640962749068017,
+      -0.5017280205332841,
+      0.15408555174132807
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "parent_frame": "gripper_center",
+  "child_frame": "handeye_color_optical",
+  "translation_unit": "m",
+  "status": "calibrated_pending_independent_measurement",
+  "source": "calibration/panthera_ht/wrist_camera/evidence/solved_111.json",
+  "method": "TSAI",
+  "sample_count": 15,
+  "note": "Solved eye-in-hand from 15 MoveIt plugin samples (TSAI). Leave-one-out 4.98mm rms / 8.02mm max -> NOT independently validated. Replaced the hand-measured wrist_camera.yaml nominal and the 50mm target_compensation.yaml patch. See validation/handeye/corner_alignment_experiment.md before trusting this for hole approach.",
+  "original_source": "validation/handeye/solved_111.json"
+}

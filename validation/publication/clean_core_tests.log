@@ -1,0 +1,21 @@
+test_bad_trajectory_does_not_partially_change_state (test_contract.ContractTests) ... ok
+test_linear_motion_is_not_silently_replaced (test_contract.ContractTests) ... ok
+test_motion_requires_connection_then_explicit_enable (test_contract.ContractTests) ... ok
+test_pending_backends_fail_instead_of_fake_success (test_contract.ContractTests) ... ok
+test_same_task_runs_for_both_joint_counts (test_contract.ContractTests) ... ok
+test_unknown_selection_is_rejected (test_contract.ContractTests) ... ok
+test_valid_multisegment_trajectory (test_contract.ContractTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+test_joint_mapping_and_tcp_exist (test_models.ModelTests) ... ok
+test_meshes_are_local_and_exist (test_models.ModelTests) ... ok
+test_model_and_planner_use_same_geometry (test_models.ModelTests) ... ok
+test_vendor_snapshot_matches_lock (test_models.ModelTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.085s
+
+OK

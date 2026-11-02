@@ -1,0 +1,14 @@
+OK torch: 2.7.1+cpu
+OK torchvision: 0.22.1+cpu
+OK torchcodec: 0.5
+OK pinocchio: 3.8.0
+OK pyrealsense2: imported
+OK hightorque_robot: 1.0.0+panthera.project
+OK lerobot: 0.4.3
+OK lerobot_robot_panthera: imported
+OK lerobot.scripts.lerobot_record: imported
+OK lerobot.scripts.lerobot_train: imported
+OK record / replay / ACT CLI config decoding
+OK official URDF / gravity: nq=6
+PASS: imports / plugin configs / SDK paths; no device opened
+Camera config: empty (joint-only recording; configure serial for image data)

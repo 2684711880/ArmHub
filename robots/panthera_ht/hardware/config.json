@@ -1,0 +1,108 @@
+{
+  "device": "/dev/ttyACM0",
+  "motor_config": "motors.yaml",
+  "lower_rad": [
+    -2.4,
+    0.0,
+    0.0,
+    -1.6,
+    -1.7,
+    -2.5
+  ],
+  "upper_rad": [
+    2.4,
+    3.2,
+    4.0,
+    1.6,
+    1.7,
+    2.5
+  ],
+  "torque_caps_nm": [
+    21.0,
+    36.0,
+    36.0,
+    21.0,
+    10.0,
+    3.0
+  ],
+  "gripper_bounds_rad": [
+    0.0,
+    2.0
+  ],
+  "gripper_torque_cap_nm": 1.0,
+  "max_feedback_age_s": 0.15,
+  "feedback_query_period_s": 0.025,
+  "feedback_acquire_timeout_s": 0.6,
+  "stable_window_s": 0.5,
+  "stable_delta_rad": 0.003,
+  "max_step_rad": 0.0872664626,
+  "hold_speed_rad_s": 0.02,
+  "position_tolerance_rad": 0.01,
+  "position_guard_rad": 0.05,
+  "arrival_dwell_s": 0.3,
+  "motion_timeout_margin_s": 5.0,
+  "commissioning_only": true,
+  "gravity_compensation": {
+    "torque_caps_nm": [
+      15.0,
+      30.0,
+      30.0,
+      15.0,
+      5.0,
+      3.0
+    ],
+    "period_s": 0.005,
+    "query_period_s": 0.002,
+    "feedback_timeout_s": 0.05,
+    "max_command_gap_s": 0.1,
+    "max_velocity_rad_s": 2.0,
+    "log_period_s": 0.05
+  },
+  "cartesian": {
+    "start_tolerance_rad": 0.01,
+    "minimum_duration_s": 2.0,
+    "position_tolerance_m": 0.005,
+    "orientation_tolerance_rad": 0.03,
+    "collision_step_rad": 0.02
+  },
+  "home_joints_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "motion_smoothing": {
+    "control_period_s": 0.05,
+    "stream_min_speed_rad_s": 0.005,
+    "acceleration_limits_rad_s2": [
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8
+    ],
+    "jerk_limits_rad_s3": [
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0
+    ],
+    "max_tracking_error_rad": 0.15,
+    "max_cycle_gap_s": 0.2,
+    "feedback_timeout_s": 0.1
+  },
+  "velocity_limits_rad_s": [
+    1.68,
+    2.0,
+    2.0,
+    1.68,
+    1.48,
+    1.48
+  ],
+  "jog_max_speed_rad_s": 0.1
+}

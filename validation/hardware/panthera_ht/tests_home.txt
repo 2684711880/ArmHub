@@ -1,0 +1,56 @@
+test_bad_trajectory_does_not_partially_change_state (test_contract.ContractTests) ... ok
+test_linear_motion_is_not_silently_replaced (test_contract.ContractTests) ... ok
+test_motion_requires_connection_then_explicit_enable (test_contract.ContractTests) ... ok
+test_pending_backends_fail_instead_of_fake_success (test_contract.ContractTests) ... ok
+test_same_task_runs_for_both_joint_counts (test_contract.ContractTests) ... ok
+test_unknown_selection_is_rejected (test_contract.ContractTests) ... ok
+test_valid_multisegment_trajectory (test_contract.ContractTests) ... ok
+test_interrupt_after_output_is_followed_by_hold (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_invalid_model_output_does_not_enter_torque_mode (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_missing_feedback_never_claims_hold_stop_confirmed (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_position_control_cannot_enter_during_gravity_mode (test_gravity.GravityControlTests) ... ok
+test_slow_cycle_is_rejected_then_held (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_speed_guard_records_exact_joint_and_sample_before_hold (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_torque_frames_only_cover_six_axes_then_exit_to_full_hold (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_unknown_robot_gravity_is_explicitly_unsupported (test_gravity.GravityControlTests) ... ok
+test_joint_mapping_and_tcp_exist (test_models.ModelTests) ... ok
+test_meshes_are_local_and_exist (test_models.ModelTests) ... ok
+test_model_and_planner_use_same_geometry (test_models.ModelTests) ... ok
+test_vendor_snapshot_matches_lock (test_models.ModelTests) ... ok
+test_cartesian_can_execute_over_30_degrees (test_panthera_cartesian.CartesianTests) ... ok
+test_cartesian_duration_can_exceed_30_seconds (test_panthera_cartesian.CartesianTests) ... ok
+test_cartesian_orientation_can_exceed_30_degrees (test_panthera_cartesian.CartesianTests) ... ok
+test_changed_start_rejected_before_send (test_panthera_cartesian.CartesianTests) ... ok
+test_collision_rejection_does_not_send (test_panthera_cartesian.CartesianTests) ... ok
+test_coupled_target_feedback_and_gripper (test_panthera_cartesian.CartesianTests) ... ok
+test_fk_failure_to_reach_prevents_false_success (test_panthera_cartesian.CartesianTests) ... ok
+test_gravity_excludes_cartesian_preview (test_panthera_cartesian.CartesianTests) ... ok
+test_invalid_and_large_targets_do_not_send (test_panthera_cartesian.CartesianTests) ... ok
+test_preview_accepts_translation_over_previous_15cm_limit (test_panthera_cartesian.CartesianTests) ... ok
+test_preview_never_sends_or_enables (test_panthera_cartesian.CartesianTests) ... ok
+test_bounded_jog_fills_all_seven_slots_and_keeps_gripper (test_panthera_hardware.HardwareTests) ... ok
+test_encoder_zero_offset_is_held_without_expanding_motion_limits (test_panthera_hardware.HardwareTests) ... ok
+test_fault_and_motor_identity_are_rejected (test_panthera_hardware.HardwareTests) ... ok
+test_freshness_requires_new_frames_not_fresh_cache_time (test_panthera_hardware.HardwareTests) ... ok
+test_large_multijoint_and_nonfinite_goals_never_transmit (test_panthera_hardware.HardwareTests) ... ok
+test_motion_requires_explicit_enable (test_panthera_hardware.HardwareTests) ... ok
+test_read_and_enable_never_send_motion (test_panthera_hardware.HardwareTests) ... ok
+test_unverified_functions_remain_unavailable (test_panthera_hardware.HardwareTests) ... ok
+test_collision_prevents_home (test_panthera_home.HomeTests) ... ok
+test_gravity_blocks_home (test_panthera_home.HomeTests) ... ok
+test_home_requires_enable (test_panthera_home.HomeTests) ... ok
+test_home_returns_all_axes_to_zero_and_keeps_gripper (test_panthera_home.HomeTests) ... ok
+test_invalid_home_and_speed_rejected_without_sending (test_panthera_home.HomeTests) ... ok
+test_long_return_is_timed_from_measured_start (test_panthera_home.HomeTests) ... ok
+test_preview_uses_configured_joint_home_and_never_sends (test_panthera_home.HomeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 2.542s
+
+OK

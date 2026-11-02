@@ -1,0 +1,22 @@
+{
+  "source": "saved_hardware_trace_and_offline_regression",
+  "hardware_connected_during_fix": false,
+  "start_j4_deg": 1.1159999764140158,
+  "pose_j4_mean_deg": [
+    1.0080000647624223,
+    0.9459310886858134,
+    0.8279999807794036,
+    0.6862500100253011,
+    0.6120000507545106
+  ],
+  "commanded_j4_first_deg": 1.1159999764140158,
+  "commanded_j4_last_before_hold_deg": 0.5759999912692245,
+  "position_tolerance_deg": 0.5729577951308232,
+  "completed_poses": 5,
+  "hold_stop_confirmed": true,
+  "cause": "collector reanchored nonmoving joint targets to every feedback snapshot; fixed startup checks eventually reject accumulated target drift",
+  "fix": "fixed planned holding targets, bounded single-joint interface and existing tolerance retained",
+  "regression_before": "hold_target_before.log",
+  "regression_after": "hold_target_after.log",
+  "physical_retry": "pending user execution"
+}

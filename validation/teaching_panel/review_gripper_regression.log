@@ -1,0 +1,35 @@
+test_closed_mechanical_end_removes_torque (test_gripper_assist.AssistTests) ... ok
+test_config_rejects_unbounded_or_invalid_assist (test_gripper_assist.AssistTests) ... ok
+test_far_or_fast_gripper_does_not_activate (test_gripper_assist.AssistTests) ... ok
+test_feedback_fault_stale_torque_counter_and_cycle_guards (test_gripper_assist.AssistTests) ... ok
+test_feedback_jump_is_rejected_instead_of_sending_large_position_error (test_gripper_assist.AssistTests) ... ok
+test_idle_hold_captures_actual_gripper_instead_of_padding_zero (test_gripper_assist.AssistTests) ... /home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/cmeel.prefix/lib/python3.10/site-packages/hppfcl/__init__.py:3: DeprecationWarning: Please update your 'hppfcl' imports to 'coal'
+  warnings.warn(
+ok
+test_initial_closed_position_never_assists (test_gripper_assist.AssistTests) ... ok
+test_initial_target_uses_actual_opening_and_slews_recorded_jump (test_gripper_assist.AssistTests) ... ok
+test_near_position_after_opening_ramps_bounded_closing_torque (test_gripper_assist.AssistTests) ... ok
+test_partial_opening_immediately_removes_torque (test_gripper_assist.AssistTests) ... ok
+test_proxy_is_restored_if_upstream_swallows_motor_error (test_gripper_assist.AssistTests) ... ok
+test_real_official_sender_preserves_six_axes_and_packet_mode (test_gripper_assist.AssistTests) ... 夹爪日志：/tmp/tmp0wr50pvo/trace.csv，27 个采样；位置加力辅助已启用。
+ok
+test_blocked_close_holds_without_claiming_grasp (test_gripper_cli.GripperCliTests) ... ok
+test_open_reaches_target_and_keeps_six_axes (test_gripper_cli.GripperCliTests) ... ok
+test_bad_feedback_rejected_before_original_send (test_gripper_trace.GripperTraceTests) ... 夹爪日志：/tmp/tmp9q37nhwq/trace.csv，0 个采样；未改变官方控制。
+夹爪日志：/tmp/tmposzavm7p/trace.csv，0 个采样；未改变官方控制。
+夹爪日志：/tmp/tmp0lhz5uzg/trace.csv，0 个采样；未改变官方控制。
+夹爪日志：/tmp/tmpbag1iir6/trace.csv，0 个采样；未改变官方控制。
+夹爪日志：/tmp/tmp0t86ogw6/trace.csv，0 个采样；未改变官方控制。
+ok
+test_existing_log_is_never_overwritten (test_gripper_trace.GripperTraceTests) ... ok
+test_real_send_seam_preserves_action_identity_and_result (test_gripper_trace.GripperTraceTests) ... 夹爪日志：/tmp/tmpk2dfkof_/trace.csv，2 个采样；未改变官方控制。
+ok
+test_send_failure_still_restores_class_via_finally (test_gripper_trace.GripperTraceTests) ... 夹爪日志：/tmp/tmp_fqgph3q/trace.csv，1 个采样；未改变官方控制。
+ok
+test_teaching_mode_is_rejected_without_sending (test_gripper_trace.GripperTraceTests) ... 夹爪日志：/tmp/tmpjq7n2po2/trace.csv，0 个采样；未改变官方控制。
+ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 2.510s
+
+OK

@@ -1,0 +1,36 @@
+{
+  "task_log": "logs/hole_approach/events/20261019T053246_542535Z.jsonl",
+  "backend_log": "logs/panthera_ht/20261019T053246_690515Z.jsonl",
+  "actual_control_errors": [
+    {
+      "event": "control_error",
+      "utc": "2026-10-19T05:33:11.305879+00:00",
+      "monotonic_s": 16207.223268389,
+      "reason": "当前姿态保持指令已发出，但停止反馈未确认",
+      "state": "RECOVER",
+      "tracking": true
+    },
+    {
+      "event": "control_error",
+      "utc": "2026-10-19T05:34:27.214459+00:00",
+      "monotonic_s": 16283.131846464,
+      "reason": "Motion arrival timeout; hold requested",
+      "state": "IDLE",
+      "tracking": false
+    }
+  ],
+  "recorded_hold_feedback_samples": 72,
+  "recorded_max_raw_velocity_rad_s": 0.47595128417015076,
+  "longest_old_stop_predicate_window_s": 0.2279934130001493,
+  "old_required_window_s": 0.3,
+  "regression_tests": 127,
+  "result": "passed",
+  "verification": [
+    "recorded motor feedback replay",
+    "two repeated recovery/reacquire/approach cycles through production controller/runtime/backend/Ruckig with fake transport and collision model",
+    "home waits for pending hold",
+    "continued drift rejects hold",
+    "terminal speed-cap lag convergence"
+  ],
+  "physical_motion_executed_this_turn": false
+}

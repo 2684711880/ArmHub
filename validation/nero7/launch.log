@@ -1,0 +1,350 @@
+[INFO] [launch]: All log files can be found below /home/a/.ros/log/2026-10-19-09-45-59-606356-1-38476
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gzserver-1]: process started with pid [38507]
+[INFO] [robot_state_publisher-2]: process started with pid [38509]
+[INFO] [spawn_entity.py-3]: process started with pid [38511]
+[INFO] [move_group-4]: process started with pid [38513]
+[robot_state_publisher-2] 1792374359.876561 [88] robot_stat: selected interface "lo" is not multicast-capable: disabling multicast
+[robot_state_publisher-2] [INFO] [1792374359.880494124] [robot_state_publisher]: got segment armhub_floor
+[robot_state_publisher-2] [INFO] [1792374359.880553755] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1792374359.880559296] [robot_state_publisher]: got segment gripper_base
+[robot_state_publisher-2] [INFO] [1792374359.880563053] [robot_state_publisher]: got segment gripper_flange
+[robot_state_publisher-2] [INFO] [1792374359.880566299] [robot_state_publisher]: got segment gripper_link1
+[robot_state_publisher-2] [INFO] [1792374359.880569314] [robot_state_publisher]: got segment gripper_link2
+[robot_state_publisher-2] [INFO] [1792374359.880572300] [robot_state_publisher]: got segment link1
+[robot_state_publisher-2] [INFO] [1792374359.880575516] [robot_state_publisher]: got segment link2
+[robot_state_publisher-2] [INFO] [1792374359.880578592] [robot_state_publisher]: got segment link3
+[robot_state_publisher-2] [INFO] [1792374359.880581687] [robot_state_publisher]: got segment link4
+[robot_state_publisher-2] [INFO] [1792374359.880584583] [robot_state_publisher]: got segment link5
+[robot_state_publisher-2] [INFO] [1792374359.880587508] [robot_state_publisher]: got segment link6
+[robot_state_publisher-2] [INFO] [1792374359.880590524] [robot_state_publisher]: got segment link7
+[robot_state_publisher-2] [INFO] [1792374359.880593439] [robot_state_publisher]: got segment world
+[move_group-4] 1792374359.889006 [88] move_group: selected interface "lo" is not multicast-capable: disabling multicast
+[move_group-4] [INFO] [1792374359.894629677] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0 seconds
+[move_group-4] [INFO] [1792374359.894676745] [moveit_robot_model.robot_model]: Loading robot model 'armhub_nero7'...
+[move_group-4] [INFO] [1792374359.894682255] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[gzserver-1] 1792374360.048511 [88]   gzserver: selected interface "lo" is not multicast-capable: disabling multicast
+[spawn_entity.py-3] 1792374360.088352 [88]    python3: selected interface "lo" is not multicast-capable: disabling multicast
+[spawn_entity.py-3] [INFO] [1792374360.119482739] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-3] [INFO] [1792374360.119808587] [spawn_entity]: Loading entity published on topic robot_description
+[spawn_entity.py-3] [INFO] [1792374360.121196177] [spawn_entity]: Waiting for entity xml on robot_description
+[spawn_entity.py-3] [INFO] [1792374360.122708571] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-3] [INFO] [1792374360.122906771] [spawn_entity]: Waiting for service /spawn_entity
+[spawn_entity.py-3] [INFO] [1792374360.626226598] [spawn_entity]: Calling service /spawn_entity
+[move_group-4] [INFO] [1792374360.699814488] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-4] [INFO] [1792374360.699929473] [moveit.ros_planning_interface.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-4] [INFO] [1792374360.700099010] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-4] [INFO] [1792374360.700264338] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-4] [INFO] [1792374360.700273115] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[move_group-4] [INFO] [1792374360.700593693] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-4] [INFO] [1792374360.700600857] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-4] [INFO] [1792374360.700760615] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-4] [INFO] [1792374360.700910856] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-4] [WARN] [1792374360.700983050] [moveit.ros.occupancy_map_monitor.middleware_handle]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-4] [ERROR] [1792374360.700988330] [moveit.ros.occupancy_map_monitor.middleware_handle]: No 3D sensor plugin(s) defined for octomap updates
+[spawn_entity.py-3] [INFO] [1792374360.717359017] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [armhub_nero7]
+[gzserver-1] [INFO] [1792374360.920394867] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+[gzserver-1] [INFO] [1792374360.922127872] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+[gzserver-1] [INFO] [1792374360.922205658] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+[gzserver-1] [INFO] [1792374360.922967330] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+[gzserver-1] [INFO] [1792374360.924969448] [gazebo_ros2_control]: Received urdf from param server, parsing...
+[gzserver-1] [INFO] [1792374360.924997761] [gazebo_ros2_control]: Loading parameter files /home/a/ArmHub/ros_ws/install/armhub_sim/share/armhub_sim/robots/nero7/simulation/controllers.yaml
+[gzserver-1] [INFO] [1792374360.930110938] [gazebo_ros2_control]: Loading joint: joint1
+[gzserver-1] [INFO] [1792374360.930125425] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1792374360.930130605] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930136255] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1792374360.930143659] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1792374360.930147907] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1792374360.930151544] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930260267] [gazebo_ros2_control]: Loading joint: joint2
+[gzserver-1] [INFO] [1792374360.930266879] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1792374360.930270847] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930274854] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1792374360.930279493] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1792374360.930283029] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1792374360.930286466] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930337291] [gazebo_ros2_control]: Loading joint: joint3
+[gzserver-1] [INFO] [1792374360.930343683] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1792374360.930348412] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930353842] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1792374360.930360554] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1792374360.930365303] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1792374360.930368910] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930414405] [gazebo_ros2_control]: Loading joint: joint4
+[gzserver-1] [INFO] [1792374360.930418653] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1792374360.930422350] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930425716] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1792374360.930429723] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1792374360.930433130] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1792374360.930436476] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930477833] [gazebo_ros2_control]: Loading joint: joint5
+[gzserver-1] [INFO] [1792374360.930481801] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1792374360.930485167] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930489154] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1792374360.930493152] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1792374360.930496508] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1792374360.930499864] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930539128] [gazebo_ros2_control]: Loading joint: joint6
+[gzserver-1] [INFO] [1792374360.930542895] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1792374360.930546281] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930549567] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1792374360.930553344] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1792374360.930556690] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1792374360.930560007] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930598218] [gazebo_ros2_control]: Loading joint: joint7
+[gzserver-1] [INFO] [1792374360.930602055] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1792374360.930605391] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930608668] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-1] [INFO] [1792374360.930612595] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1792374360.930619929] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1792374360.930623475] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930662157] [gazebo_ros2_control]: Loading joint: gripper_joint1
+[gzserver-1] [INFO] [1792374360.930683197] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1792374360.930687134] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930690851] [gazebo_ros2_control]: 			 found initial value: 0.020000
+[gzserver-1] [INFO] [1792374360.930695450] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1792374360.930698796] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1792374360.930702222] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930765931] [gazebo_ros2_control]: Loading joint: gripper_joint2
+[gzserver-1] [INFO] [1792374360.930770139] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1792374360.930773696] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930777783] [gazebo_ros2_control]: 			 found initial value: -0.020000
+[gzserver-1] [INFO] [1792374360.930782652] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1792374360.930786119] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1792374360.930789605] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1792374360.930879443] [resource_manager]: Initialize hardware 'ArmHubGazeboSystem' 
+[gzserver-1] [INFO] [1792374360.930956447] [resource_manager]: Successful initialization of hardware 'ArmHubGazeboSystem'
+[gzserver-1] [INFO] [1792374360.930997433] [resource_manager]: 'configure' hardware 'ArmHubGazeboSystem' 
+[gzserver-1] [INFO] [1792374360.931002573] [resource_manager]: Successful 'configure' of hardware 'ArmHubGazeboSystem'
+[gzserver-1] [INFO] [1792374360.931006871] [resource_manager]: 'activate' hardware 'ArmHubGazeboSystem' 
+[gzserver-1] [INFO] [1792374360.931010077] [resource_manager]: Successful 'activate' of hardware 'ArmHubGazeboSystem'
+[gzserver-1] [INFO] [1792374360.931054340] [gazebo_ros2_control]: Loading controller_manager
+[gzserver-1] [WARN] [1792374360.937505174] [gazebo_ros2_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[gzserver-1] [INFO] [1792374360.937661045] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+[INFO] [spawn_entity.py-3]: process has finished cleanly [pid 38511]
+[INFO] [spawner-5]: process started with pid [38636]
+[INFO] [spawner-6]: process started with pid [38638]
+[INFO] [spawner-7]: process started with pid [38640]
+[spawner-7] 1792374361.111614 [88]    spawner: selected interface "lo" is not multicast-capable: disabling multicast
+[spawner-6] 1792374361.114474 [88]    spawner: selected interface "lo" is not multicast-capable: disabling multicast
+[spawner-5] 1792374361.114474 [88]    spawner: selected interface "lo" is not multicast-capable: disabling multicast
+[gzserver-1] [INFO] [1792374361.135343095] [controller_manager]: Loading controller 'gripper_controller'
+[gzserver-1] [WARN] [1792374361.143251872] [gripper_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[gzserver-1] [INFO] [1792374361.151299819] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gzserver-1] [INFO] [1792374361.159975879] [controller_manager]: Loading controller 'arm_controller'
+[spawner-7] [INFO] [1792374361.160936252] [spawner_gripper_controller]: [94mLoaded [1mgripper_controller[0m
+[gzserver-1] [WARN] [1792374361.163625153] [arm_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[gzserver-1] [INFO] [1792374361.170535456] [controller_manager]: Configuring controller 'gripper_controller'
+[gzserver-1] [INFO] [1792374361.171284544] [gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gzserver-1] [INFO] [1792374361.171334147] [gripper_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[gzserver-1] [INFO] [1792374361.171381265] [gripper_controller]: Using 'splines' interpolation method.
+[spawner-5] [INFO] [1792374361.171967640] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[gzserver-1] [INFO] [1792374361.172304198] [gripper_controller]: Controller state will be published at 50.00 Hz.
+[gzserver-1] [INFO] [1792374361.177599225] [gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+[gzserver-1] [INFO] [1792374361.180004276] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[gzserver-1] [INFO] [1792374361.180057014] [joint_state_broadcaster]: Publishing state interfaces defined in 'joints' and 'interfaces' parameters.
+[gzserver-1] [WARN] [1792374361.180075028] [joint_state_broadcaster]: Mapping from 'position' to interface 'position' will not be done, because 'position' is defined in 'interface' parameter.
+[gzserver-1] [WARN] [1792374361.180091509] [joint_state_broadcaster]: Mapping from 'velocity' to interface 'velocity' will not be done, because 'velocity' is defined in 'interface' parameter.
+[spawner-6] [INFO] [1792374361.183312282] [spawner_arm_controller]: [94mLoaded [1marm_controller[0m
+[gzserver-1] [INFO] [1792374361.190124262] [controller_manager]: Configuring controller 'arm_controller'
+[gzserver-1] [INFO] [1792374361.190303276] [arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gzserver-1] [INFO] [1792374361.190322161] [arm_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[gzserver-1] [INFO] [1792374361.190338432] [arm_controller]: Using 'splines' interpolation method.
+[gzserver-1] [INFO] [1792374361.190677825] [arm_controller]: Controller state will be published at 50.00 Hz.
+[gzserver-1] [INFO] [1792374361.192020051] [arm_controller]: Action status changes will be monitored at 20.00 Hz.
+[spawner-7] [INFO] [1792374361.220771737] [spawner_gripper_controller]: [92mConfigured and activated [1mgripper_controller[0m
+[spawner-5] [INFO] [1792374361.240853683] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[spawner-6] [INFO] [1792374361.260708196] [spawner_arm_controller]: [92mConfigured and activated [1marm_controller[0m
+[INFO] [spawner-7]: process has finished cleanly [pid 38640]
+[INFO] [spawner-5]: process has finished cleanly [pid 38636]
+[INFO] [spawner-6]: process has finished cleanly [pid 38638]
+[move_group-4] [INFO] [1792374361.479790646] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'ompl'
+[move_group-4] [INFO] [1792374361.486206686] [moveit.ros_planning.planning_pipeline]: Using planning interface 'OMPL'
+[move_group-4] [INFO] [1792374361.487239324] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.path_tolerance' was not set. Using default value: 0.100000
+[move_group-4] [INFO] [1792374361.487248852] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.resample_dt' was not set. Using default value: 0.100000
+[move_group-4] [INFO] [1792374361.487251878] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.min_angle_change' was not set. Using default value: 0.001000
+[move_group-4] [INFO] [1792374361.487261375] [moveit_ros.fix_workspace_bounds]: Param 'ompl.default_workspace_bounds' was not set. Using default value: 10.000000
+[move_group-4] [INFO] [1792374361.487268789] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_bounds_error' was set to 0.100000
+[move_group-4] [INFO] [1792374361.487271705] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-4] [INFO] [1792374361.487277065] [moveit_ros.fix_start_state_collision]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-4] [INFO] [1792374361.487279950] [moveit_ros.fix_start_state_collision]: Param 'ompl.jiggle_fraction' was not set. Using default value: 0.020000
+[move_group-4] [INFO] [1792374361.487282635] [moveit_ros.fix_start_state_collision]: Param 'ompl.max_sampling_attempts' was not set. Using default value: 100
+[move_group-4] [INFO] [1792374361.487287604] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[move_group-4] [INFO] [1792374361.487290019] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Resolve constraint frames to robot links'
+[move_group-4] [INFO] [1792374361.487291862] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[move_group-4] [INFO] [1792374361.487293836] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[move_group-4] [INFO] [1792374361.487295709] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[move_group-4] [INFO] [1792374361.487297463] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[move_group-4] [INFO] [1792374361.494443095] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for arm_controller
+[move_group-4] [INFO] [1792374361.494993142] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for gripper_controller
+[move_group-4] [INFO] [1792374361.495064225] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-4] [INFO] [1792374361.495075506] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-4] [INFO] [1792374361.495171214] [moveit_ros.trajectory_execution_manager]: Trajectory execution is not managing controllers
+[move_group-4] [INFO] [1792374361.495190541] [move_group.move_group]: MoveGroup debug mode is ON
+[move_group-4] [INFO] [1792374361.503370183] [move_group.move_group]: 
+[move_group-4] 
+[move_group-4] ********************************************************
+[move_group-4] * MoveGroup using: 
+[move_group-4] *     - ApplyPlanningSceneService
+[move_group-4] *     - ClearOctomapService
+[move_group-4] *     - CartesianPathService
+[move_group-4] *     - ExecuteTrajectoryAction
+[move_group-4] *     - GetPlanningSceneService
+[move_group-4] *     - KinematicsService
+[move_group-4] *     - MoveAction
+[move_group-4] *     - MotionPlanService
+[move_group-4] *     - QueryPlannersService
+[move_group-4] *     - StateValidationService
+[move_group-4] ********************************************************
+[move_group-4] 
+[move_group-4] [INFO] [1792374361.503400600] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner
+[move_group-4] [INFO] [1792374361.503407142] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context initialization complete
+[move_group-4] [96mLoading 'move_group/ApplyPlanningSceneService'...
+[move_group-4] [0m[96mLoading 'move_group/ClearOctomapService'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupCartesianPathService'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupExecuteTrajectoryAction'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupGetPlanningSceneService'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupKinematicsService'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupMoveAction'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupPlanService'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupQueryPlannersService'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupStateValidationService'...
+[move_group-4] [0m[92m
+[move_group-4] You can start planning now!
+[move_group-4] 
+[move_group-4] [INFO] [1792374399.961707541] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-4] [INFO] [1792374399.961812126] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[move_group-4] [INFO] [1792374399.961857781] [moveit_move_group_default_capabilities.move_action_capability]: Combined planning and execution request received for MoveGroup action. Forwarding to planning and execution pipeline.
+[move_group-4] [INFO] [1792374399.961936318] [moveit_ros.plan_execution]: Planning attempt 1 of at most 1
+[move_group-4] [INFO] [1792374399.961942670] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-4] [INFO] [1792374399.970541228] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-4] [INFO] [1792374400.978208807] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-4] [INFO] [1792374400.978244744] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-4] [INFO] [1792374400.978307361] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-4] [INFO] [1792374400.978360350] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-4] [INFO] [1792374400.978399774] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-4] [INFO] [1792374400.978421875] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-4] [INFO] [1792374400.978574721] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[gzserver-1] [INFO] [1792374400.979178309] [arm_controller]: Received new action goal
+[gzserver-1] [INFO] [1792374400.979309514] [arm_controller]: Accepted new action goal
+[move_group-4] [INFO] [1792374400.979478430] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-4] [INFO] [1792374400.979501873] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[gzserver-1] [INFO] [1792374408.506981781] [arm_controller]: Goal reached, success!
+[move_group-4] [INFO] [1792374408.529978581] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-4] [INFO] [1792374408.530073949] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-4] [INFO] [1792374408.538546443] [moveit_move_group_default_capabilities.move_action_capability]: Solution was found and executed.
+[move_group-4] [INFO] [1792374408.568244086] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-4] [INFO] [1792374408.568333253] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[move_group-4] [INFO] [1792374408.568381663] [moveit_move_group_default_capabilities.move_action_capability]: Combined planning and execution request received for MoveGroup action. Forwarding to planning and execution pipeline.
+[move_group-4] [INFO] [1792374408.568411900] [moveit_ros.plan_execution]: Planning attempt 1 of at most 1
+[move_group-4] [INFO] [1792374408.568418111] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-4] [INFO] [1792374408.580434760] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-4] [INFO] [1792374409.519603462] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-4] [INFO] [1792374409.519638899] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-4] [INFO] [1792374409.519715111] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-4] [INFO] [1792374409.519776315] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-4] [INFO] [1792374409.519809788] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-4] [INFO] [1792374409.519828443] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-4] [INFO] [1792374409.519943668] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[gzserver-1] [INFO] [1792374409.520425388] [arm_controller]: Received new action goal
+[gzserver-1] [INFO] [1792374409.520485891] [arm_controller]: Accepted new action goal
+[move_group-4] [INFO] [1792374409.520613740] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-4] [INFO] [1792374409.520641963] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[gzserver-1] [INFO] [1792374418.015376346] [arm_controller]: Goal reached, success!
+[move_group-4] [INFO] [1792374418.021134229] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-4] [INFO] [1792374418.021233815] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-4] [INFO] [1792374418.029930110] [moveit_move_group_default_capabilities.move_action_capability]: Solution was found and executed.
+[move_group-4] [INFO] [1792374418.067241946] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-4] [INFO] [1792374418.067339849] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[move_group-4] [INFO] [1792374418.067403427] [moveit_move_group_default_capabilities.move_action_capability]: Combined planning and execution request received for MoveGroup action. Forwarding to planning and execution pipeline.
+[move_group-4] [INFO] [1792374418.067442240] [moveit_ros.plan_execution]: Planning attempt 1 of at most 1
+[move_group-4] [INFO] [1792374418.067449283] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-4] [INFO] [1792374418.080658935] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-4] [ERROR] [1792374426.081149107] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:265 - arm/arm[RRTConnectkConfigDefault]: Unable to sample any valid states for goal tree
+[move_group-4] [ERROR] [1792374426.084012109] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:265 - arm/arm[RRTConnectkConfigDefault]: Unable to sample any valid states for goal tree
+[move_group-4] [ERROR] [1792374426.084411396] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:265 - arm/arm[RRTConnectkConfigDefault]: Unable to sample any valid states for goal tree
+[move_group-4] [ERROR] [1792374426.084591412] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:265 - arm/arm[RRTConnectkConfigDefault]: Unable to sample any valid states for goal tree
+[move_group-4] [WARN] [1792374426.084675530] [ompl]: ./src/ompl/tools/multiplan/src/ParallelPlan.cpp:138 - ParallelPlan::solve(): Unable to find solution by any of the threads in 8.003887 seconds
+[move_group-4] [INFO] [1792374426.097341819] [moveit.ompl_planning.model_based_planning_context]: Unable to solve the planning problem
+[move_group-4] [INFO] [1792374426.097399457] [moveit_move_group_default_capabilities.move_action_capability]: Catastrophic failure
+[move_group-4] [INFO] [1792374426.132854370] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-4] [INFO] [1792374426.132926174] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[move_group-4] [INFO] [1792374426.132963123] [moveit_move_group_default_capabilities.move_action_capability]: Combined planning and execution request received for MoveGroup action. Forwarding to planning and execution pipeline.
+[move_group-4] [INFO] [1792374426.132992138] [moveit_ros.plan_execution]: Planning attempt 1 of at most 1
+[move_group-4] [INFO] [1792374426.132996335] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-4] [INFO] [1792374426.133161745] [moveit_collision_detection_fcl.collision_common]: Found a contact between 'armhub_validation_blocker' (type 'Object') and 'link1' (type 'Robot link'), which constitutes a collision. Contact information is not stored.
+[move_group-4] [INFO] [1792374426.133169750] [moveit_collision_detection_fcl.collision_common]: Collision checking is considered complete (collision was found and 0 contacts are stored)
+[move_group-4] [INFO] [1792374426.133172445] [moveit_ros.fix_start_state_collision]: Start state appears to be in collision with respect to group arm
+[move_group-4] [WARN] [1792374426.136001654] [moveit_ros.fix_start_state_collision]: Unable to find a valid state nearby the start state (using jiggle fraction of 0.020000 and 100 sampling attempts). Passing the original planning request to the planner.
+[move_group-4] [INFO] [1792374426.136152937] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-4] [WARN] [1792374426.136333925] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - arm/arm[RRTConnectkConfigDefault]: Skipping invalid start state (invalid state)
+[move_group-4] [ERROR] [1792374426.136390070] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - arm/arm[RRTConnectkConfigDefault]: Motion planning start tree could not be initialized!
+[move_group-4] [WARN] [1792374426.136416550] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - arm/arm[RRTConnectkConfigDefault]: Skipping invalid start state (invalid state)
+[move_group-4] [ERROR] [1792374426.136437719] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - arm/arm[RRTConnectkConfigDefault]: Motion planning start tree could not be initialized!
+[move_group-4] [WARN] [1792374426.136445614] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - arm/arm[RRTConnectkConfigDefault]: Skipping invalid start state (invalid state)
+[move_group-4] [WARN] [1792374426.136458969] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - arm/arm[RRTConnectkConfigDefault]: Skipping invalid start state (invalid state)
+[move_group-4] [ERROR] [1792374426.136476572] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - arm/arm[RRTConnectkConfigDefault]: Motion planning start tree could not be initialized!
+[move_group-4] [ERROR] [1792374426.136484577] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - arm/arm[RRTConnectkConfigDefault]: Motion planning start tree could not be initialized!
+[move_group-4] [WARN] [1792374426.136504464] [ompl]: ./src/ompl/tools/multiplan/src/ParallelPlan.cpp:138 - ParallelPlan::solve(): Unable to find solution by any of the threads in 0.000252 seconds
+[move_group-4] [WARN] [1792374426.136543878] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - arm/arm[RRTConnectkConfigDefault]: Skipping invalid start state (invalid state)
+[move_group-4] [ERROR] [1792374426.136567933] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - arm/arm[RRTConnectkConfigDefault]: Motion planning start tree could not be initialized!
+[move_group-4] [WARN] [1792374426.136584043] [ompl]: ./src/ompl/tools/multiplan/src/ParallelPlan.cpp:138 - ParallelPlan::solve(): Unable to find solution by any of the threads in 0.000065 seconds
+[move_group-4] [WARN] [1792374426.146207564] [ompl]: ./src/ompl/base/goals/src/GoalLazySamples.cpp:129 - Goal sampling thread never did any work.
+[move_group-4] [INFO] [1792374426.146280781] [moveit.ompl_planning.model_based_planning_context]: Unable to solve the planning problem
+[move_group-4] [INFO] [1792374426.146310256] [moveit_move_group_default_capabilities.move_action_capability]: Catastrophic failure
+[move_group-4] [INFO] [1792374426.162777402] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-4] [INFO] [1792374426.162878871] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[move_group-4] [INFO] [1792374426.162936158] [moveit_move_group_default_capabilities.move_action_capability]: Combined planning and execution request received for MoveGroup action. Forwarding to planning and execution pipeline.
+[move_group-4] [INFO] [1792374426.162975662] [moveit_ros.plan_execution]: Planning attempt 1 of at most 1
+[move_group-4] [INFO] [1792374426.162982525] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-4] [INFO] [1792374426.172045398] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'arm[RRTConnectkConfigDefault]' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-4] [INFO] [1792374427.153851265] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-4] [INFO] [1792374427.153896550] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-4] [INFO] [1792374427.153943898] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-4] [INFO] [1792374427.154013428] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-4] [INFO] [1792374427.154050868] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-4] [INFO] [1792374427.154072679] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-4] [INFO] [1792374427.154243989] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[gzserver-1] [INFO] [1792374427.154694832] [arm_controller]: Received new action goal
+[gzserver-1] [INFO] [1792374427.154743964] [arm_controller]: Accepted new action goal
+[move_group-4] [INFO] [1792374427.154832219] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-4] [INFO] [1792374427.154842368] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[gzserver-1] [INFO] [1792374433.667668115] [arm_controller]: Goal reached, success!
+[move_group-4] [INFO] [1792374433.705341774] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-4] [INFO] [1792374433.705540927] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-4] [INFO] [1792374433.714186442] [moveit_move_group_default_capabilities.move_action_capability]: Solution was found and executed.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [move_group-4]: sending signal 'SIGINT' to process[move_group-4]
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[INFO] [gzserver-1]: sending signal 'SIGINT' to process[gzserver-1]
+[move_group-4] [INFO] [1792374465.269800593] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-2] [INFO] [1792374465.270461580] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[move_group-4] [INFO] [1792374465.300572787] [moveit.ros_planning_interface.moveit_cpp]: Deleting MoveItCpp
+[move_group-4] [INFO] [1792374465.301338349] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-4] [INFO] [1792374465.303562840] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping world geometry monitor
+[move_group-4] [INFO] [1792374465.303741915] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[move_group-4] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[move_group-4]          at line 127 in ./src/class_loader.cpp
+[move_group-4] Stack trace (most recent call last):
+[move_group-4] #16   Object "", at 0xffffffffffffffff, in 
+[move_group-4] #15   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x570a62715724, in 
+[move_group-4] #14   Source "../csu/libc-start.c", line 392, in __libc_start_main_impl [0x7ea5bea29e3f]
+[move_group-4] #13   Source "../sysdeps/nptl/libc_start_call_main.h", line 58, in __libc_start_call_main [0x7ea5bea29d8f]
+[move_group-4] #12   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x570a6271465b, in 
+[move_group-4] #11   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x570a62716709, in 
+[move_group-4] #10   Object "/opt/ros/humble/lib/libmoveit_cpp.so.2.5.9", at 0x7ea5bf6f1876, in moveit_cpp::MoveItCpp::~MoveItCpp()
+[move_group-4] #9    Object "/opt/ros/humble/lib/libmoveit_cpp.so.2.5.9", at 0x7ea5bf6efba9, in 
+[move_group-4] #8    Object "/opt/ros/humble/lib/libmoveit_trajectory_execution_manager.so.2.5.9", at 0x7ea5bec783b5, in trajectory_execution_manager::TrajectoryExecutionManager::~TrajectoryExecutionManager()
+[move_group-4] #7    Object "/opt/ros/humble/lib/libmoveit_trajectory_execution_manager.so.2.5.9", at 0x7ea5bec8b2d9, in 
+[move_group-4] #6    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7ea5bf352b8c, in rclcpp::Node::~Node()
+[move_group-4] #5    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7ea5bf352b2e, in rclcpp::Node::~Node()
+[move_group-4] #4    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7ea5bf32dd39, in 
+[move_group-4] #3    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7ea5bf35c0b9, in 
+[move_group-4] #2    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7ea5bf35c000, in rclcpp::node_interfaces::NodeBase::~NodeBase()
+[move_group-4] #1    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7ea5bf32dd39, in 
+[move_group-4] #0    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7ea5bf332b31, in rclcpp::CallbackGroup::~CallbackGroup()
+[move_group-4] Segmentation fault (Address not mapped to object [0x7ea5b1674798])
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 38509]
+[INFO] [gzserver-1]: process has finished cleanly [pid 38507]
+[ERROR] [move_group-4]: process has died [pid 38513, exit code -11, cmd '/opt/ros/humble/lib/moveit_ros_move_group/move_group --ros-args --params-file /tmp/launch_params_s6l4w17v --params-file /tmp/launch_params_63uvwnz5 --params-file /tmp/launch_params_z3571icn --params-file /tmp/launch_params_53v41lzf --params-file /tmp/launch_params_tw46z56b --params-file /tmp/launch_params_rtllck6v --params-file /tmp/launch_params_t9kt5258'].
+[move_group-4] [0m

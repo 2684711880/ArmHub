@@ -1,0 +1,130 @@
+{
+  "status": "offline_passed_no_hardware_motion",
+  "source": "logs/drawing_panel/20261019_145607_766429/comparison",
+  "requested_speed_mm_s": 20.0,
+  "acceleration_limits_rad_s2": [
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8
+  ],
+  "jerk_limits_rad_s3": [
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0
+  ],
+  "circles": [
+    {
+      "name": "xy_circle_fwd",
+      "recorded_duration_s": 166.01652426779646,
+      "new_duration_s": 6.471660331136115,
+      "speedup": 25.652848847623602,
+      "checks": {
+        "duration_s": 6.471660331136115,
+        "min_tcp_z_m": 0.09981214476184513,
+        "collision": {
+          "samples": 649,
+          "step_rad": 0.02,
+          "collision_pairs_checked": 17,
+          "scope": "ruckig_reference_self_collision_only"
+        },
+        "timing": {
+          "parameterization": "circle_geometry_plus_C3_progress",
+          "requested_duration_s": 6.2831653700350625,
+          "velocity_required_duration_s": 0.48092220626391796,
+          "acceleration_required_duration_s": 2.7477905136191247,
+          "jerk_required_duration_s": 3.2343041283069116,
+          "duration_s": 6.471660331136115,
+          "ramp_fraction": 0.2,
+          "ik_stations": 91,
+          "peak_velocity_rad_s": [
+            0.1099818234634526,
+            0.09372609528681011,
+            0.08886037233955073,
+            0.007897860503682552,
+            6.886503661144817e-05,
+            0.10998180201859367
+          ],
+          "peak_acceleration_rad_s2": [
+            0.1374719669414065,
+            0.14422010144026626,
+            0.1277353999969162,
+            0.017039040299634014,
+            8.635916717871459e-05,
+            0.13747194405654112
+          ],
+          "peak_jerk_rad_s3": [
+            0.31180852239329787,
+            0.4992929244083834,
+            0.4592055943874446,
+            0.05281843619113386,
+            0.00019591209065883137,
+            0.31180848470508765
+          ],
+          "planning_circle_error_max_mm": 0.13935198381214386,
+          "planning_orientation_error_max_rad": 0.0006283521649579719,
+          "allowed_circle_error_mm": 0.1774477626809111
+        }
+      }
+    },
+    {
+      "name": "xy_circle_rev",
+      "recorded_duration_s": 120.91614838334628,
+      "new_duration_s": 6.471660331136115,
+      "speedup": 18.683945416850882,
+      "checks": {
+        "duration_s": 6.471660331136115,
+        "min_tcp_z_m": 0.0998121373132802,
+        "collision": {
+          "samples": 649,
+          "step_rad": 0.02,
+          "collision_pairs_checked": 17,
+          "scope": "ruckig_reference_self_collision_only"
+        },
+        "timing": {
+          "parameterization": "circle_geometry_plus_C3_progress",
+          "requested_duration_s": 6.2831653700350625,
+          "velocity_required_duration_s": 0.4806809690009307,
+          "acceleration_required_duration_s": 2.682048309536478,
+          "jerk_required_duration_s": 3.234232742589706,
+          "duration_s": 6.471660331136115,
+          "ramp_fraction": 0.2,
+          "ik_stations": 91,
+          "peak_velocity_rad_s": [
+            0.1099266337217155,
+            0.09372295161705144,
+            0.0889213528674041,
+            0.00784989934707437,
+            4.899193615901712e-09,
+            0.10992663361806693
+          ],
+          "peak_acceleration_rad_s2": [
+            0.1374015871414715,
+            0.1322121266131546,
+            0.1278209839493539,
+            0.016960162872584904,
+            1.4917356881866577e-08,
+            0.13740158603601066
+          ],
+          "peak_jerk_rad_s3": [
+            0.3116514549911142,
+            0.49925986481155693,
+            0.4595597653224691,
+            0.05254007774839838,
+            5.765625721155353e-07,
+            0.3116514678935981
+          ],
+          "planning_circle_error_max_mm": 7.451587351100671e-06,
+          "planning_orientation_error_max_rad": 2.1073424255447017e-08,
+          "allowed_circle_error_mm": 0.05
+        }
+      }
+    }
+  ],
+  "note": "Planning/FK/position/dynamics/self-collision checks only; real tracking remains to be measured"
+}

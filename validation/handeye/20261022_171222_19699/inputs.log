@@ -1,0 +1,2 @@
+1792660343.134144 [77]     python: selected interface "lo" is not multicast-capable: disabling multicast
+[INFO] [1792660343.485140181] [handeye_real_inputs]: Rectified color/CameraInfo publishing; feedback source: gravity-log. No motor commands.

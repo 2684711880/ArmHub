@@ -1,0 +1,6 @@
+{
+  "active_robot": "nero7",
+  "requested_robot": "panthera_ht",
+  "passed": true,
+  "reason": "运行模型或硬件插件不匹配；拒绝把仿真命令发给其他机器人"
+}

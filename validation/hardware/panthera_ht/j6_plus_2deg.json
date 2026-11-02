@@ -1,0 +1,143 @@
+{
+  "robot": "panthera_ht",
+  "backend": "hardware",
+  "command": "jog",
+  "motion_requested": true,
+  "before": {
+    "joint_names": [
+      "joint1",
+      "joint2",
+      "joint3",
+      "joint4",
+      "joint5",
+      "joint6"
+    ],
+    "positions": [
+      -0.04461061581969261,
+      0.0,
+      -0.00251327408477664,
+      0.025132741779088974,
+      0.04021238535642624,
+      -0.006911504548043013
+    ],
+    "observed_at_monotonic_s": 3835.5163915466383,
+    "enabled": false,
+    "source": "hardware"
+  },
+  "motors": [
+    {
+      "id": 1,
+      "position_rad": -0.04461061581969261,
+      "velocity_rad_s": 0.0,
+      "fault": 0,
+      "mode": 0,
+      "counter": 3,
+      "device_time_unix_s": 1792375619.599
+    },
+    {
+      "id": 2,
+      "position_rad": 0.0,
+      "velocity_rad_s": 0.0,
+      "fault": 0,
+      "mode": 0,
+      "counter": 3,
+      "device_time_unix_s": 1792375619.599
+    },
+    {
+      "id": 3,
+      "position_rad": -0.00251327408477664,
+      "velocity_rad_s": 0.0,
+      "fault": 0,
+      "mode": 0,
+      "counter": 3,
+      "device_time_unix_s": 1792375619.599
+    },
+    {
+      "id": 4,
+      "position_rad": 0.025132741779088974,
+      "velocity_rad_s": 0.0015707963611930609,
+      "fault": 0,
+      "mode": 0,
+      "counter": 3,
+      "device_time_unix_s": 1792375619.599
+    },
+    {
+      "id": 5,
+      "position_rad": 0.04021238535642624,
+      "velocity_rad_s": 0.0,
+      "fault": 0,
+      "mode": 0,
+      "counter": 3,
+      "device_time_unix_s": 1792375619.599
+    },
+    {
+      "id": 6,
+      "position_rad": -0.006911504548043013,
+      "velocity_rad_s": 0.0,
+      "fault": 0,
+      "mode": 0,
+      "counter": 3,
+      "device_time_unix_s": 1792375619.599
+    },
+    {
+      "id": 7,
+      "position_rad": 1.008451223373413,
+      "velocity_rad_s": -0.004712388850748539,
+      "fault": 0,
+      "mode": 0,
+      "counter": 3,
+      "device_time_unix_s": 1792375619.599
+    }
+  ],
+  "log_file": "/home/a/ArmHub/logs/panthera_ht/20261019T020659_212874Z.jsonl",
+  "target_rad": [
+    -0.04461061581969261,
+    0.0,
+    -0.00251327408477664,
+    0.025132741779088974,
+    0.04021238535642624,
+    0.02799508049184358
+  ],
+  "joint": 6,
+  "delta_degrees": 2.0,
+  "result": {
+    "status": "succeeded",
+    "source": "hardware",
+    "final_positions": [
+      -0.04461061581969261,
+      0.0,
+      -0.00188495556358248,
+      0.025132741779088974,
+      0.039584070444107056,
+      0.02387610450387001
+    ],
+    "detail": "官方 SDK POS_VEL_MAX_TORQUE 执行；新反馈确认到位；固件速度上限不代表精确轨迹时序",
+    "target_position_m": null,
+    "actual_position_m": null,
+    "position_error_m": null,
+    "trajectory_points": 1
+  },
+  "stop_confirmed": true,
+  "after": {
+    "joint_names": [
+      "joint1",
+      "joint2",
+      "joint3",
+      "joint4",
+      "joint5",
+      "joint6"
+    ],
+    "positions": [
+      -0.04461061581969261,
+      0.0,
+      -0.00062831852119416,
+      0.024504423141479492,
+      0.039584070444107056,
+      0.024504423141479492
+    ],
+    "observed_at_monotonic_s": 3838.8753948294843,
+    "enabled": true,
+    "source": "hardware"
+  },
+  "status": "completed"
+}

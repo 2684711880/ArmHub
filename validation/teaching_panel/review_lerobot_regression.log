@@ -1,0 +1,87 @@
+test_runner_exposes_matching_viewer_without_shell_activation (test_lerobot_integration.EnvironmentTests) ... ok
+test_exit_stops_writer_before_hold_and_release (test_lerobot_integration.LifecycleTests) ... ok
+test_hold_failure_is_not_reported_as_success_and_releases_resources (test_lerobot_integration.LifecycleTests) ... ok
+test_live_writer_prevents_second_sender (test_lerobot_integration.LifecycleTests) ... ok
+test_preset_entrypoints_return_before_upstream_motion (test_lerobot_integration.LifecycleTests) ... ok
+test_demo_or_missing_prepared_pose_rejected_before_connection (test_lerobot_trial.TrialTests) ... ok
+test_empty_or_out_of_range_episode_rejected_before_viewer (test_lerobot_trial.TrialTests) ... ok
+test_execute_uses_saved_target_and_waits_for_feedback_completion (test_lerobot_trial.TrialTests) ... 准备位文件： /tmp/tmpugmtyucb/settings.json
+六轴目标 / rad： [0, 0, 0, 0, 0, 0]
+六轴到位后张开夹爪： {'target_rad': 1.6, 'speed_rad_s': 0.3, 'torque_cap_nm': 0.3}
+{
+  "start": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "target": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "duration": 3.0
+}
+六轴已到准备位，开始受限速/限力矩张开夹爪。
+新反馈已确认：六轴在准备位、夹爪已张开。
+ok
+test_interrupted_execution_closes_and_cancels_guard (test_lerobot_trial.TrialTests) ... 准备位文件： /tmp/tmpczgmn72v/settings.json
+六轴目标 / rad： [0, 0, 0, 0, 0, 0]
+六轴到位后张开夹爪： {'target_rad': 1.6, 'speed_rad_s': 0.3, 'torque_cap_nm': 0.3}
+{
+  "start": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "target": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "duration": 3.0
+}
+ok
+test_preflight_failure_never_starts_and_still_closes (test_lerobot_trial.TrialTests) ... 准备位文件： /tmp/tmppbfcl1cc/settings.json
+六轴目标 / rad： [0, 0, 0, 0, 0, 0]
+ok
+test_preview_never_starts_motion_and_closes_transport (test_lerobot_trial.TrialTests) ... 准备位文件： /tmp/tmppn9b7pv9/settings.json
+六轴目标 / rad： [0, 0, 0, 0, 0, 0]
+六轴到位后张开夹爪： {'target_rad': 1.6, 'speed_rad_s': 0.3, 'torque_cap_nm': 0.3}
+{
+  "start": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "target": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "duration": 3.0
+}
+只读预览完成，未发送运动命令。执行请加 --execute。
+ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.166s
+
+OK

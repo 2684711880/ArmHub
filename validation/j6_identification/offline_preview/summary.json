@@ -1,0 +1,16 @@
+{
+  "status": "preview",
+  "motion_sent": false,
+  "collision_samples": 564,
+  "collision_scope": "nominal_robot_self_collision_only; excludes camera, cables, external obstacles",
+  "train_design_rank": 3,
+  "train_design_condition_scaled": 36.10065135623482,
+  "train_singular_values_scaled": [
+    7.252070288158803,
+    1.780147426960393,
+    0.20088474904778478
+  ],
+  "condition_warning": false,
+  "sample_poses": 42,
+  "validation_poses": 14
+}

@@ -1,0 +1,100 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -140,7 +140,7 @@
+ target_link_libraries(1_PosVel_control hightorque_robot ament_index_cpp::ament_index_cpp)
+ 
+ # Pinocchio is required by the dynamics/impedance examples below.
+-find_package(pinocchio REQUIRED)
++find_package(pinocchio QUIET)
+ 
+ if(pinocchio_FOUND)
+   message(STATUS "Found pinocchio, building 2_joint_impedance_control example")
+--- a/include/hardware/motor.hpp
++++ b/include/hardware/motor.hpp
+@@ -1,5 +1,6 @@
+ #ifndef _MOTOR_H_
+ #define _MOTOR_H_
++#include <mutex>
+ #include "serial_struct.hpp"
+ #include <stdint.h>
+ #include <unordered_map>
+@@ -110,6 +111,7 @@
+ {
+ private:
+     int id, num, CANport_num, CANboard_num;
++    std::mutex commission_feedback_mutex_;
+     motor_back_t data;
+     std::string motor_name;
+     motor_type type_ = motor_type::null;
+@@ -174,6 +176,7 @@
+     motor_pos_vel_tqe_kp_kd_s *return_pos_vel_tqe_kp_kd_p();
+     size_t return_size_motor_pos_vel_tqe_kp_kd_s();
+     motor_back_t *get_current_motor_state();
++    motor_back_t feedback_snapshot();
+     std::string get_motor_name();
+     cdc_rx_motor_version_s* get_version();
+     void set_version(cdc_rx_motor_version_s &v);
+--- a/include/hardware/robot.hpp
++++ b/include/hardware/robot.hpp
+@@ -15,6 +15,7 @@
+     class robot
+     {
+     private:
++        bool commission_passive_lifecycle_ = false;
+         std::string robot_name, Serial_Type;
+         int CANboard_num, Seial_baudrate;
+         std::vector<canboard> CANboards;
+--- a/src/hardware/motor.cpp
++++ b/src/hardware/motor.cpp
+@@ -542,6 +542,7 @@
+ #include <chrono>
+ void motor::fresh_data(uint8_t mode, uint8_t fault, int16_t position, int16_t velocity, int16_t torque)
+ {
++    std::lock_guard<std::mutex> lock(commission_feedback_mutex_);
+     data.num++;
+     data.mode = mode;
+     data.fault = fault;
+@@ -706,3 +707,5 @@
+ {
+     data.num = 0;
+ }
++
++motor_back_t motor::feedback_snapshot() { std::lock_guard<std::mutex> lock(commission_feedback_mutex_); return data; }
+--- a/src/hardware/robot.cpp
++++ b/src/hardware/robot.cpp
+@@ -27,6 +27,7 @@
+     void robot::init_robot(const std::string& config_path)
+     {
+         auto config = YAML::LoadFile(config_path);
++        commission_passive_lifecycle_ = config["robot"]["commission_passive_lifecycle"] ? config["robot"]["commission_passive_lifecycle"].as<bool>() : false;
+         std::cout << "robot_config: " << config["robot"]["name"].as<std::string>() << std::endl;
+         auto param_file = config_path;
+         if (config["robot"]["param_file"])
+@@ -65,7 +66,7 @@
+ 
+         init_ser();
+         error_check_flag = true;
+-        error_check_thread_ = std::thread(&robot::check_error, this);
++        if (!commission_passive_lifecycle_) error_check_thread_ = std::thread(&robot::check_error, this);
+         auto it = robot_params.CANboards.begin();
+         for (size_t i = 1; i <= CANboard_num; i++, it++)
+         {
+@@ -81,7 +82,7 @@
+             cp->puch_motor(&Motors);
+         }
+         set_port_motor_num(); // 设置通道上挂载的电机数，并获取主控板固件版本号
+-        if (slave_v >= COMBINE_VERSION(4, 1, 0))
++        if (!commission_passive_lifecycle_ && slave_v >= COMBINE_VERSION(4, 1, 0))
+         {
+             canboard_fdcan_reset();
+         }
+@@ -114,7 +115,8 @@
+ 
+     robot::~robot()
+     {
+-        if (robot_params.exit_motor_brake_flag)
++        if (commission_passive_lifecycle_) { std::cout << "Commission session: closing transport without automatic motor brake/stop/reset" << std::endl; }
++        else if (robot_params.exit_motor_brake_flag)
+         {
+             set_brake();
+             set_brake();

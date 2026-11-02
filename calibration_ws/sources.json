@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "moveit_calibration",
+    "upstream": "https://github.com/moveit/moveit_calibration.git",
+    "commit": "3f9d48ebe843caf1de060bfafe78160585c7c26f",
+    "note": "Imported working source including existing ROS Humble compatibility changes; see imported.patch for local modifications."
+  },
+  {
+    "directory": "moveit_visual_tools",
+    "upstream": "https://github.com/moveit/moveit_visual_tools.git",
+    "commit": "e5681a71c63c8a5610da7ca7964ce2fab751ea6e",
+    "note": "Imported working source including existing ROS Humble compatibility changes; see imported.patch for local modifications."
+  }
+]

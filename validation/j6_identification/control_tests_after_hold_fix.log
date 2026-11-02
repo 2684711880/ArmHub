@@ -1,0 +1,206 @@
+test_4cm_circle_at_20mm_s_takes_under_eight_seconds (test_circle_timing.CircleTimingTests) ... ok
+test_endpoints_rest_and_continuous_start (test_circle_timing.CircleTimingTests) ... ok
+test_high_requested_speed_still_retimes_to_same_jerk_limit (test_circle_timing.CircleTimingTests) ... ok
+test_independent_dense_derivative_and_position_checks (test_circle_timing.CircleTimingTests) ... ok
+test_open_path_and_invalid_parameters_rejected (test_circle_timing.CircleTimingTests) ... ok
+test_reverse_uses_same_circle_and_ui_keeps_sdk_movej (test_circle_timing.CircleTimingTests) ... ok
+test_bad_trajectory_does_not_partially_change_state (test_contract.ContractTests) ... ok
+test_linear_motion_is_not_silently_replaced (test_contract.ContractTests) ... ok
+test_motion_requires_connection_then_explicit_enable (test_contract.ContractTests) ... ok
+test_pending_backends_fail_instead_of_fake_success (test_contract.ContractTests) ... ok
+test_same_task_runs_for_both_joint_counts (test_contract.ContractTests) ... ok
+test_unknown_selection_is_rejected (test_contract.ContractTests) ... ok
+test_valid_multisegment_trajectory (test_contract.ContractTests) ... ok
+test_export_uses_feedback_xyz_even_when_plan_differs (test_drawing_panel.DrawingGeometryTests) ... ok
+test_geometry_pair_ids_do_not_mix_different_sizes (test_drawing_panel.DrawingGeometryTests) ... ok
+test_reverse_from_wrong_endpoint_is_rejected_without_motion (test_drawing_panel.DrawingGeometryTests) ... ok
+test_reverse_line_returns_over_same_geometry (test_drawing_panel.DrawingGeometryTests) ... ok
+test_square_closed_real_model_checked_and_height_rejection (test_drawing_panel.DrawingGeometryTests) ... ok
+test_duplicate_commands_cannot_queue_motions (test_drawing_panel.WorkerAndStopTests) ... ok
+test_missing_execution_permission_never_touches_motor (test_drawing_panel.WorkerAndStopTests) ... ok
+test_stop_hook_saves_partial_feedback_and_confirms_hold (test_drawing_panel.WorkerAndStopTests) ... ok
+test_execution_checkbox_and_draw_button_command_are_explicit (test_drawing_panel_ui.DrawingPanelUiTests) ... ok
+test_replay_disables_hardware_controls_without_worker (test_drawing_panel_ui.DrawingPanelUiTests) ... ok
+test_interrupt_after_output_is_followed_by_hold (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_invalid_model_output_does_not_enter_torque_mode (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_missing_feedback_never_claims_hold_stop_confirmed (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_position_control_cannot_enter_during_gravity_mode (test_gravity.GravityControlTests) ... ok
+test_slow_cycle_is_rejected_then_held (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_speed_guard_records_exact_joint_and_sample_before_hold (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_torque_frames_only_cover_six_axes_then_exit_to_full_hold (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_unknown_robot_gravity_is_explicitly_unsupported (test_gravity.GravityControlTests) ... ok
+test_blocked_close_holds_without_claiming_grasp (test_gripper_cli.GripperCliTests) ... ok
+test_open_reaches_target_and_keeps_six_axes (test_gripper_cli.GripperCliTests) ... ok
+test_camera_only_reads_without_opening_arm (test_hole_application.ApplicationTests) ... ok
+test_camera_only_rejects_execution_flag (test_hole_application.ApplicationTests) ... ok
+test_current_calibration_and_zero_patch_are_preserved (test_hole_application.ApplicationTests) ... ok
+test_dry_run_never_constructs_arm_and_validates_continuous_feed (test_hole_application.ApplicationTests) ... ok
+test_execute_once_requires_explicit_execution_flag (test_hole_application.ApplicationTests) ... ok
+test_invalid_handeye_frame_rejected (test_hole_application.ApplicationTests) ... ok
+test_feed_continues_through_target_loss_and_stale_camera (test_hole_controller.ControllerTests) ... ok
+test_go_locks_click_observation_and_ignores_later_hole_motion (test_hole_controller.ControllerTests) ... ok
+test_home_is_ruckig_reference_through_shared_runtime (test_hole_controller.ControllerTests) ... ok
+test_old_tracking_ik_cannot_interrupt_feed (test_hole_controller.ControllerTests) ... ok
+test_read_only_rejects_all_motion_keys (test_hole_controller.ControllerTests) ... ok
+test_settings_cancel_pending_motion (test_hole_controller.ControllerTests) ... ok
+test_status_explains_tracking_observation_readiness (test_hole_controller.ControllerTests) ... ok
+test_stop_discards_late_ik_result (test_hole_controller.ControllerTests) ... ok
+test_keys_are_not_blocked_by_camera_or_ik_workers (test_hole_ui_processes.UiProcessTests) ... u 打开 TCP/offset 微调，a 应用（暂停跟踪并作废旧规划）；p 仅预览，g 自动plan并执行两段，t 跟踪/丢孔回收，空格保持，r home，c 抓取，o 释放，f 切换显示坐标系，q 退出。
+ok
+test_overlay_frame_switch_does_not_publish_motion (test_hole_ui_processes.UiProcessTests) ... u 打开 TCP/offset 微调，a 应用（暂停跟踪并作废旧规划）；p 仅预览，g 自动plan并执行两段，t 跟踪/丢孔回收，空格保持，r home，c 抓取，o 释放，f 切换显示坐标系，q 退出。
+ok
+test_capture_uses_measured_torque_and_preserves_all_feedback (test_j6_collection.CollectionTests) ... ok
+test_complete_session_retains_both_directions_and_holdout_data (test_j6_collection.CollectionTests) ... ok
+test_continuous_position_motion_times_out_without_accepting_window (test_j6_collection.CollectionTests) ... ok
+test_hardware_trace_velocity_spike_retries_same_pose_and_recovers (test_j6_collection.CollectionTests) ... ok
+test_hold_failure_is_saved_and_never_claims_completion (test_j6_collection.CollectionTests) ... ok
+test_hold_targets_do_not_ratchet_toward_quantized_feedback (test_j6_collection.CollectionTests) ... ok
+test_interrupt_keeps_partial_files_and_confirms_hold (test_j6_collection.CollectionTests) ... [1/1] train J3偏移=+0° J6偏移=+0° positive：停稳采样
+ok
+test_limits_and_collisions_fail_before_any_motion (test_j6_collection.CollectionTests) ... ok
+test_near_limit_fault_stale_or_drift_cannot_be_reported_as_static (test_j6_collection.CollectionTests) ... ok
+test_parser_rejects_execute_with_offline_or_invalid_scan (test_j6_collection.CollectionTests) ... ok
+test_plan_has_opposite_approaches_and_separate_validation_group (test_j6_collection.CollectionTests) ... ok
+test_small_position_drift_discards_old_window_and_waits_in_place (test_j6_collection.CollectionTests) ...   drift_then_settle 位置窗口发生变化，在原位重新等待停稳（第1次）
+ok
+test_steps_reuse_bounded_single_axis_and_preserve_gripper_and_caps (test_j6_collection.CollectionTests) ... ok
+test_zero_boundary_noise_uses_fixed_legal_hold_without_zeroing_encoder (test_j6_collection.CollectionTests) ... ok
+test_payload_first_moment_features_match_pinocchio_added_mass (test_j6_collection.DynamicsFeatureTests) ... ok
+test_joint_mapping_and_tcp_exist (test_models.ModelTests) ... ok
+test_meshes_are_local_and_exist (test_models.ModelTests) ... ok
+test_model_and_planner_use_same_geometry (test_models.ModelTests) ... ok
+test_vendor_snapshot_matches_lock (test_models.ModelTests) ... ok
+test_fk_snapshots_are_not_rewritten_by_later_model_calls (test_movel.MoveLTests) ... ok
+test_guarded_recording_and_report_roundtrip (test_movel.MoveLTests) ... ok
+test_real_model_curve_derivatives_and_collision (test_movel.MoveLTests) ... ok
+test_square_from_current_has_no_diagonal_transfer (test_movel.MoveLTests) ... ok
+test_cartesian_can_execute_over_30_degrees (test_panthera_cartesian.CartesianTests) ... ok
+test_cartesian_duration_can_exceed_30_seconds (test_panthera_cartesian.CartesianTests) ... ok
+test_cartesian_orientation_can_exceed_30_degrees (test_panthera_cartesian.CartesianTests) ... ok
+test_changed_start_rejected_before_send (test_panthera_cartesian.CartesianTests) ... ok
+test_collision_rejection_does_not_send (test_panthera_cartesian.CartesianTests) ... ok
+test_coupled_target_feedback_and_gripper (test_panthera_cartesian.CartesianTests) ... ok
+test_fk_failure_to_reach_prevents_false_success (test_panthera_cartesian.CartesianTests) ... ok
+test_gravity_excludes_cartesian_preview (test_panthera_cartesian.CartesianTests) ... ok
+test_invalid_and_large_targets_do_not_send (test_panthera_cartesian.CartesianTests) ... ok
+test_preview_accepts_translation_over_previous_15cm_limit (test_panthera_cartesian.CartesianTests) ... ok
+test_preview_never_sends_or_enables (test_panthera_cartesian.CartesianTests) ... ok
+test_bounded_jog_fills_all_seven_slots_and_keeps_gripper (test_panthera_hardware.HardwareTests) ... ok
+test_encoder_zero_offset_is_held_without_expanding_motion_limits (test_panthera_hardware.HardwareTests) ... ok
+test_fault_and_motor_identity_are_rejected (test_panthera_hardware.HardwareTests) ... ok
+test_freshness_requires_new_frames_not_fresh_cache_time (test_panthera_hardware.HardwareTests) ... ok
+test_large_multijoint_and_nonfinite_goals_never_transmit (test_panthera_hardware.HardwareTests) ... ok
+test_motion_requires_explicit_enable (test_panthera_hardware.HardwareTests) ... ok
+test_read_and_enable_never_send_motion (test_panthera_hardware.HardwareTests) ... ok
+test_unverified_functions_remain_unavailable (test_panthera_hardware.HardwareTests) ... ok
+test_collision_prevents_home (test_panthera_home.HomeTests) ... ok
+test_gravity_blocks_home (test_panthera_home.HomeTests) ... ok
+test_home_requires_enable (test_panthera_home.HomeTests) ... ok
+test_home_returns_all_axes_to_zero_and_keeps_gripper (test_panthera_home.HomeTests) ... ok
+test_invalid_home_and_speed_rejected_without_sending (test_panthera_home.HomeTests) ... ok
+test_long_return_is_timed_from_measured_start (test_panthera_home.HomeTests) ... ok
+test_preview_uses_configured_joint_home_and_never_sends (test_panthera_home.HomeTests) ... ok
+test_calls_official_movej_and_holds_all_seven_slots (test_panthera_movej.SDKMoveJTests) ... ok
+test_cancel_guard_rejects_packet (test_panthera_movej.SDKMoveJTests) ... ok
+test_complete_sdk_movej_reference_session_and_stop (test_panthera_movej.SDKMoveJTests) ... ok
+test_feedback_based_velocity_excess_is_rejected_before_send (test_panthera_movej.SDKMoveJTests) ... ok
+test_nonfinite_and_out_of_bounds_targets_never_send (test_panthera_movej.SDKMoveJTests) ... ok
+test_ctrl_c_switches_to_measured_position_hold (test_panthera_stream.StreamTests) ... ok
+test_dense_trajectory_satisfies_v_a_jerk_and_bounds (test_panthera_stream.StreamTests) ... ok
+test_feedback_cycle_gap_holds_before_sending_next_reference (test_panthera_stream.StreamTests) ... ok
+test_feedback_stall_does_not_send_future_references (test_panthera_stream.StreamTests) ... ok
+test_late_cycle_holds_instead_of_catching_up_in_burst (test_panthera_stream.StreamTests) ... ok
+test_nontracking_driver_fails_then_holds (test_panthera_stream.StreamTests) ... ok
+test_real_ruckig_stream_is_timed_smooth_and_ends_exactly (test_panthera_stream.StreamTests) ... ok
+test_trajectory_rejects_physical_limit_violation (test_panthera_stream.StreamTests) ... ok
+test_actual_stream_exceeds_old_cap_and_respects_each_axis (test_restored_speed.RestoredSpeedTests) ... ok
+test_home_defaults_to_restored_limits_and_scale_is_per_axis (test_restored_speed.RestoredSpeedTests) ... ok
+test_production_profile_matches_reference_limits (test_restored_speed.RestoredSpeedTests) ... ok
+test_ruckig_retains_distinct_joint_limits (test_restored_speed.RestoredSpeedTests) ... ok
+test_validation_rejects_speed_above_specific_axis_even_below_global_max (test_restored_speed.RestoredSpeedTests) ... ok
+test_active_gripper_excludes_arm_reference (test_task_execution.TaskExecutionTests) ... ok
+test_cancel_between_ticks_holds_and_stops_old_stream (test_task_execution.TaskExecutionTests) ... ok
+test_ctrl_c_between_blocking_reference_ticks_holds (test_task_execution.TaskExecutionTests) ... ok
+test_gripper_fills_seven_slots_and_holds_arm (test_task_execution.TaskExecutionTests) ... ok
+test_gripper_rejects_superseded_command_without_packet (test_task_execution.TaskExecutionTests) ... ok
+test_replanning_cannot_hide_a_long_reference_gap (test_task_execution.TaskExecutionTests) ... ok
+test_stale_generation_prevents_first_reference (test_task_execution.TaskExecutionTests) ... ok
+test_telemetry_is_detached_from_native_snapshot (test_task_execution.TaskExecutionTests) ... ok
+test_repeated_lost_recovery_reacquire_runs_through_real_backend (test_tracking_hold.ReacquireRuntimeChainTests) ... ok
+test_terminal_speed_cap_can_close_measured_lag_before_timeout (test_tracking_hold.TerminalArrivalTests) ... ok
+test_continuing_position_drift_cannot_confirm_hold (test_tracking_hold.TrackingHoldTests) ... ok
+test_position_stable_hold_is_confirmed_despite_velocity_spikes (test_tracking_hold.TrackingHoldTests) ... ok
+test_recorded_reacquire_feedback_replay_confirms_position_hold (test_tracking_hold.TrackingHoldTests) ... ok
+test_task_hold_returns_then_confirms_on_regular_feedback_ticks (test_tracking_hold.TrackingHoldTests) ... ok
+test_expired_moving_handoff_still_rejected (test_tracking_recovery.RecoveryBackendTests) ... ok
+test_rest_recovery_starts_after_stationary_preflight (test_tracking_recovery.RecoveryBackendTests) ... ok
+test_feed_finishes_before_lost_hole_recovery (test_tracking_recovery.RecoveryWorkflowTests) ... ok
+test_lost_retracts_and_visible_stops_then_confirms (test_tracking_recovery.RecoveryWorkflowTests) ... ok
+test_stale_camera_holds_instead_of_blind_recovery (test_tracking_recovery.RecoveryWorkflowTests) ... ok
+test_feedback_fault_in_current_tick_stops_before_new_reference (test_tracking_reference_handoff.CachedFeedbackTests) ... ok
+test_latest_tick_feedback_is_used_without_second_serial_query (test_tracking_reference_handoff.CachedFeedbackTests) ... ok
+test_target_update_during_final_target_hold_is_not_stream_timeout (test_tracking_reference_handoff.TrackingReferenceHandoffTests) ... ok
+test_runtime_preloads_geometry_before_allowing_control (test_tracking_runtime_chain.TrackingRuntimeChainTests) ... ok
+test_tracking_retarget_after_final_reference_keeps_running (test_tracking_runtime_chain.TrackingRuntimeChainTests) ... ok
+test_cold_start_still_requires_full_stable_window (test_tracking_startup.TrackingStartupTests) ... ok
+test_feedback_gap_invalidates_stability_cache (test_tracking_startup.TrackingStartupTests) ... ok
+test_position_change_invalidates_stability_cache (test_tracking_startup.TrackingStartupTests) ... ok
+test_stable_streaming_feedback_does_not_expire_camera_on_start (test_tracking_startup.TrackingStartupTests) ... ok
+test_depth_rim_not_background (test_vision_components.DepthTests) ... ok
+test_invalid_hole_center_still_uses_valid_rim (test_vision_components.DepthTests) ... ok
+test_multiple_holes_rejected (test_vision_components.DepthTests) ... ok
+test_recorded_real_depth_frame (test_vision_components.DepthTests) ... ok
+test_solid_board_and_foreground_object_are_not_holes (test_vision_components.DepthTests) ... ok
+test_tilted_depth_board_normal (test_vision_components.DepthTests) ... ok
+test_constant_velocity_predicts_during_dropout (test_vision_components.EstimatorTests) ... ok
+test_expired_track_reinitializes_on_actual_measurement (test_vision_components.EstimatorTests) ... ok
+test_expiry_uncertainty_and_displacement_limits (test_vision_components.EstimatorTests) ... ok
+test_insufficient_samples_cannot_predict (test_vision_components.EstimatorTests) ... ok
+test_outlier_does_not_extend_prediction_window (test_vision_components.EstimatorTests) ... ok
+test_prediction_reads_do_not_reject_delayed_measurements (test_vision_components.EstimatorTests) ... ok
+test_stationary_measurement_noise_is_reduced (test_vision_components.EstimatorTests) ... ok
+test_coordinates_switch_but_projection_and_distances_do_not (test_vision_components.OverlayTests) ... ok
+test_normal_gap_and_euclidean_distance_are_distinct (test_vision_components.OverlayTests) ... ok
+test_old_camera_pose_is_not_used_to_project_new_image (test_vision_components.OverlayTests) ... ok
+test_point_behind_or_outside_image_is_not_clamped_to_false_pixel (test_vision_components.OverlayTests) ... ok
+test_render_camera_and_base_previews (test_vision_components.OverlayTests) ... ok
+test_default_rod_tip_four_cm_forward (test_vision_components.ToolTests) ... ok
+test_following_go_carries_applied_settings_when_apply_is_coalesced (test_vision_components.ToolTests) ... ok
+test_invalid_calibration_is_rejected (test_vision_components.ToolTests) ... ok
+test_offset_is_in_gripper_axes_and_rotation_independent (test_vision_components.ToolTests) ... ok
+test_tool_fk_ik_transform_roundtrip_preserves_gripper_model (test_vision_components.ToolTests) ... ok
+test_ui_apply_publishes_values_and_invalidates_old_epoch (test_vision_components.ToolTests) ... ok
+test_ui_slider_roundtrip_and_apply_button_without_sdk (test_vision_components.ToolTests) ... ok
+
+----------------------------------------------------------------------
+Ran 169 tests in 17.833s
+
+OK
+  完成 xy_line_u_fwd: 1053 帧新反馈, 43 次下发
+
+================================================================================================================
+运动                    路径RMS    路径Max    跟踪RMS    跟踪Max    延迟ms     去延迟RMS     终点mm     规划终点     稳定s    姿态Max°
+----------------------------------------------------------------------------------------------------------------
+xy_line_u_fwd         0.000    0.000    0.894    1.355      50      0.011    0.000    0.000   -0.06     0.000
+================================================================================================================
+
+============================================================
+警告：检测到目标位置超出关节限位范围！
+目标位置: [10. 10. 10. 10. 10. 10.]
+限位下限: [-2.4  0.   0.  -1.6 -1.7 -2.5]
+限位上限: [2.4 3.2 4.  1.6 1.7 2.5]
+  关节1: 10.000 不在 [-2.400, 2.400] 范围内
+  关节2: 10.000 不在 [0.000, 3.200] 范围内
+  关节3: 10.000 不在 [0.000, 4.000] 范围内
+  关节4: 10.000 不在 [-1.600, 1.600] 范围内
+  关节5: 10.000 不在 [-1.700, 1.700] 范围内
+  关节6: 10.000 不在 [-2.500, 2.500] 范围内
+控制指令已被拒绝，保护机械臂安全
+============================================================
+

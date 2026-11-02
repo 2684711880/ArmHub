@@ -1,0 +1,23 @@
+{
+  "condition_source": "latest run interpreted as cable unplugged based on user statement; not instrumented",
+  "old": {
+    "hy_kg_m": 0.00015112311823551255,
+    "hz_kg_m": 0.013169816585518536,
+    "paired_validation_before_nm": 0.044524278201053126,
+    "paired_validation_after_nm": 0.021131742808072323,
+    "individual_validation_after_nm": 0.07003544654217485,
+    "mean_full_direction_gap_nm": 0.12699438456397477,
+    "direction_fit_coefficient_nm": 0.06242500568826287
+  },
+  "new": {
+    "hy_kg_m": -0.0004199134608984533,
+    "hz_kg_m": 0.010402241353951043,
+    "paired_validation_before_nm": 0.03643671611900394,
+    "paired_validation_after_nm": 0.011607003759244533,
+    "individual_validation_after_nm": 0.027142757374732217,
+    "mean_full_direction_gap_nm": 0.036229837001330235,
+    "direction_fit_coefficient_nm": 0.01689112089033843
+  },
+  "control_parameters_changed": false,
+  "caveat": "Start poses differ; not an isolated controlled measurement of cable force."
+}

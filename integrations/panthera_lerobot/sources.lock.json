@@ -1,0 +1,17 @@
+{
+  "sources": [
+    {
+      "directory": "Panthera-HT_lerobot",
+      "url": "https://github.com/HighTorque-Robotics/Panthera-HT_lerobot.git",
+      "commit": "def0e386544f089777b54eef60000051a1ba2020"
+    },
+    {
+      "directory": "Panthera-HT_SDK",
+      "url": "https://github.com/HighTorque-Robotics/Panthera-HT_SDK.git",
+      "commit": "3712b3a3c2a4e6cbbc836a5d0b228a79d1a185c3"
+    }
+  ],
+  "native_sdk": "ArmHub vendor/panthera/sdk/python; passive lifecycle and feedback snapshot fixes",
+  "patch": "patches/armhub-lifecycle.patch",
+  "patch_sha256": "b1a4bf2b82f77b2d76fc600b0e36925f70bfae87263300eaa502b0740430f4c4"
+}

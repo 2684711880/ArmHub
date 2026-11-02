@@ -1,0 +1,19 @@
+{
+  "follower_device": "/dev/ttyACM0",
+  "leader_device": null,
+  "cameras": {
+    "d435": {
+      "type": "intelrealsense",
+      "serial_number_or_name": "Intel RealSense D435",
+      "width": 640,
+      "height": 480,
+      "fps": 30,
+      "use_depth": false
+    }
+  },
+  "fps": 20,
+  "num_episodes": 1,
+  "episode_time_s": 15,
+  "reset_time_s": 10,
+  "task": "panthera demonstration"
+}

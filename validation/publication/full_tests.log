@@ -1,0 +1,531 @@
+test_degenerate_rotations_rejected (test_auto_handeye.AutoHandeyeTests) ... ok
+test_envelope_does_not_expand_limits (test_auto_handeye.AutoHandeyeTests) ... ok
+test_known_transform_recovered_with_holdout (test_auto_handeye.AutoHandeyeTests) ... ok
+test_plan_has_15_distinct_poses_and_3_holdouts (test_auto_handeye.AutoHandeyeTests) ... ok
+test_validation_never_changes_fit (test_auto_handeye.AutoHandeyeTests) ... ok
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/cmeel.prefix/lib/python3.10/site-packages/hppfcl/__init__.py:3: DeprecationWarning: Please update your 'hppfcl' imports to 'coal'
+  warnings.warn(
+test_4cm_circle_at_20mm_s_takes_under_eight_seconds (test_circle_timing.CircleTimingTests) ... ok
+test_endpoints_rest_and_continuous_start (test_circle_timing.CircleTimingTests) ... ok
+test_high_requested_speed_still_retimes_to_same_jerk_limit (test_circle_timing.CircleTimingTests) ... ok
+test_independent_dense_derivative_and_position_checks (test_circle_timing.CircleTimingTests) ... ok
+test_open_path_and_invalid_parameters_rejected (test_circle_timing.CircleTimingTests) ... ok
+test_reverse_uses_same_circle_and_ui_keeps_sdk_movej (test_circle_timing.CircleTimingTests) ... ok
+test_blocked_or_failing_display_does_not_stop_capture (test_continuous_preview.PreviewTests) ... ERROR:root:Rerun 显示异常；相机读取继续运行
+Traceback (most recent call last):
+  File "/home/a/ArmHub/integrations/panthera_lerobot/continuous_preview.py", line 104, in _display
+    self.publish(frame)
+  File "/home/a/ArmHub/integrations/panthera_lerobot/continuous_preview.py", line 174, in <lambda>
+    proxy = CachedCamera(camera, lambda frame, key=key: publish(key, frame), status_path)
+  File "/home/a/ArmHub/tests/test_continuous_preview.py", line 101, in publish
+    raise RuntimeError('viewer failure')
+RuntimeError: viewer failure
+ok
+test_camera_failure_rejects_cached_frame_and_new_round (test_continuous_preview.PreviewTests) ... WARNING:root:D435 暂无新图像，后台继续尝试恢复：USB disconnected
+ok
+test_keep_return_and_wait_do_not_interrupt_capture_or_save_extra_frames (test_continuous_preview.PreviewTests) ... 正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+ok
+test_long_stall_recovers_without_restarting_program (test_continuous_preview.PreviewTests) ... WARNING:root:D435 暂无新图像，后台继续尝试恢复：USB disconnected
+WARNING:root:D435 暂无新图像，后台继续尝试恢复：USB disconnected
+ok
+test_one_pipeline_keeps_preview_between_rounds_and_releases_on_exit (test_continuous_preview.PreviewTests) ... ok
+test_stale_cache_cannot_be_recorded (test_continuous_preview.PreviewTests) ... ok
+test_startup_failure_closes_camera_without_connecting_arm (test_continuous_preview.PreviewTests) ... WARNING:root:D435 暂无新图像，后台继续尝试恢复：USB disconnected
+WARNING:root:D435 暂无新图像，后台继续尝试恢复：USB disconnected
+ok
+test_bad_trajectory_does_not_partially_change_state (test_contract.ContractTests) ... ok
+test_linear_motion_is_not_silently_replaced (test_contract.ContractTests) ... ok
+test_motion_requires_connection_then_explicit_enable (test_contract.ContractTests) ... ok
+test_pending_backends_fail_instead_of_fake_success (test_contract.ContractTests) ... ok
+test_same_task_runs_for_both_joint_counts (test_contract.ContractTests) ... ok
+test_unknown_selection_is_rejected (test_contract.ContractTests) ... ok
+test_valid_multisegment_trajectory (test_contract.ContractTests) ... ok
+test_export_uses_feedback_xyz_even_when_plan_differs (test_drawing_panel.DrawingGeometryTests) ... /home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+WARNING:matplotlib.style.core:In /home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+WARNING:matplotlib.style.core:In /home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+ok
+test_geometry_pair_ids_do_not_mix_different_sizes (test_drawing_panel.DrawingGeometryTests) ... ok
+test_reverse_from_wrong_endpoint_is_rejected_without_motion (test_drawing_panel.DrawingGeometryTests) ... ok
+test_reverse_line_returns_over_same_geometry (test_drawing_panel.DrawingGeometryTests) ... ok
+test_square_closed_real_model_checked_and_height_rejection (test_drawing_panel.DrawingGeometryTests) ... ok
+test_duplicate_commands_cannot_queue_motions (test_drawing_panel.WorkerAndStopTests) ... ok
+test_missing_execution_permission_never_touches_motor (test_drawing_panel.WorkerAndStopTests) ... ok
+test_stop_hook_saves_partial_feedback_and_confirms_hold (test_drawing_panel.WorkerAndStopTests) ... ok
+test_execution_checkbox_and_draw_button_command_are_explicit (test_drawing_panel_ui.DrawingPanelUiTests) ... ok
+test_replay_disables_hardware_controls_without_worker (test_drawing_panel_ui.DrawingPanelUiTests) ... ok
+test_interrupt_after_output_is_followed_by_hold (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_invalid_model_output_does_not_enter_torque_mode (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_missing_feedback_never_claims_hold_stop_confirmed (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_position_control_cannot_enter_during_gravity_mode (test_gravity.GravityControlTests) ... ok
+test_slow_cycle_is_rejected_then_held (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_speed_guard_records_exact_joint_and_sample_before_hold (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_torque_frames_only_cover_six_axes_then_exit_to_full_hold (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_unknown_robot_gravity_is_explicitly_unsupported (test_gravity.GravityControlTests) ... ok
+test_closed_mechanical_end_removes_torque (test_gripper_assist.AssistTests) ... ok
+test_config_rejects_unbounded_or_invalid_assist (test_gripper_assist.AssistTests) ... ok
+test_far_or_fast_gripper_does_not_activate (test_gripper_assist.AssistTests) ... ok
+test_feedback_fault_stale_torque_counter_and_cycle_guards (test_gripper_assist.AssistTests) ... ok
+test_feedback_jump_is_rejected_instead_of_sending_large_position_error (test_gripper_assist.AssistTests) ... ok
+test_idle_hold_captures_actual_gripper_instead_of_padding_zero (test_gripper_assist.AssistTests) ... ok
+test_initial_closed_position_never_assists (test_gripper_assist.AssistTests) ... ok
+test_initial_target_uses_actual_opening_and_slews_recorded_jump (test_gripper_assist.AssistTests) ... ok
+test_near_position_after_opening_ramps_bounded_closing_torque (test_gripper_assist.AssistTests) ... ok
+test_partial_opening_immediately_removes_torque (test_gripper_assist.AssistTests) ... ok
+test_proxy_is_restored_if_upstream_swallows_motor_error (test_gripper_assist.AssistTests) ... ok
+test_real_official_sender_preserves_six_axes_and_packet_mode (test_gripper_assist.AssistTests) ... 夹爪日志：/tmp/tmp_fx53lfs/trace.csv，27 个采样；位置加力辅助已启用。
+ok
+test_blocked_close_holds_without_claiming_grasp (test_gripper_cli.GripperCliTests) ... ok
+test_open_reaches_target_and_keeps_six_axes (test_gripper_cli.GripperCliTests) ... ok
+test_bad_feedback_rejected_before_original_send (test_gripper_trace.GripperTraceTests) ... 夹爪日志：/tmp/tmp_d1wdr3a/trace.csv，0 个采样；未改变官方控制。
+夹爪日志：/tmp/tmpy5q3tf44/trace.csv，0 个采样；未改变官方控制。
+夹爪日志：/tmp/tmp_2al8lsm/trace.csv，0 个采样；未改变官方控制。
+夹爪日志：/tmp/tmp0bwy10hm/trace.csv，0 个采样；未改变官方控制。
+夹爪日志：/tmp/tmp4nf1blvj/trace.csv，0 个采样；未改变官方控制。
+ok
+test_existing_log_is_never_overwritten (test_gripper_trace.GripperTraceTests) ... ok
+test_real_send_seam_preserves_action_identity_and_result (test_gripper_trace.GripperTraceTests) ... 夹爪日志：/tmp/tmpgdikmnpy/trace.csv，2 个采样；未改变官方控制。
+ok
+test_send_failure_still_restores_class_via_finally (test_gripper_trace.GripperTraceTests) ... 夹爪日志：/tmp/tmp6s28esqy/trace.csv，1 个采样；未改变官方控制。
+ok
+test_teaching_mode_is_rejected_without_sending (test_gripper_trace.GripperTraceTests) ... 夹爪日志：/tmp/tmpiumiwblo/trace.csv，0 个采样；未改变官方控制。
+ok
+test_fk_matches_official_tcp (test_handeye_rviz_fk.ManualHandeyeFKTests) ... ok
+test_camera_only_reads_without_opening_arm (test_hole_application.ApplicationTests) ... ok
+test_camera_only_rejects_execution_flag (test_hole_application.ApplicationTests) ... ok
+test_current_calibration_and_zero_patch_are_preserved (test_hole_application.ApplicationTests) ... ok
+test_dry_run_never_constructs_arm_and_validates_continuous_feed (test_hole_application.ApplicationTests) ... ok
+test_execute_once_requires_explicit_execution_flag (test_hole_application.ApplicationTests) ... ok
+test_invalid_handeye_frame_rejected (test_hole_application.ApplicationTests) ... ok
+test_feed_continues_through_target_loss_and_stale_camera (test_hole_controller.ControllerTests) ... ok
+test_go_locks_click_observation_and_ignores_later_hole_motion (test_hole_controller.ControllerTests) ... ok
+test_home_is_ruckig_reference_through_shared_runtime (test_hole_controller.ControllerTests) ... ok
+test_old_tracking_ik_cannot_interrupt_feed (test_hole_controller.ControllerTests) ... ok
+test_read_only_rejects_all_motion_keys (test_hole_controller.ControllerTests) ... ok
+test_settings_cancel_pending_motion (test_hole_controller.ControllerTests) ... ok
+test_status_explains_tracking_observation_readiness (test_hole_controller.ControllerTests) ... ok
+test_stop_discards_late_ik_result (test_hole_controller.ControllerTests) ... ok
+test_keys_are_not_blocked_by_camera_or_ik_workers (test_hole_ui_processes.UiProcessTests) ... u 打开 TCP/offset 微调，a 应用（暂停跟踪并作废旧规划）；p 仅预览，g 自动plan并执行两段，t 跟踪/丢孔回收，空格保持，r home，c 抓取，o 释放，f 切换显示坐标系，q 退出。
+ok
+test_overlay_frame_switch_does_not_publish_motion (test_hole_ui_processes.UiProcessTests) ... u 打开 TCP/offset 微调，a 应用（暂停跟踪并作废旧规划）；p 仅预览，g 自动plan并执行两段，t 跟踪/丢孔回收，空格保持，r home，c 抓取，o 释放，f 切换显示坐标系，q 退出。
+ok
+test_capture_uses_measured_torque_and_preserves_all_feedback (test_j6_collection.CollectionTests) ... ok
+test_complete_session_retains_both_directions_and_holdout_data (test_j6_collection.CollectionTests) ... ok
+test_continuous_position_motion_times_out_without_accepting_window (test_j6_collection.CollectionTests) ... ok
+test_hardware_trace_velocity_spike_retries_same_pose_and_recovers (test_j6_collection.CollectionTests) ... ok
+test_hold_failure_is_saved_and_never_claims_completion (test_j6_collection.CollectionTests) ... ok
+test_hold_targets_do_not_ratchet_toward_quantized_feedback (test_j6_collection.CollectionTests) ... ok
+test_interrupt_keeps_partial_files_and_confirms_hold (test_j6_collection.CollectionTests) ... [1/1] train J3偏移=+0° J6偏移=+0° positive：停稳采样
+ok
+test_limits_and_collisions_fail_before_any_motion (test_j6_collection.CollectionTests) ... ok
+test_near_limit_fault_stale_or_drift_cannot_be_reported_as_static (test_j6_collection.CollectionTests) ... ok
+test_parser_rejects_execute_with_offline_or_invalid_scan (test_j6_collection.CollectionTests) ... ok
+test_plan_has_opposite_approaches_and_separate_validation_group (test_j6_collection.CollectionTests) ... ok
+test_small_position_drift_discards_old_window_and_waits_in_place (test_j6_collection.CollectionTests) ...   drift_then_settle 位置窗口发生变化，在原位重新等待停稳（第1次）
+ok
+test_steps_reuse_bounded_single_axis_and_preserve_gripper_and_caps (test_j6_collection.CollectionTests) ... ok
+test_zero_boundary_noise_uses_fixed_legal_hold_without_zeroing_encoder (test_j6_collection.CollectionTests) ... ok
+test_payload_first_moment_features_match_pinocchio_added_mass (test_j6_collection.DynamicsFeatureTests) ... ok
+test_incomplete_run_is_not_reported_as_successful_experiment (test_j6_fit.FitTests) ... ok
+test_known_first_moments_and_directional_gap_are_recovered (test_j6_fit.FitTests) ... ok
+test_missing_direction_or_mixed_group_labels_are_rejected (test_j6_fit.FitTests) ... ok
+test_validation_torques_cannot_change_training_parameters (test_j6_fit.FitTests) ... ok
+test_official_variants_match_tcp_and_saved_prepare (test_kinematics_import_order.KinematicsImportTests) ... ok
+test_runner_exposes_matching_viewer_without_shell_activation (test_lerobot_integration.EnvironmentTests) ... ok
+test_exit_stops_writer_before_hold_and_release (test_lerobot_integration.LifecycleTests) ... ok
+test_hold_failure_is_not_reported_as_success_and_releases_resources (test_lerobot_integration.LifecycleTests) ... ok
+test_live_writer_prevents_second_sender (test_lerobot_integration.LifecycleTests) ... ok
+test_preset_entrypoints_return_before_upstream_motion (test_lerobot_integration.LifecycleTests) ... ok
+test_demo_or_missing_prepared_pose_rejected_before_connection (test_lerobot_trial.TrialTests) ... ok
+test_empty_or_out_of_range_episode_rejected_before_viewer (test_lerobot_trial.TrialTests) ... ok
+test_execute_uses_saved_target_and_waits_for_feedback_completion (test_lerobot_trial.TrialTests) ... 准备位文件： /tmp/tmpylpmsw5_/settings.json
+六轴目标 / rad： [0, 0, 0, 0, 0, 0]
+六轴到位后张开夹爪： {'target_rad': 1.6, 'speed_rad_s': 0.3, 'torque_cap_nm': 0.3}
+{
+  "start": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "target": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "duration": 3.0
+}
+六轴已到准备位，开始受限速/限力矩张开夹爪。
+新反馈已确认：六轴在准备位、夹爪已张开。
+ok
+test_interrupted_execution_closes_and_cancels_guard (test_lerobot_trial.TrialTests) ... 准备位文件： /tmp/tmp3nhpft_c/settings.json
+六轴目标 / rad： [0, 0, 0, 0, 0, 0]
+六轴到位后张开夹爪： {'target_rad': 1.6, 'speed_rad_s': 0.3, 'torque_cap_nm': 0.3}
+{
+  "start": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "target": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "duration": 3.0
+}
+ok
+test_preflight_failure_never_starts_and_still_closes (test_lerobot_trial.TrialTests) ... 准备位文件： /tmp/tmp549vphjr/settings.json
+六轴目标 / rad： [0, 0, 0, 0, 0, 0]
+ok
+test_preview_never_starts_motion_and_closes_transport (test_lerobot_trial.TrialTests) ... 准备位文件： /tmp/tmp2ebul512/settings.json
+六轴目标 / rad： [0, 0, 0, 0, 0, 0]
+六轴到位后张开夹爪： {'target_rad': 1.6, 'speed_rad_s': 0.3, 'torque_cap_nm': 0.3}
+{
+  "start": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "target": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "duration": 3.0
+}
+只读预览完成，未发送运动命令。执行请加 --execute。
+ok
+test_begin_waits_for_both_explicit_inputs (test_manual_review.ReviewTests) ... 已成功保留 0/50 条；下一条为第 1 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 1/50 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+ok
+test_empty_dataset_is_archived_with_recoverable_frames (test_manual_review.ReviewTests) ... 未完成的空数据集已完整保留到：/tmp/tmp1g9wlpc3/test.empty-20261102_104709_050930，本次重新创建 local/test
+ok
+test_quit_before_preparation_never_moves_or_connects (test_manual_review.ReviewTests) ... 已成功保留 0/50 条；下一条为第 1 条。
+ok
+test_quit_discards_current_without_saving_or_starting_another (test_manual_review.ReviewTests) ... 未完成的空数据集已完整保留到：/tmp/tmp1tko4zbi/data.empty-20261102_104710_123163，本次重新创建 local/test
+已成功保留 0/2 条；下一条为第 1 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 1/2 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+ok
+test_ready_pose_waits_for_n_without_another_preparation_and_reports_index (test_manual_review.ReviewTests) ... ok
+test_real_dataset_reject_keep_append_and_decode (test_manual_review.ReviewTests) ... Map:   0%|          | 0/8 [00:00<?, ? examples/s]Map: 100%|██████████| 8/8 [00:00<00:00, 1910.74 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[warn]: Instance 1: AQ mode 2 is unsupported with source dimensions (32 / 32), setting AQ mode to 0
+Svt[warn]: Instance 1: Restoration Filtering is unsupported with source dimensions (32 / 32), disabling Restoration Filtering
+Svt[warn]: TPL is disabled for aq_mode 0
+Svt[info]: Level of Parallelism: 5
+Svt[info]: Number of PPCS 59
+Svt[info]: [asm level on system : up to avx512icl]
+Svt[info]: [asm level selected : up to avx512icl]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 32 / 32 / 20 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / CQP Assignment 					: CQP / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 0 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Map:   0%|          | 0/8 [00:00<?, ? examples/s]Map: 100%|██████████| 8/8 [00:00<00:00, 2244.74 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[warn]: Instance 1: AQ mode 2 is unsupported with source dimensions (32 / 32), setting AQ mode to 0
+Svt[warn]: Instance 1: Restoration Filtering is unsupported with source dimensions (32 / 32), disabling Restoration Filtering
+Svt[warn]: TPL is disabled for aq_mode 0
+Svt[info]: Level of Parallelism: 5
+Svt[info]: Number of PPCS 59
+Svt[info]: [asm level on system : up to avx512icl]
+Svt[info]: [asm level selected : up to avx512icl]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 32 / 32 / 20 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / CQP Assignment 					: CQP / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 0 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x62e74a60c0c0] Starting second pass: moving the moov atom to the beginning of the file
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+ok
+test_real_official_loop_reject_does_not_count_and_keep_appends (test_manual_review.ReviewTests) ... 未完成的空数据集已完整保留到：/tmp/tmpq2gn886r/data.empty-20261102_104710_302549，本次重新创建 local/test
+已成功保留 0/2 条；下一条为第 1 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 1/2 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+已成功保留 0/2 条；下一条为第 1 条。
+正在录制第 1/2 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+已保留成功回合：1/2
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+已成功保留 1/2 条；下一条为第 2 条。
+正在录制第 2/2 条；已成功保留 1 条。松爪并抬离盒口后按 → 结束。
+已保留成功回合：2/2
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+ok
+test_resume_counts_existing_successes_towards_goal (test_manual_review.ReviewTests) ... 已成功保留 1/2 条；下一条为第 2 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 2/2 条；已成功保留 1 条。松爪并抬离盒口后按 → 结束。
+已保留成功回合：2/2
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+ok
+test_return_failure_after_s_does_not_lose_saved_data (test_manual_review.ReviewTests) ... 未完成的空数据集已完整保留到：/tmp/tmp2lqwvv9l/data.empty-20261102_104710_305759，本次重新创建 local/test
+已成功保留 0/2 条；下一条为第 1 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 1/2 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+已保留成功回合：1/2
+正在回准备位并张开夹爪；此过程不录制。
+ok
+test_review_disconnects_before_prompt_and_does_not_keep_on_enter (test_manual_review.ReviewTests) ... 请输入小写 s、r 或 q；回车不会默认保存。
+请输入小写 s、r 或 q；回车不会默认保存。
+ok
+test_boundary_seed_recovers_reachable_marker_target (test_marker_corner_ik.MarkerCornerIKTests) ... ok
+test_joint_mapping_and_tcp_exist (test_models.ModelTests) ... ok
+test_meshes_are_local_and_exist (test_models.ModelTests) ... ok
+test_model_and_planner_use_same_geometry (test_models.ModelTests) ... ok
+test_vendor_snapshot_matches_lock (test_models.ModelTests) ... ok
+test_fk_snapshots_are_not_rewritten_by_later_model_calls (test_movel.MoveLTests) ... ok
+test_guarded_recording_and_report_roundtrip (test_movel.MoveLTests) ... /home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:2010: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  p.space          = oneOf(self._space_widths)("space")
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:2012: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  p.style_literal  = oneOf(
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:2020: PyparsingDeprecationWarning: 'leaveWhitespace' deprecated - use 'leave_whitespace'
+  )("sym").leaveWhitespace()
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:2024: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  p.start_group    = Optional(r"\math" + oneOf(self._fontnames)("font")) + "{"
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:2027: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  p.delim          = oneOf(self._delims)
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:1984: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+  val.setName(key)
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:1987: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  val.setParseAction(getattr(self, key))
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:1748: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  return Empty().setParseAction(raise_error)
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:2088: PyparsingDeprecationWarning: 'endQuoteChar' argument is deprecated, use 'end_quote_char'
+  p.text = cmd(r"\text", QuotedString('{', '\\', endQuoteChar="}"))
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:2097: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  + OneOrMore(oneOf(["_", "^"]) - p.placeable)("subsuper")
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:2146: PyparsingDeprecationWarning: 'unquoteResults' argument is deprecated, use 'unquote_results'
+  p.math_string   = QuotedString('$', '\\', unquoteResults=False)
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:2147: PyparsingDeprecationWarning: 'leaveWhitespace' deprecated - use 'leave_whitespace'
+  p.non_math      = Regex(r"(?:(?:\\[$])|[^$])*").leaveWhitespace()
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:2170: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  result = self._expression.parseString(s)
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:2197: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  return self._math_expression.parseString(toks[0][1:-1], parseAll=True)
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/pyparsing/util.py:466: PyparsingDeprecationWarning: 'parseAll' argument is deprecated, use 'parse_all'
+  return fn(self, *args, **kwargs)
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/matplotlib/_mathtext.py:2178: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  ParserElement.resetCache()
+ok
+test_real_model_curve_derivatives_and_collision (test_movel.MoveLTests) ... ok
+test_square_from_current_has_no_diagonal_transfer (test_movel.MoveLTests) ... ok
+test_cartesian_can_execute_over_30_degrees (test_panthera_cartesian.CartesianTests) ... ok
+test_cartesian_duration_can_exceed_30_seconds (test_panthera_cartesian.CartesianTests) ... ok
+test_cartesian_orientation_can_exceed_30_degrees (test_panthera_cartesian.CartesianTests) ... ok
+test_changed_start_rejected_before_send (test_panthera_cartesian.CartesianTests) ... ok
+test_collision_rejection_does_not_send (test_panthera_cartesian.CartesianTests) ... ok
+test_coupled_target_feedback_and_gripper (test_panthera_cartesian.CartesianTests) ... ok
+test_fk_failure_to_reach_prevents_false_success (test_panthera_cartesian.CartesianTests) ... ok
+test_gravity_excludes_cartesian_preview (test_panthera_cartesian.CartesianTests) ... ok
+test_invalid_and_large_targets_do_not_send (test_panthera_cartesian.CartesianTests) ... ok
+test_preview_accepts_translation_over_previous_15cm_limit (test_panthera_cartesian.CartesianTests) ... ok
+test_preview_never_sends_or_enables (test_panthera_cartesian.CartesianTests) ... ok
+test_bounded_jog_fills_all_seven_slots_and_keeps_gripper (test_panthera_hardware.HardwareTests) ... ok
+test_encoder_zero_offset_is_held_without_expanding_motion_limits (test_panthera_hardware.HardwareTests) ... ok
+test_fault_and_motor_identity_are_rejected (test_panthera_hardware.HardwareTests) ... ok
+test_freshness_requires_new_frames_not_fresh_cache_time (test_panthera_hardware.HardwareTests) ... ok
+test_large_multijoint_and_nonfinite_goals_never_transmit (test_panthera_hardware.HardwareTests) ... ok
+test_motion_requires_explicit_enable (test_panthera_hardware.HardwareTests) ... ok
+test_read_and_enable_never_send_motion (test_panthera_hardware.HardwareTests) ... ok
+test_unverified_functions_remain_unavailable (test_panthera_hardware.HardwareTests) ... ok
+test_collision_prevents_home (test_panthera_home.HomeTests) ... ok
+test_gravity_blocks_home (test_panthera_home.HomeTests) ... ok
+test_home_requires_enable (test_panthera_home.HomeTests) ... ok
+test_home_returns_all_axes_to_zero_and_keeps_gripper (test_panthera_home.HomeTests) ... ok
+test_invalid_home_and_speed_rejected_without_sending (test_panthera_home.HomeTests) ... ok
+test_long_return_is_timed_from_measured_start (test_panthera_home.HomeTests) ... ok
+test_preview_uses_configured_joint_home_and_never_sends (test_panthera_home.HomeTests) ... ok
+test_calls_official_movej_and_holds_all_seven_slots (test_panthera_movej.SDKMoveJTests) ... ok
+test_cancel_guard_rejects_packet (test_panthera_movej.SDKMoveJTests) ... ok
+test_complete_sdk_movej_reference_session_and_stop (test_panthera_movej.SDKMoveJTests) ... ok
+test_feedback_based_velocity_excess_is_rejected_before_send (test_panthera_movej.SDKMoveJTests) ... ok
+test_nonfinite_and_out_of_bounds_targets_never_send (test_panthera_movej.SDKMoveJTests) ... ok
+test_ctrl_c_switches_to_measured_position_hold (test_panthera_stream.StreamTests) ... ok
+test_dense_trajectory_satisfies_v_a_jerk_and_bounds (test_panthera_stream.StreamTests) ... ok
+test_feedback_cycle_gap_holds_before_sending_next_reference (test_panthera_stream.StreamTests) ... ok
+test_feedback_stall_does_not_send_future_references (test_panthera_stream.StreamTests) ... ok
+test_late_cycle_holds_instead_of_catching_up_in_burst (test_panthera_stream.StreamTests) ... ok
+test_nontracking_driver_fails_then_holds (test_panthera_stream.StreamTests) ... ok
+test_real_ruckig_stream_is_timed_smooth_and_ends_exactly (test_panthera_stream.StreamTests) ... ok
+test_trajectory_rejects_physical_limit_violation (test_panthera_stream.StreamTests) ... ok
+test_fault_torque_and_invalid_feedback_never_debounced (test_policy_guard.GuardTests) ... ok
+test_rate_limit_and_feedback_path_checked (test_policy_guard.GuardTests) ... ok
+test_real_geometry_saved_start_without_hardware (test_policy_guard.GuardTests) ... ok
+test_reject_collision_and_low_tcp (test_policy_guard.GuardTests) ... ok
+test_reject_jump_and_latch (test_policy_guard.GuardTests) ... ok
+test_reject_limits_nan_and_wrong_keys (test_policy_guard.GuardTests) ... ok
+test_reject_wrong_start_tracking_fault_and_gap (test_policy_guard.GuardTests) ... ok
+test_single_speed_spike_freezes_reference_and_recovers (test_policy_guard.GuardTests) ... ok
+test_spikes_on_different_motors_do_not_accumulate (test_policy_guard.GuardTests) ... ok
+test_sustained_and_severe_speed_trip (test_policy_guard.GuardTests) ... ok
+test_actual_stream_exceeds_old_cap_and_respects_each_axis (test_restored_speed.RestoredSpeedTests) ... ok
+test_home_defaults_to_restored_limits_and_scale_is_per_axis (test_restored_speed.RestoredSpeedTests) ... ok
+test_production_profile_matches_reference_limits (test_restored_speed.RestoredSpeedTests) ... ok
+test_ruckig_retains_distinct_joint_limits (test_restored_speed.RestoredSpeedTests) ... ok
+test_validation_rejects_speed_above_specific_axis_even_below_global_max (test_restored_speed.RestoredSpeedTests) ... ok
+test_active_gripper_excludes_arm_reference (test_task_execution.TaskExecutionTests) ... ok
+test_cancel_between_ticks_holds_and_stops_old_stream (test_task_execution.TaskExecutionTests) ... ok
+test_ctrl_c_between_blocking_reference_ticks_holds (test_task_execution.TaskExecutionTests) ... ok
+test_gripper_fills_seven_slots_and_holds_arm (test_task_execution.TaskExecutionTests) ... ok
+test_gripper_rejects_superseded_command_without_packet (test_task_execution.TaskExecutionTests) ... ok
+test_replanning_cannot_hide_a_long_reference_gap (test_task_execution.TaskExecutionTests) ... ok
+test_stale_generation_prevents_first_reference (test_task_execution.TaskExecutionTests) ... ok
+test_telemetry_is_detached_from_native_snapshot (test_task_execution.TaskExecutionTests) ... ok
+test_short_timeout_does_not_close_preview_and_frames_resume (test_teaching_camera.CameraRecoveryTests) ... ok
+test_sustained_timeout_closes_camera_instead_of_publishing_stale_frames (test_teaching_camera.CameraRecoveryTests) ... ok
+test_failed_and_discarded_episode_never_calls_dataset_export (test_teaching_panel.RecordingContracts) ... ok
+test_interrupted_frames_retain_raw_but_are_excluded (test_teaching_panel.RecordingContracts) ... ok
+test_invalid_new_episode_does_not_overwrite_previous_metadata (test_teaching_panel.RecordingContracts) ... ok
+test_constructing_worker_does_not_open_devices (test_teaching_panel.TeachingContracts) ... ok
+test_gripper_during_drag_uses_its_own_sdk_packet (test_teaching_panel.TeachingContracts) ... ok
+test_invalid_settings_rejected (test_teaching_panel.TeachingContracts) ... ok
+test_long_running_episode_does_not_stop_until_explicit_end (test_teaching_panel.TeachingContracts) ... ok
+test_no_permission_no_drag_or_gripper_command (test_teaching_panel.TeachingContracts) ... ok
+test_nonfinite_gravity_is_rejected_before_any_torque_packet (test_teaching_panel.TeachingContracts) ... ok
+test_prepare_is_saved_from_stationary_feedback_without_motion (test_teaching_panel.TeachingContracts) ... ok
+test_return_requires_preview_and_rejects_drift (test_teaching_panel.TeachingContracts) ... ok
+test_stop_invalidates_previously_queued_commands (test_teaching_panel.TeachingContracts) ... ok
+test_arrow_escape_is_not_mixed_into_review_key (test_terminal_keys.TerminalKeyTests) ... ok
+test_extra_lines_cannot_accept_the_next_phase (test_terminal_keys.TerminalKeyTests) ... ok
+test_partial_stale_key_is_flushed_before_next_prompt (test_terminal_keys.TerminalKeyTests) ... ok
+test_shutdown_unblocks_pending_question (test_terminal_keys.TerminalKeyTests) ... ok
+test_terminal_read_occurs_only_on_dedicated_thread (test_terminal_keys.TerminalKeyTests) ... ok
+test_repeated_lost_recovery_reacquire_runs_through_real_backend (test_tracking_hold.ReacquireRuntimeChainTests) ... ok
+test_terminal_speed_cap_can_close_measured_lag_before_timeout (test_tracking_hold.TerminalArrivalTests) ... ok
+test_continuing_position_drift_cannot_confirm_hold (test_tracking_hold.TrackingHoldTests) ... ok
+test_position_stable_hold_is_confirmed_despite_velocity_spikes (test_tracking_hold.TrackingHoldTests) ... ok
+test_recorded_reacquire_feedback_replay_confirms_position_hold (test_tracking_hold.TrackingHoldTests) ... ok
+test_task_hold_returns_then_confirms_on_regular_feedback_ticks (test_tracking_hold.TrackingHoldTests) ... ok
+test_expired_moving_handoff_still_rejected (test_tracking_recovery.RecoveryBackendTests) ... ok
+test_rest_recovery_starts_after_stationary_preflight (test_tracking_recovery.RecoveryBackendTests) ... ok
+test_feed_finishes_before_lost_hole_recovery (test_tracking_recovery.RecoveryWorkflowTests) ... ok
+test_lost_retracts_and_visible_stops_then_confirms (test_tracking_recovery.RecoveryWorkflowTests) ... ok
+test_stale_camera_holds_instead_of_blind_recovery (test_tracking_recovery.RecoveryWorkflowTests) ... ok
+test_feedback_fault_in_current_tick_stops_before_new_reference (test_tracking_reference_handoff.CachedFeedbackTests) ... ok
+test_latest_tick_feedback_is_used_without_second_serial_query (test_tracking_reference_handoff.CachedFeedbackTests) ... ok
+test_target_update_during_final_target_hold_is_not_stream_timeout (test_tracking_reference_handoff.TrackingReferenceHandoffTests) ... ok
+test_runtime_preloads_geometry_before_allowing_control (test_tracking_runtime_chain.TrackingRuntimeChainTests) ... ok
+test_tracking_retarget_after_final_reference_keeps_running (test_tracking_runtime_chain.TrackingRuntimeChainTests) ... ok
+test_cold_start_still_requires_full_stable_window (test_tracking_startup.TrackingStartupTests) ... ok
+test_feedback_gap_invalidates_stability_cache (test_tracking_startup.TrackingStartupTests) ... ok
+test_position_change_invalidates_stability_cache (test_tracking_startup.TrackingStartupTests) ... ok
+test_stable_streaming_feedback_does_not_expire_camera_on_start (test_tracking_startup.TrackingStartupTests) ... ok
+test_depth_rim_not_background (test_vision_components.DepthTests) ... ok
+test_invalid_hole_center_still_uses_valid_rim (test_vision_components.DepthTests) ... ok
+test_multiple_holes_rejected (test_vision_components.DepthTests) ... ok
+test_recorded_real_depth_frame (test_vision_components.DepthTests) ... ok
+test_solid_board_and_foreground_object_are_not_holes (test_vision_components.DepthTests) ... ok
+test_tilted_depth_board_normal (test_vision_components.DepthTests) ... ok
+test_constant_velocity_predicts_during_dropout (test_vision_components.EstimatorTests) ... ok
+test_expired_track_reinitializes_on_actual_measurement (test_vision_components.EstimatorTests) ... ok
+test_expiry_uncertainty_and_displacement_limits (test_vision_components.EstimatorTests) ... ok
+test_insufficient_samples_cannot_predict (test_vision_components.EstimatorTests) ... ok
+test_outlier_does_not_extend_prediction_window (test_vision_components.EstimatorTests) ... ok
+test_prediction_reads_do_not_reject_delayed_measurements (test_vision_components.EstimatorTests) ... ok
+test_stationary_measurement_noise_is_reduced (test_vision_components.EstimatorTests) ... ok
+test_coordinates_switch_but_projection_and_distances_do_not (test_vision_components.OverlayTests) ... ok
+test_normal_gap_and_euclidean_distance_are_distinct (test_vision_components.OverlayTests) ... ok
+test_old_camera_pose_is_not_used_to_project_new_image (test_vision_components.OverlayTests) ... ok
+test_point_behind_or_outside_image_is_not_clamped_to_false_pixel (test_vision_components.OverlayTests) ... ok
+test_render_camera_and_base_previews (test_vision_components.OverlayTests) ... ok
+test_default_rod_tip_four_cm_forward (test_vision_components.ToolTests) ... ok
+test_following_go_carries_applied_settings_when_apply_is_coalesced (test_vision_components.ToolTests) ... ok
+test_invalid_calibration_is_rejected (test_vision_components.ToolTests) ... ok
+test_offset_is_in_gripper_axes_and_rotation_independent (test_vision_components.ToolTests) ... ok
+test_tool_fk_ik_transform_roundtrip_preserves_gripper_model (test_vision_components.ToolTests) ... ok
+test_ui_apply_publishes_values_and_invalidates_old_epoch (test_vision_components.ToolTests) ... ok
+test_ui_slider_roundtrip_and_apply_button_without_sdk (test_vision_components.ToolTests) ... ok
+
+----------------------------------------------------------------------
+Ran 255 tests in 47.228s
+
+OK
+  完成 xy_line_u_fwd: 1053 帧新反馈, 43 次下发
+
+================================================================================================================
+运动                    路径RMS    路径Max    跟踪RMS    跟踪Max    延迟ms     去延迟RMS     终点mm     规划终点     稳定s    姿态Max°
+----------------------------------------------------------------------------------------------------------------
+xy_line_u_fwd         0.000    0.000    0.894    1.355      50      0.011    0.000    0.000   -0.06     0.000
+================================================================================================================
+
+============================================================
+警告：检测到目标位置超出关节限位范围！
+目标位置: [10. 10. 10. 10. 10. 10.]
+限位下限: [-2.4  0.   0.  -1.6 -1.7 -2.5]
+限位上限: [2.4 3.2 4.  1.6 1.7 2.5]
+  关节1: 10.000 不在 [-2.400, 2.400] 范围内
+  关节2: 10.000 不在 [0.000, 3.200] 范围内
+  关节3: 10.000 不在 [0.000, 4.000] 范围内
+  关节4: 10.000 不在 [-1.600, 1.600] 范围内
+  关节5: 10.000 不在 [-1.700, 1.700] 范围内
+  关节6: 10.000 不在 [-2.500, 2.500] 范围内
+控制指令已被拒绝，保护机械臂安全
+============================================================
+

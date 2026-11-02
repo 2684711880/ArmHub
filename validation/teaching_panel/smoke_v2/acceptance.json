@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "source": "synthetic_only",
+  "hardware_connected": false,
+  "frames": 40,
+  "actual_fps": 19.964468222324587,
+  "gripper_target_and_feedback_distinct": true,
+  "raw_episode": "/home/a/ArmHub/validation/teaching_panel/smoke_v2/raw/demo/20261020_095540_943762",
+  "dataset": {
+    "root": "/home/a/ArmHub/validation/teaching_panel/smoke_v2/lerobot/demo/panthera_teaching",
+    "episode_index": 0,
+    "frames": 40
+  },
+  "decoded_image_shape": [
+    3,
+    480,
+    640
+  ],
+  "events": [
+    "options",
+    "mode",
+    "log",
+    "prepared",
+    "log",
+    "mode",
+    "record_started",
+    "gripper_target",
+    "gripper_target",
+    "record_stopping",
+    "mode",
+    "mode",
+    "review",
+    "exporting",
+    "exporting",
+    "exported",
+    "decision"
+  ]
+}

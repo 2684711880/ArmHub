@@ -1,0 +1,12 @@
+{
+  "motion_requested_deg": 2.0,
+  "measured_travel_deg": 1.8000000660978193,
+  "final_target_error_deg": 0.19999993390218082,
+  "max_other_arm_axis_drift_deg": 0.1079999983629796,
+  "stop_confirmed": true,
+  "arrival_tolerance_rad": 0.01,
+  "status": "passed_with_configured_tolerance",
+  "source_report": "validation/hardware/panthera_ht/j6_plus_2deg.json",
+  "offline_tests_passed": 19,
+  "no_cartesian_or_trajectory_hardware_validation": true
+}

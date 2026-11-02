@@ -1,0 +1,7 @@
+../home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/cmeel.prefix/lib/python3.10/site-packages/hppfcl/__init__.py:3: DeprecationWarning: Please update your 'hppfcl' imports to 'coal'
+  warnings.warn(
+........
+----------------------------------------------------------------------
+Ran 10 tests in 2.186s
+
+OK

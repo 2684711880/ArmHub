@@ -1,0 +1,50 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: handeye_color_optical
+    Frame Rate: 30
+  Displays:
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Calibration Axes
+      Enabled: true
+      Marker Topic:
+        Value: /moveit_visual_tools
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        Depth: 10
+    - Class: moveit_rviz_plugin/HandEyeCalibration
+      Name: HandEyeCalibration
+      Enabled: true
+      Camera FOV Marker: false
+      sensor_mount_type: 1
+      target_type: HandEyeTarget/Aruco
+      markers, X: 1
+      markers, Y: 1
+      first marker ID: 23
+      marker size (px): 200
+      marker separation (px): 20
+      marker border (bits): 1
+      ArUco dictionary: DICT_6X6_250
+      measured marker size (m): 0.100
+      measured separation (m): 0.010
+      image_topic: /handeye/color/image_raw
+      sensor: handeye_color_optical
+      object: handeye_target
+      eef: gripper_center
+      base: base_link
+      group: arm
+    - Class: rviz_default_plugins/Image
+      Name: Marker Detection
+      Enabled: true
+      Topic:
+        Value: /handeye_calibration/target_detection
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        Depth: 5
+Window Geometry:
+  Width: 1400
+  Height: 900

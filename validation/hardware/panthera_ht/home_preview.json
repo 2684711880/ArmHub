@@ -1,0 +1,149 @@
+{
+  "robot": "panthera_ht",
+  "backend": "hardware",
+  "command": "home",
+  "motion_requested": false,
+  "before": {
+    "joint_names": [
+      "joint1",
+      "joint2",
+      "joint3",
+      "joint4",
+      "joint5",
+      "joint6"
+    ],
+    "positions": [
+      0.5453805327415466,
+      1.038610577583313,
+      0.5064247846603394,
+      0.5585752129554749,
+      0.5227610468864441,
+      0.0
+    ],
+    "observed_at_monotonic_s": 5925.867404844851,
+    "enabled": false,
+    "source": "hardware"
+  },
+  "motors": [
+    {
+      "id": 1,
+      "position_rad": 0.5453805327415466,
+      "velocity_rad_s": 0.0,
+      "fault": 0,
+      "mode": 10,
+      "counter": 3,
+      "device_time_unix_s": 1792377709.95
+    },
+    {
+      "id": 2,
+      "position_rad": 1.038610577583313,
+      "velocity_rad_s": -0.0345575213432312,
+      "fault": 0,
+      "mode": 10,
+      "counter": 3,
+      "device_time_unix_s": 1792377709.95
+    },
+    {
+      "id": 3,
+      "position_rad": 0.5064247846603394,
+      "velocity_rad_s": 0.0,
+      "fault": 0,
+      "mode": 10,
+      "counter": 3,
+      "device_time_unix_s": 1792377709.95
+    },
+    {
+      "id": 4,
+      "position_rad": 0.5585752129554749,
+      "velocity_rad_s": 0.004712388850748539,
+      "fault": 0,
+      "mode": 10,
+      "counter": 3,
+      "device_time_unix_s": 1792377709.95
+    },
+    {
+      "id": 5,
+      "position_rad": 0.5227610468864441,
+      "velocity_rad_s": -0.0015707963611930609,
+      "fault": 0,
+      "mode": 10,
+      "counter": 3,
+      "device_time_unix_s": 1792377709.95
+    },
+    {
+      "id": 6,
+      "position_rad": 0.0,
+      "velocity_rad_s": 0.004712388850748539,
+      "fault": 0,
+      "mode": 10,
+      "counter": 3,
+      "device_time_unix_s": 1792377709.95
+    },
+    {
+      "id": 7,
+      "position_rad": 1.0134778022766113,
+      "velocity_rad_s": 0.014137166552245617,
+      "fault": 0,
+      "mode": 10,
+      "counter": 3,
+      "device_time_unix_s": 1792377709.95
+    }
+  ],
+  "log_file": "/home/a/ArmHub/logs/panthera_ht/20261019T024149_562136Z.jsonl",
+  "preview": {
+    "source": "hardware_home_preview",
+    "start_joints_rad": [
+      0.5453805327415466,
+      1.038610577583313,
+      0.5064247846603394,
+      0.5585752129554749,
+      0.5227610468864441,
+      0.0
+    ],
+    "target_joints_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "target_pose": {
+      "frame_id": "base_link",
+      "tcp_frame": "gripper_center",
+      "position_m": [
+        0.246649,
+        0.0,
+        0.16871899999999998
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "joint_delta_degrees": [
+      31.24800275468703,
+      59.50800265316858,
+      29.016002801859,
+      32.00400224296989,
+      29.952001680433792,
+      0.0
+    ],
+    "duration_s": 10.38610577583313,
+    "velocity_scale": 0.15,
+    "effective_max_speed_rad_s": 0.1,
+    "gripper_hold_raw_rad": 1.0134778022766113,
+    "collision_check": {
+      "samples": 53,
+      "step_rad": 0.02,
+      "collision_pairs_checked": 17,
+      "scope": "nominal_joint_interpolation_self_collision_only"
+    },
+    "motion_sent": false,
+    "note": "回到配置中的关节姿态，不重设编码器零点"
+  },
+  "note": "仅预览 home，不发送运动命令",
+  "status": "completed"
+}

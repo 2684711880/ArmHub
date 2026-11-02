@@ -1,0 +1,110 @@
+test_begin_waits_for_both_explicit_inputs (test_manual_review.ReviewTests) ... 已成功保留 0/50 条；下一条为第 1 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 1/50 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+ok
+test_empty_dataset_is_archived_with_recoverable_frames (test_manual_review.ReviewTests) ... 未完成的空数据集已完整保留到：/tmp/tmp3k_wb_is/test.empty-20261020_143902_775494，本次重新创建 local/test
+ok
+test_quit_before_preparation_never_moves_or_connects (test_manual_review.ReviewTests) ... 已成功保留 0/50 条；下一条为第 1 条。
+ok
+test_quit_discards_current_without_saving_or_starting_another (test_manual_review.ReviewTests) ... 未完成的空数据集已完整保留到：/tmp/tmp911339wu/data.empty-20261020_143905_735586，本次重新创建 local/test
+已成功保留 0/2 条；下一条为第 1 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 1/2 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+ok
+test_ready_pose_waits_for_n_without_another_preparation_and_reports_index (test_manual_review.ReviewTests) ... ok
+test_real_dataset_reject_keep_append_and_decode (test_manual_review.ReviewTests) ... Map:   0%|          | 0/8 [00:00<?, ? examples/s]Map: 100%|██████████| 8/8 [00:00<00:00, 1113.51 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[warn]: Instance 1: AQ mode 2 is unsupported with source dimensions (32 / 32), setting AQ mode to 0
+Svt[warn]: Instance 1: Restoration Filtering is unsupported with source dimensions (32 / 32), disabling Restoration Filtering
+Svt[warn]: TPL is disabled for aq_mode 0
+Svt[info]: Level of Parallelism: 5
+Svt[info]: Number of PPCS 59
+Svt[info]: [asm level on system : up to avx512icl]
+Svt[info]: [asm level selected : up to avx512icl]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 32 / 32 / 20 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / CQP Assignment 					: CQP / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 0 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Map:   0%|          | 0/8 [00:00<?, ? examples/s]Map: 100%|██████████| 8/8 [00:00<00:00, 1593.73 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[warn]: Instance 1: AQ mode 2 is unsupported with source dimensions (32 / 32), setting AQ mode to 0
+Svt[warn]: Instance 1: Restoration Filtering is unsupported with source dimensions (32 / 32), disabling Restoration Filtering
+Svt[warn]: TPL is disabled for aq_mode 0
+Svt[info]: Level of Parallelism: 5
+Svt[info]: Number of PPCS 59
+Svt[info]: [asm level on system : up to avx512icl]
+Svt[info]: [asm level selected : up to avx512icl]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 32 / 32 / 20 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / CQP Assignment 					: CQP / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 0 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x598d04889180] Starting second pass: moving the moov atom to the beginning of the file
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+ok
+test_real_official_loop_reject_does_not_count_and_keep_appends (test_manual_review.ReviewTests) ... 未完成的空数据集已完整保留到：/tmp/tmpqticxbof/data.empty-20261020_143906_298018，本次重新创建 local/test
+已成功保留 0/2 条；下一条为第 1 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 1/2 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+已成功保留 0/2 条；下一条为第 1 条。
+正在录制第 1/2 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+已保留成功回合：1/2
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+已成功保留 1/2 条；下一条为第 2 条。
+正在录制第 2/2 条；已成功保留 1 条。松爪并抬离盒口后按 → 结束。
+已保留成功回合：2/2
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+ok
+test_resume_counts_existing_successes_towards_goal (test_manual_review.ReviewTests) ... 已成功保留 1/2 条；下一条为第 2 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 2/2 条；已成功保留 1 条。松爪并抬离盒口后按 → 结束。
+已保留成功回合：2/2
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+ok
+test_return_failure_after_s_does_not_lose_saved_data (test_manual_review.ReviewTests) ... 未完成的空数据集已完整保留到：/tmp/tmp7rx7rnvz/data.empty-20261020_143906_303704，本次重新创建 local/test
+已成功保留 0/2 条；下一条为第 1 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 1/2 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+已保留成功回合：1/2
+正在回准备位并张开夹爪；此过程不录制。
+ok
+test_review_disconnects_before_prompt_and_does_not_keep_on_enter (test_manual_review.ReviewTests) ... 请输入小写 s、r 或 q；回车不会默认保存。
+请输入小写 s、r 或 q；回车不会默认保存。
+ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 3.530s
+
+OK

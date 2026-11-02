@@ -1,0 +1,53 @@
+test_short_timeout_does_not_close_preview_and_frames_resume (test_teaching_camera.CameraRecoveryTests) ... ok
+test_sustained_timeout_closes_camera_instead_of_publishing_stale_frames (test_teaching_camera.CameraRecoveryTests) ... ok
+test_failed_and_discarded_episode_never_calls_dataset_export (test_teaching_panel.RecordingContracts) ... ok
+test_interrupted_frames_retain_raw_but_are_excluded (test_teaching_panel.RecordingContracts) ... ok
+test_invalid_new_episode_does_not_overwrite_previous_metadata (test_teaching_panel.RecordingContracts) ... ok
+test_constructing_worker_does_not_open_devices (test_teaching_panel.TeachingContracts) ... ok
+test_gripper_during_drag_uses_its_own_sdk_packet (test_teaching_panel.TeachingContracts) ... ok
+test_invalid_settings_rejected (test_teaching_panel.TeachingContracts) ... ok
+test_long_running_episode_does_not_stop_until_explicit_end (test_teaching_panel.TeachingContracts) ... ok
+test_no_permission_no_drag_or_gripper_command (test_teaching_panel.TeachingContracts) ... ok
+test_nonfinite_gravity_is_rejected_before_any_torque_packet (test_teaching_panel.TeachingContracts) ... ok
+test_prepare_is_saved_from_stationary_feedback_without_motion (test_teaching_panel.TeachingContracts) ... ok
+test_return_requires_preview_and_rejects_drift (test_teaching_panel.TeachingContracts) ... ok
+test_stop_invalidates_previously_queued_commands (test_teaching_panel.TeachingContracts) ... ok
+test_exit_stops_writer_before_hold_and_release (test_lerobot_integration.LifecycleTests) ... ok
+test_hold_failure_is_not_reported_as_success_and_releases_resources (test_lerobot_integration.LifecycleTests) ... ok
+test_live_writer_prevents_second_sender (test_lerobot_integration.LifecycleTests) ... ok
+test_preset_entrypoints_return_before_upstream_motion (test_lerobot_integration.LifecycleTests) ... ok
+test_interrupt_after_output_is_followed_by_hold (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_invalid_model_output_does_not_enter_torque_mode (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_missing_feedback_never_claims_hold_stop_confirmed (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_position_control_cannot_enter_during_gravity_mode (test_gravity.GravityControlTests) ... ok
+test_slow_cycle_is_rejected_then_held (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_speed_guard_records_exact_joint_and_sample_before_hold (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_torque_frames_only_cover_six_axes_then_exit_to_full_hold (test_gravity.GravityControlTests) ... 重力补偿即将启用：仅六轴，Ctrl+C 切回当前位置保持。物理急停保持可操作。
+ok
+test_unknown_robot_gravity_is_explicitly_unsupported (test_gravity.GravityControlTests) ... ok
+test_bounded_jog_fills_all_seven_slots_and_keeps_gripper (test_panthera_hardware.HardwareTests) ... ok
+test_encoder_zero_offset_is_held_without_expanding_motion_limits (test_panthera_hardware.HardwareTests) ... ok
+test_fault_and_motor_identity_are_rejected (test_panthera_hardware.HardwareTests) ... ok
+test_freshness_requires_new_frames_not_fresh_cache_time (test_panthera_hardware.HardwareTests) ... ok
+test_large_multijoint_and_nonfinite_goals_never_transmit (test_panthera_hardware.HardwareTests) ... ok
+test_motion_requires_explicit_enable (test_panthera_hardware.HardwareTests) ... ok
+test_read_and_enable_never_send_motion (test_panthera_hardware.HardwareTests) ... ok
+test_unverified_functions_remain_unavailable (test_panthera_hardware.HardwareTests) ... ok
+test_ctrl_c_switches_to_measured_position_hold (test_panthera_stream.StreamTests) ... ok
+test_dense_trajectory_satisfies_v_a_jerk_and_bounds (test_panthera_stream.StreamTests) ... ok
+test_feedback_cycle_gap_holds_before_sending_next_reference (test_panthera_stream.StreamTests) ... ok
+test_feedback_stall_does_not_send_future_references (test_panthera_stream.StreamTests) ... ok
+test_late_cycle_holds_instead_of_catching_up_in_burst (test_panthera_stream.StreamTests) ... ok
+test_nontracking_driver_fails_then_holds (test_panthera_stream.StreamTests) ... ok
+test_real_ruckig_stream_is_timed_smooth_and_ends_exactly (test_panthera_stream.StreamTests) ... ok
+test_trajectory_rejects_physical_limit_violation (test_panthera_stream.StreamTests) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 0.684s
+
+OK

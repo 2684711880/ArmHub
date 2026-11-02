@@ -1,0 +1,36 @@
+{
+  "repo_id": "local/panthera_teaching",
+  "task": "pick an object from the tabletop and place it",
+  "fps": 20,
+  "gripper_open": 1.6,
+  "gripper_close": 0.0,
+  "gripper_speed": 0.3,
+  "gripper_torque": 0.3,
+  "return_scale": 0.15,
+  "return_duration_s": 3.0,
+  "tcp_z_min_m": null,
+  "prepared": {
+    "q": [
+      0.03141592815518379,
+      1.3276370763778687,
+      1.2333893775939941,
+      -1.3100441694259644,
+      -0.03707079589366913,
+      -0.059690263122320175
+    ],
+    "position_m": [
+      0.23006057470584623,
+      0.014217784797127313,
+      0.14664786246709063
+    ],
+    "quaternion_xyzw": [
+      -0.020943461674422712,
+      0.6447873175718624,
+      0.045399382378876016,
+      0.7627251028982795
+    ],
+    "source": "hardware",
+    "saved_unix_s": 1792462643.8321793,
+    "orientation_policy": "user_arranged; not an automatic downward-pose guarantee"
+  }
+}

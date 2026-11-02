@@ -1,0 +1,18 @@
+{
+  "software_status": "passed",
+  "offline_tests_passed": 101,
+  "dry_run": {
+    "source": "synthetic_kinematic_fixture",
+    "feed_knots": 90,
+    "feed_duration_s": 7.591642701049248,
+    "sampled_line_error_m": 9.919082293212098e-07,
+    "motion_sent": false
+  },
+  "recorded_rgbd": "passed",
+  "live_camera_devices": [],
+  "hardware_readonly": "unavailable",
+  "hardware_feedback_error": "七个电机的新反馈未在期限内到齐；没有更新运动目标",
+  "hardware_motion_attempted": false,
+  "hardware_motion_command_events": 0,
+  "calibration_status": "calibrated_pending_independent_measurement"
+}

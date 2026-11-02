@@ -1,0 +1,2 @@
+# Matches the RealSense SDK already present on this workstation.
+pyrealsense2==2.59.1.11053

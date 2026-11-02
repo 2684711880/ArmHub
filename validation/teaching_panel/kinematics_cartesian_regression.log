@@ -1,0 +1,16 @@
+test_cartesian_can_execute_over_30_degrees (test_panthera_cartesian.CartesianTests) ... ok
+test_cartesian_duration_can_exceed_30_seconds (test_panthera_cartesian.CartesianTests) ... ok
+test_cartesian_orientation_can_exceed_30_degrees (test_panthera_cartesian.CartesianTests) ... ok
+test_changed_start_rejected_before_send (test_panthera_cartesian.CartesianTests) ... ok
+test_collision_rejection_does_not_send (test_panthera_cartesian.CartesianTests) ... ok
+test_coupled_target_feedback_and_gripper (test_panthera_cartesian.CartesianTests) ... ok
+test_fk_failure_to_reach_prevents_false_success (test_panthera_cartesian.CartesianTests) ... ok
+test_gravity_excludes_cartesian_preview (test_panthera_cartesian.CartesianTests) ... ok
+test_invalid_and_large_targets_do_not_send (test_panthera_cartesian.CartesianTests) ... ok
+test_preview_accepts_translation_over_previous_15cm_limit (test_panthera_cartesian.CartesianTests) ... ok
+test_preview_never_sends_or_enables (test_panthera_cartesian.CartesianTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.041s
+
+OK

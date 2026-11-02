@@ -1,0 +1,112 @@
+{
+  "mode": "offline_no_hardware",
+  "status": "passed",
+  "plans": [
+    {
+      "start_pose": {
+        "frame_id": "base_link",
+        "tcp_frame": "gripper_center",
+        "position_m": [
+          0.246649,
+          0.0,
+          0.16871899999999998
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "target_position_m": [
+        0.246649,
+        0.0,
+        0.178719
+      ],
+      "target_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "target_joints_rad": [
+        0.0,
+        0.035869542919567295,
+        0.03880598033172661,
+        -0.0029367120326778485,
+        0.0,
+        0.0
+      ],
+      "ik_position_error_m": 9.97302883286069e-06,
+      "ik_orientation_error_rad": 2.7476383618393225e-07,
+      "orientation_policy": "hold_current",
+      "collision_check": {
+        "samples": 3,
+        "step_rad": 0.02,
+        "collision_pairs_checked": 17,
+        "scope": "nominal_joint_interpolation_self_collision_only"
+      },
+      "model_tcp_error_m": 0.0
+    },
+    {
+      "start_pose": {
+        "frame_id": "base_link",
+        "tcp_frame": "gripper_center",
+        "position_m": [
+          0.2581322896513135,
+          -0.01763665698164427,
+          0.2354141505637264
+        ],
+        "quaternion_xyzw": [
+          0.011447880186021163,
+          -0.014446886458469808,
+          -0.03882272487513264,
+          0.9990760879653624
+        ]
+      },
+      "target_position_m": [
+        0.2581322896513135,
+        -0.01763665698164427,
+        0.2454141505637264
+      ],
+      "target_quaternion_xyzw": [
+        0.011447880186021163,
+        -0.014446886458469808,
+        -0.03882272487513264,
+        0.9990760879653624
+      ],
+      "target_joints_rad": [
+        -0.041996471796805754,
+        0.2905770276159084,
+        0.2687596090977143,
+        0.049818366712434,
+        0.03600354870391046,
+        0.022999866481402585
+      ],
+      "ik_position_error_m": 9.514955289227182e-06,
+      "ik_orientation_error_rad": 9.43844772703246e-07,
+      "orientation_policy": "hold_current",
+      "collision_check": {
+        "samples": 4,
+        "step_rad": 0.02,
+        "collision_pairs_checked": 17,
+        "scope": "nominal_joint_interpolation_self_collision_only"
+      },
+      "model_tcp_error_m": 0.0
+    }
+  ],
+  "negative_cases_rejected": [
+    "unreachable",
+    "bad_quaternion",
+    "self_collision"
+  ],
+  "collision_negative_joint_rad": [
+    0.5710387167580881,
+    3.030650977651076,
+    0.13569483920792313,
+    0.5385865150563189,
+    1.291893348139917,
+    -1.7684410879986583
+  ],
+  "collision_detail": "参考轨迹自碰撞，样本 0：[('base_link_0', 'link3_0'), ('base_link_0', 'link4_0'), ('base_link_0', 'link5_0')]"
+}

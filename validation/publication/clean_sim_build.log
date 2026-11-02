@@ -1,0 +1,167 @@
+Prepared panthera_ht: 6 joints, TCP=gripper_center
+Prepared nero7: 7 joints, TCP=gripper_base
+Starting >>> armhub_sim
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/build/armhub_sim
+-- Install configuration: ""
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/launch
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/launch/sim.launch.py
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/config
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/config/moveit.rviz
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/worlds
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/worlds/bench.world
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/tools
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/tools/rod.json
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/robot.json
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/simulation
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/simulation/controllers.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/hardware
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/hardware/motors.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/hardware/config.json
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/planning
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/planning/kinematics.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/planning/moveit_controllers.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/planning/robot.srdf
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/planning/joint_limits.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/description
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/description/planning.urdf
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/panthera_ht/description/simulation.urdf
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/nero7
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/nero7/robot.json
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/nero7/simulation
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/nero7/simulation/controllers.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/nero7/planning
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/nero7/planning/kinematics.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/nero7/planning/moveit_controllers.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/nero7/planning/robot.srdf
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/nero7/planning/joint_limits.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/nero7/description
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/nero7/description/planning.urdf
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/robots/nero7/description/simulation.urdf
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference/nero.gazebo.ros2_control.xacro
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference/nero.srdf
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference/kinematics.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference/moveit_controllers.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference/joint_limits.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference/ros2_controllers.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference/gazebo_ros2_controllers.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference/nero.ros2_control.xacro
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference/nero.urdf.xacro
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference/gazebo_initial_positions.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference/nero.gazebo.urdf.xacro
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference/moveit.rviz
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference/initial_positions.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/moveit_reference/pilz_cartesian_limits.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/licenses
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/licenses/0_LICENSE
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/robot_with_camera.urdf
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/link1.stl
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/base_link.stl
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/gripper_link1.stl
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/gripper_flange.stl
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/link4.stl
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/gripper_base.stl
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/revo2_flange.stl
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/gripper_link2.stl
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/link7.stl
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/link6.stl
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/link5.stl
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/link3.stl
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae/link2.dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae/link3.dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae/revo2_flange.dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae/link4.dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae/link5.dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae/link7.dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae/gripper_flange.dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae/gripper_link2.dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae/base_link.dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae/gripper_link1.dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae/link6.dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae/gripper_base_with_flange.dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae/link1.dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/dae/gripper_base.dae
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/link2.stl
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/agilex/nero/meshes/gripper_base_with_flange.stl
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/kinematics.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/moveit_controllers.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/joint_limits_sim.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/panthera_ht_ros_description.ros2_control.xacro
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/panthera_ht_ros_description_gripper.srdf
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/joint_limits.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/calibration.rviz
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/moveit_controllers_hardware_gripper.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/panthera_ht_ros_description.urdf.xacro
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/moveit_controllers_sim.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/moveit_controllers_hardware.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/panthera_ht_ros_description.srdf
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/panthera_ht_hardware.ros2_control.xacro
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/moveit.rviz
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/initial_positions.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/panthera_ht_hardware.urdf.xacro
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/sensors_3d.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/moveit_reference/pilz_cartesian_limits.yaml
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/LICENSE
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/urdf
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/urdf/panthera_ht_ros_description_gripper.urdf.xacro
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/urdf/panthera_ht_ros_description.urdf
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/urdf/panthera_ht_ros_description.xacro
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/urdf/panthera_ht_ros_description_hardware.urdf.xacro
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/urdf/panthera_ht_ros_description.csv
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/urdf/panthera_ht_ros_description_gripper.xacro
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/meshes
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/meshes/link6.STL
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/meshes/R_finger.STL
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/meshes/link3.STL
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/meshes/L_finger.STL
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/meshes/link5.STL
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/meshes/link4.STL
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/meshes/link6_ttb.STL
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/meshes/link2.STL
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/meshes/gripper_center.STL
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/meshes/base_link.STL
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/vendor/panthera/description/meshes/link1.STL
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/ament_index/resource_index/package_run_dependencies/armhub_sim
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/ament_index/resource_index/parent_prefix_path/armhub_sim
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/environment/ament_prefix_path.sh
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/environment/ament_prefix_path.dsv
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/environment/path.sh
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/environment/path.dsv
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/local_setup.bash
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/local_setup.sh
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/local_setup.zsh
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/local_setup.dsv
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/package.dsv
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/ament_index/resource_index/packages/armhub_sim
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/cmake/armhub_simConfig.cmake
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/cmake/armhub_simConfig-version.cmake
+-- Installing: /tmp/armhub-publication-clean-ec0gnexx/ros_ws/install/armhub_sim/share/armhub_sim/package.xml
+Finished <<< armhub_sim [0.60s]
+
+Summary: 1 package finished [0.88s]

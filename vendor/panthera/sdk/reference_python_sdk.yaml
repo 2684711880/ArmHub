@@ -1,0 +1,96 @@
+robot:
+  name: Panthera-HT
+  robot_name: Panthera-HT
+  param_file: /home/a/Panthera-HT/hardware_ws/config/motors.yaml
+  commission_passive_lifecycle: true
+  joint_limits:
+    lower:
+    - -2.4
+    - 0.0
+    - 0.0
+    - -1.6
+    - -1.7
+    - -2.5
+    upper:
+    - 2.4
+    - 3.2
+    - 4.0
+    - 1.6
+    - 1.7
+    - 2.5
+  gripper_limits:
+    lower: 0.0
+    upper: 2.0
+  max_torque:
+  - 21.0
+  - 36.0
+  - 36.0
+  - 21.0
+  - 10.0
+  - 3.0
+  velocity_limits:
+  - 1.68
+  - 2.0
+  - 2.0
+  - 1.68
+  - 1.48
+  - 1.48
+  acceleration_limits:
+  - 0.8
+  - 0.8
+  - 0.8
+  - 0.8
+  - 0.8
+  - 0.8
+urdf:
+  file_path: python_sdk_arm.urdf
+  base_link: base_link
+  end_effector_link: gripper_center
+kinematics:
+  joint_names:
+  - joint1
+  - joint2
+  - joint3
+  - joint4
+  - joint5
+  - joint6
+motion_parameters:
+  align_clearance_m: 0.20
+  feed_distance_m: 0.18
+  rod_length_m: 0.04
+  tcp_xyz_mm: [0.0, 0.0, 0.0]
+  tcp_rpy_deg: [0.0, 0.0, 0.0]
+  feed_duration_s: 2.0
+  approach_duration_s: 3.0
+  recovery_speed_rad_s: 0.6
+motion_smoothing:
+  control_period_s: 0.05
+  stream_min_speed_rad_s: 0.005
+  max_jerk_rad_s3: [4.0, 4.0, 4.0, 4.0, 4.0, 4.0]
+  tracking_replan_period_s: 0.3
+  state_filter_tau_s: 0.12
+  max_tracking_error_rad: 0.15
+  max_cycle_gap_s: 0.2
+  feed_ramp_fraction: 0.2
+hole_estimator:
+  measurement_std_m: 0.005
+  acceleration_noise: 0.005
+  initial_velocity_std: 0.05
+  max_prediction_s: 3.0
+  max_position_std_m: 0.025
+  max_prediction_displacement_m: 0.05
+  max_speed_m_s: 0.2
+  innovation_gate_squared: 16.0
+  min_prediction_samples: 5
+  prediction_replan_m: 0.02
+  normal_gate_deg: 15.0
+gripper_test:
+  close_rad: 0.0
+  open_rad: 1.6
+  speed_rad_s: 0.5
+  max_torque_nm: 0.5
+  torque_cap_nm: 1.0  # existing project gripper command cap, not rated maximum
+moveit_cartesian:
+  eef_step: 0.002
+  jump_threshold: 1.5
+  resample_dt: 0.01

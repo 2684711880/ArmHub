@@ -1,0 +1,13 @@
+{
+  "source_log": "/home/a/ArmHub/logs/panthera_ht/20261019T021840_112795Z.jsonl",
+  "user_report": "Manual hand dragging before protection triggered",
+  "exit_reason": "重力补偿时实测速度超过配置保护阈值",
+  "original_velocity_limit_rad_s": 1.0,
+  "duration_before_failure_s": 4.362575416999789,
+  "control_cycles": 858,
+  "hold_stop_confirmed": true,
+  "exact_trigger_joint_and_speed_recorded": false,
+  "new_velocity_limit_rad_s": 2.0,
+  "new_limit_hardware_tested": false,
+  "change": "Added exact offending joint/sample and recent history logging; kept velocity guard and other protections"
+}

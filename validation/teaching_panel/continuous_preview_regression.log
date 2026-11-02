@@ -1,0 +1,100 @@
+已成功保留 0/50 条；下一条为第 1 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 1/50 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+.未完成的空数据集已完整保留到：/tmp/tmpf9jpu8p9/test.empty-20261020_150318_039774，本次重新创建 local/test
+.已成功保留 0/50 条；下一条为第 1 条。
+.未完成的空数据集已完整保留到：/tmp/tmp38vmpbfc/data.empty-20261020_150321_347904，本次重新创建 local/test
+已成功保留 0/2 条；下一条为第 1 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 1/2 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+..Map:   0%|          | 0/8 [00:00<?, ? examples/s]Map: 100%|██████████| 8/8 [00:00<00:00, 1429.67 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[warn]: Instance 1: AQ mode 2 is unsupported with source dimensions (32 / 32), setting AQ mode to 0
+Svt[warn]: Instance 1: Restoration Filtering is unsupported with source dimensions (32 / 32), disabling Restoration Filtering
+Svt[warn]: TPL is disabled for aq_mode 0
+Svt[info]: Level of Parallelism: 5
+Svt[info]: Number of PPCS 59
+Svt[info]: [asm level on system : up to avx512icl]
+Svt[info]: [asm level selected : up to avx512icl]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 32 / 32 / 20 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / CQP Assignment 					: CQP / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 0 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Map:   0%|          | 0/8 [00:00<?, ? examples/s]Map: 100%|██████████| 8/8 [00:00<00:00, 1686.49 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[warn]: Instance 1: AQ mode 2 is unsupported with source dimensions (32 / 32), setting AQ mode to 0
+Svt[warn]: Instance 1: Restoration Filtering is unsupported with source dimensions (32 / 32), disabling Restoration Filtering
+Svt[warn]: TPL is disabled for aq_mode 0
+Svt[info]: Level of Parallelism: 5
+Svt[info]: Number of PPCS 59
+Svt[info]: [asm level on system : up to avx512icl]
+Svt[info]: [asm level selected : up to avx512icl]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 32 / 32 / 20 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / CQP Assignment 					: CQP / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 0 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x5f8bcb918000] Starting second pass: moving the moov atom to the beginning of the file
+/home/a/ArmHub/.venv_lerobot/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+.未完成的空数据集已完整保留到：/tmp/tmpz9rfbs6q/data.empty-20261020_150321_907013，本次重新创建 local/test
+已成功保留 0/2 条；下一条为第 1 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 1/2 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+已成功保留 0/2 条；下一条为第 1 条。
+正在录制第 1/2 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+已保留成功回合：1/2
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+已成功保留 1/2 条；下一条为第 2 条。
+正在录制第 2/2 条；已成功保留 1 条。松爪并抬离盒口后按 → 结束。
+已保留成功回合：2/2
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+.已成功保留 1/2 条；下一条为第 2 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 2/2 条；已成功保留 1 条。松爪并抬离盒口后按 → 结束。
+已保留成功回合：2/2
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+.未完成的空数据集已完整保留到：/tmp/tmpe6qv0a3b/data.empty-20261020_150321_911102，本次重新创建 local/test
+已成功保留 0/2 条；下一条为第 1 条。
+正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+正在录制第 1/2 条；已成功保留 0 条。松爪并抬离盒口后按 → 结束。
+已保留成功回合：1/2
+正在回准备位并张开夹爪；此过程不录制。
+.请输入小写 s、r 或 q；回车不会默认保存。
+请输入小写 s、r 或 q；回车不会默认保存。
+.
+----------------------------------------------------------------------
+Ran 10 tests in 3.873s
+
+OK

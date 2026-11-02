@@ -1,0 +1,262 @@
+diff --git a/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h b/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h
+index bcb16bb..2940494 100644
+--- a/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h
++++ b/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h
+@@ -55,14 +55,19 @@
+ #include <tf2_ros/transform_listener.h>
+ #include <rviz_visual_tools/tf_visual_tools.hpp>
+ #include <rviz_visual_tools/rviz_visual_tools.hpp>
++#if __has_include(<image_geometry/pinhole_camera_model.hpp>)
+ #include <image_geometry/pinhole_camera_model.hpp>
++#else
++#include <image_geometry/pinhole_camera_model.h>
++#include <cstdlib>
++#endif
+ #include <moveit_visual_tools/moveit_visual_tools.h>
+ #include <moveit/handeye_calibration_solver/handeye_solver_base.h>
+ #include <moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h>
+-#include <moveit/common_planning_interface_objects/common_objects.hpp>
+-#include <moveit/planning_scene_monitor/planning_scene_monitor.hpp>
++#include <moveit/common_planning_interface_objects/common_objects.h>
++#include <moveit/planning_scene_monitor/planning_scene_monitor.h>
+ #include <moveit/planning_scene_rviz_plugin/background_processing.hpp>
+-#include <moveit/utils/rclcpp_utils.hpp>
++#include <moveit/utils/rclcpp_utils.h>
+ 
+ #ifndef Q_MOC_RUN
+ #include <rclcpp/rclcpp.hpp>
+@@ -94,7 +99,9 @@ public:
+                       FRAME_SOURCE source = ROBOT_FRAME, QWidget* parent = 0)
+     : QComboBox(parent),frame_source_(source), node_(node), context_(context)
+   {
+-    robot_model_loader_.reset(new robot_model_loader::RobotModelLoader(node_, "robot_description"));
++    const char* tf_only = std::getenv("PANTHERA_HANDEYE_TF_ONLY");
++    if (!tf_only || std::string(tf_only) != "1")
++      robot_model_loader_.reset(new robot_model_loader::RobotModelLoader(node_, "robot_description"));
+   }
+ 
+   ~TFFrameNameComboBox()
+diff --git a/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h b/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h
+index 4a7366c..e758eaf 100644
+--- a/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h
++++ b/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h
+@@ -59,8 +59,12 @@
+ #include <pluginlib/class_loader.hpp>
+ #include <tf2_ros/transform_listener.h>
+ #include <rviz_visual_tools/tf_visual_tools.hpp>
+-#include <moveit/move_group_interface/move_group_interface.hpp>
+-#include <moveit/planning_scene_monitor/planning_scene_monitor.hpp>
++#if __has_include(<moveit/move_group_interface/move_group_interface.hpp>)
++#include <moveit/move_group_interface/move_group_interface.h>
++#else
++#include <moveit/move_group_interface/move_group_interface.h>
++#endif
++#include <moveit/planning_scene_monitor/planning_scene_monitor.h>
+ #include <moveit/handeye_calibration_solver/handeye_solver_base.h>
+ #include <moveit/planning_scene_rviz_plugin/background_processing.hpp>
+ #include <moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h>
+diff --git a/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h b/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h
+index d1af9e0..52aae3a 100644
+--- a/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h
++++ b/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h
+@@ -61,7 +61,11 @@
+ #include <sensor_msgs/msg/camera_info.hpp>
+ #include <sensor_msgs/msg/joint_state.hpp>
+ 
++#if __has_include(<cv_bridge/cv_bridge.hpp>)
+ #include <cv_bridge/cv_bridge.hpp>
++#else
++#include <cv_bridge/cv_bridge.h>
++#endif
+ #include <image_transport/image_transport.hpp>
+ 
+ #include <pluginlib/class_loader.hpp>
+diff --git a/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp b/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp
+index 8be558e..963d2a8 100644
+--- a/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp
++++ b/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp
+@@ -46,7 +46,12 @@ void TFFrameNameComboBox::mousePressEvent([[maybe_unused]] QMouseEvent* event)
+ 
+   clear();
+   addItem(QString(""));
+-  if (robot_model_loader_->getModel())  // Ensure that robot is brought up
++  if (!robot_model_loader_)
++  {
++    for (const auto& name : names)
++      addItem(QString::fromStdString(name));
++  }
++  else if (robot_model_loader_->getModel())  // Ensure that robot is brought up
+   {
+     const std::vector<std::string>& robot_links = robot_model_loader_->getModel()->getLinkModelNames();
+     for (const std::string& name : names)
+@@ -72,9 +77,8 @@ void TFFrameNameComboBox::mousePressEvent([[maybe_unused]] QMouseEvent* event)
+ 
+ bool TFFrameNameComboBox::hasFrame(const std::string& frame_name)
+ {
+-  std::vector<std::string> names;
+   context_->getFrameManager()->update();
+-  moveit::planning_interface::getSharedTF()->_getFrameStrings(names);
++  const auto names = context_->getFrameManager()->getAllFrameNames();
+ 
+   auto it = std::find(names.begin(), names.end(), frame_name);
+   return it != names.end();
+diff --git a/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp b/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp
+index 8be03fb..d9a8a51 100644
+--- a/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp
++++ b/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp
+@@ -37,7 +37,8 @@
+ #include <moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h>
+ #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+ #include <rclcpp/rclcpp.hpp>
+-#include <moveit/utils/moveit_error_code.hpp>
++#include <moveit/utils/moveit_error_code.h>
++#include <cstdlib>
+ 
+ 
+ namespace moveit_rviz_plugin
+@@ -377,6 +378,20 @@ bool ControlTabWidget::takeTransformSamples()
+     // Get the transform of the end-effector w.r.t the robot base
+     base_to_eef_tf = tf_buffer_->lookupTransform(frame_names_["base"], frame_names_["eef"], rclcpp::Time(0));
+ 
++    // Latest TF can remain cached after a camera or feedback source stops.
++    const auto now = node_->now();
++    const auto camera_stamp = rclcpp::Time(camera_to_object_tf.header.stamp);
++    const auto robot_stamp = rclcpp::Time(base_to_eef_tf.header.stamp);
++    const double camera_age = (now - camera_stamp).seconds();
++    const double robot_age = (now - robot_stamp).seconds();
++    if (camera_age < -0.02 || camera_age > 0.25 || robot_age < -0.02 || robot_age > 0.25 ||
++        std::abs((camera_stamp - robot_stamp).seconds()) > 0.15)
++    {
++      QMessageBox::warning(this, tr("Stale sample"),
++                           tr("Fresh camera and real robot feedback are required. Wait stationary, then retry."));
++      return false;
++    }
++
+     // Verify that sample contains sufficient rotation
+     Eigen::Isometry3d base_to_eef_eig, camera_to_object_eig;
+     base_to_eef_eig = tf2::transformToEigen(base_to_eef_tf);
+@@ -780,6 +795,15 @@ void ControlTabWidget::setGroupName(const std::string& group_name)
+ void ControlTabWidget::fillPlanningGroupNameComboBox()
+ {
+   group_name_->clear();
++  const char* tf_only = std::getenv("PANTHERA_HANDEYE_TF_ONLY");
++  if (tf_only && std::string(tf_only) == "1")
++  {
++    planning_scene_monitor_.reset();
++    auto_plan_btn_->setEnabled(false);
++    auto_execute_btn_->setEnabled(false);
++    auto_skip_btn_->setEnabled(false);
++    return;
++  }
+   planning_scene_monitor_.reset(new planning_scene_monitor::PlanningSceneMonitor(node_, "robot_description","planning_scene_monitor"));
+   if (planning_scene_monitor_)
+   {
+diff --git a/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp b/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp
+index 6c18a3d..329d8d3 100644
+--- a/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp
++++ b/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp
+@@ -418,6 +418,7 @@ void TargetTabWidget::imageCallback(const sensor_msgs::msg::Image::ConstSharedPt
+       pub_msg = cv_bridge::CvImage(std_msgs::msg::Header(), "rgb8", cv_ptr->image).toImageMsg();
+ 
+       geometry_msgs::msg::TransformStamped tf2_msg = target_->getTransformStamped(optical_frame_);
++      tf2_msg.header.stamp = msg->header.stamp;
+       tf_pub_->sendTransform(tf2_msg);
+       if (!target_->areIntrinsicsReasonable())
+       {
+diff --git a/moveit_calibration_plugins/handeye_calibration_target/include/moveit/handeye_calibration_target/handeye_target_aruco.h b/moveit_calibration_plugins/handeye_calibration_target/include/moveit/handeye_calibration_target/handeye_target_aruco.h
+index b404579..f50aaa5 100644
+--- a/moveit_calibration_plugins/handeye_calibration_target/include/moveit/handeye_calibration_target/handeye_target_aruco.h
++++ b/moveit_calibration_plugins/handeye_calibration_target/include/moveit/handeye_calibration_target/handeye_target_aruco.h
+@@ -58,7 +58,7 @@ public:
+ 
+ protected:
+   virtual bool setTargetIntrinsicParams(int markers_x, int markers_y, int marker_size, int separation, int border_bits,
+-                                        const std::string& dictionary_id);
++                                        const std::string& dictionary_id, int first_marker_id = 0);
+ 
+   virtual bool setTargetDimension(double marker_measured_size, double marker_measured_separation);
+ 
+@@ -74,6 +74,7 @@ private:
+ 
+   // Target intrinsic params
+   int markers_x_;                                        // Number of markers along X axis
++  int first_marker_id_ = 0;                              // First dictionary ID in the board
+   int markers_y_;                                        // Number of markers along Y axis
+   int marker_size_;                                      // Marker size in pixels
+   int separation_;                                       // Marker separation distance in pixels
+diff --git a/moveit_calibration_plugins/handeye_calibration_target/src/handeye_target_aruco.cpp b/moveit_calibration_plugins/handeye_calibration_target/src/handeye_target_aruco.cpp
+index 9f54bb0..1cf9596 100644
+--- a/moveit_calibration_plugins/handeye_calibration_target/src/handeye_target_aruco.cpp
++++ b/moveit_calibration_plugins/handeye_calibration_target/src/handeye_target_aruco.cpp
+@@ -41,6 +41,7 @@ namespace moveit_handeye_calibration
+ HandEyeArucoTarget::HandEyeArucoTarget()
+ {
+   parameters_.push_back(Parameter("markers, X", Parameter::ParameterType::Int, 3));
++  parameters_.push_back(Parameter("first marker ID", Parameter::ParameterType::Int, 0));
+   parameters_.push_back(Parameter("markers, Y", Parameter::ParameterType::Int, 4));
+   parameters_.push_back(Parameter("marker size (px)", Parameter::ParameterType::Int, 200));
+   parameters_.push_back(Parameter("marker separation (px)", Parameter::ParameterType::Int, 20));
+@@ -58,6 +59,7 @@ HandEyeArucoTarget::HandEyeArucoTarget()
+ bool HandEyeArucoTarget::initialize()
+ {
+   int markers_x;
++  int first_marker_id;
+   int markers_y;
+   int marker_size;
+   int separation;
+@@ -67,21 +69,21 @@ bool HandEyeArucoTarget::initialize()
+   float marker_measured_separation;
+ 
+   target_params_ready_ =
+-      getParameter("markers, X", markers_x) && getParameter("markers, Y", markers_y) &&
++      getParameter("markers, X", markers_x) && getParameter("first marker ID", first_marker_id) && getParameter("markers, Y", markers_y) &&
+       getParameter("marker size (px)", marker_size) && getParameter("marker separation (px)", separation) &&
+       getParameter("marker border (bits)", border_bits) && getParameter("ArUco dictionary", dictionary_id) &&
+       getParameter("measured marker size (m)", marker_measured_size) &&
+       getParameter("measured separation (m)", marker_measured_separation) &&
+-      setTargetIntrinsicParams(markers_x, markers_y, marker_size, separation, border_bits, dictionary_id) &&
++      setTargetIntrinsicParams(markers_x, markers_y, marker_size, separation, border_bits, dictionary_id, first_marker_id) &&
+       setTargetDimension(marker_measured_size, marker_measured_separation);
+ 
+   return target_params_ready_;
+ }
+ 
+ bool HandEyeArucoTarget::setTargetIntrinsicParams(int markers_x, int markers_y, int marker_size, int separation,
+-                                                  int border_bits, const std::string& dictionary_id)
++                                                  int border_bits, const std::string& dictionary_id, int first_marker_id)
+ {
+-  if (markers_x <= 0 || markers_y <= 0 || marker_size <= 0 || separation <= 0 || border_bits <= 0 ||
++  if (markers_x <= 0 || markers_y <= 0 || marker_size <= 0 || separation <= 0 || border_bits <= 0 || first_marker_id < 0 ||
+       ARUCO_DICTIONARY.find(dictionary_id) == ARUCO_DICTIONARY.end())
+   {
+     RCLCPP_ERROR_STREAM_THROTTLE(LOGGER_CALIBRATION_TARGET, clock, LOG_THROTTLE_PERIOD,
+@@ -105,6 +107,11 @@ bool HandEyeArucoTarget::setTargetIntrinsicParams(int markers_x, int markers_y,
+   const auto& it = ARUCO_DICTIONARY.find(dictionary_id);
+   dictionary_id_ = it->second;
+ 
++  const auto dictionary = cv::aruco::getPredefinedDictionary(dictionary_id_);
++  if (static_cast<long long>(first_marker_id) + static_cast<long long>(markers_x) * markers_y > dictionary->bytesList.rows)
++    return false;
++  first_marker_id_ = first_marker_id;
++
+   return true;
+ }
+ 
+@@ -141,6 +148,8 @@ bool HandEyeArucoTarget::createTargetImage(cv::Mat& image) const
+     cv::Ptr<cv::aruco::Dictionary> dictionary = cv::aruco::getPredefinedDictionary(dictionary_id_);
+     cv::Ptr<cv::aruco::GridBoard> board =
+         cv::aruco::GridBoard::create(markers_x_, markers_y_, float(marker_size_), float(separation_), dictionary);
++    for (auto& id : board->ids)
++      id += first_marker_id_;
+ 
+     // Create target image
+     board->draw(image_size, image, separation_, border_bits_);
+@@ -164,6 +173,8 @@ bool HandEyeArucoTarget::detectTargetPose(cv::Mat& image)
+     cv::Ptr<cv::aruco::Dictionary> dictionary = cv::aruco::getPredefinedDictionary(dictionary_id_);
+     cv::Ptr<cv::aruco::GridBoard> board =
+         cv::aruco::GridBoard::create(markers_x_, markers_y_, marker_size_real_, marker_separation_real_, dictionary);
++    for (auto& id : board->ids)
++      id += first_marker_id_;
+     aruco_mutex_.unlock();
+     cv::Ptr<cv::aruco::DetectorParameters> params_ptr(new cv::aruco::DetectorParameters());
+ #if CV_MAJOR_VERSION == 3 && CV_MINOR_VERSION == 2

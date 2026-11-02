@@ -1,0 +1,8 @@
+{
+  "motion_requested": false,
+  "camera_opened": false,
+  "status": "unavailable",
+  "error": "七个电机的新反馈未在期限内到齐；没有更新运动目标",
+  "log_file": "/home/a/ArmHub/logs/panthera_ht/20261019T031532_313818Z.jsonl",
+  "motion_command_events": 0
+}

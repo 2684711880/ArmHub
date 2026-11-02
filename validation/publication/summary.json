@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-02",
+  "scope": "offline repository publication checks; no hardware or camera opened",
+  "core": {
+    "passed": 11,
+    "environment": "system Python 3.10, clean staged checkout"
+  },
+  "full": {
+    "passed": 255,
+    "failed": 0,
+    "errors": 0,
+    "seconds": 47.228,
+    "environment": ".venv_lerobot; existing SDK; Matplotlib 3.9.4"
+  },
+  "clean_checkout": {
+    "path": "/tmp/armhub-publication-clean-ec0gnexx",
+    "source": "git checkout-index from staged publication tree",
+    "reused_build_artifacts": false,
+    "old_project_required": false,
+    "sdk_build": true,
+    "sdk_import": true,
+    "commission_safe_binding": true,
+    "ros_sim_package_build": true,
+    "core_checks_after_build": true,
+    "note": "System ROS/build dependencies were already installed; this is not a fresh OS installation test."
+  },
+  "sources": {
+    "model_hashes_verified": 80,
+    "sdk_hashes_verified": 968,
+    "all_locked_files_versioned": true
+  },
+  "checks": {
+    "all_project_shell_scripts_bash_syntax": true,
+    "lerobot_import_config_gravity_check": true,
+    "pip_check": "No broken requirements found."
+  },
+  "local_training_metadata": {
+    "dataset": "local/blue_to_box_clean_01",
+    "episodes": 20,
+    "frames": 4142,
+    "fps": 20,
+    "checkpoint": "blue_to_box_act_v1",
+    "training_step": 20000,
+    "chunk_size": 50,
+    "n_action_steps": 10,
+    "data_and_weights_uploaded": false
+  },
+  "not_run": [
+    "physical arm or camera connection",
+    "robot motion",
+    "Gazebo/MoveIt runtime acceptance",
+    "RViz hand-eye build or launch",
+    "training",
+    "policy inference or evaluation",
+    "grasp success-rate measurement"
+  ],
+  "ci": {
+    "template": "ci/github-actions-offline.yml",
+    "automated_runs_enabled": false,
+    "reason": "GitHub OAuth authorization lacks workflow scope; source publication does not require it."
+  }
+}

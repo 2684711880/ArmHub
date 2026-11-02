@@ -1,0 +1,15 @@
+{
+  "cause": "single 250ms async-read timeout closed preview despite living SDK read thread",
+  "fix": "retry transient timeout; stop after 2 seconds without fresh frames",
+  "tests_passed": 42,
+  "real_camera": "Intel RealSense D435",
+  "serial": "909512070210",
+  "observed_frames": 169,
+  "observed_frame_age_s": 0.01121,
+  "observed_shape": [
+    480,
+    640,
+    3
+  ],
+  "physical_arm_connected_by_agent": false
+}

@@ -1,0 +1,22 @@
+{
+  "status": "software_checks_passed_hardware_acceptance_pending",
+  "checks": {
+    "drawing_controller": 8,
+    "drawing_ui": 2,
+    "movel_regression": 4,
+    "execution_regression": 8
+  },
+  "screenshot": "validation/drawing_panel/interface.png",
+  "replay_source": "logs/movel/pen_square_execute_20261019",
+  "startup_policy": "No automatic hardware connection, enable, home, gripper or motion",
+  "hardware_startup": {
+    "status": "failed",
+    "mode": "live_read_only_connection",
+    "reason": "USB/CAN board detected; motors 1-7 did not provide complete fresh feedback",
+    "driver_log": "/home/a/ArmHub/logs/panthera_ht/20261019T063059_445253Z.jsonl",
+    "motor_command_packets": 0,
+    "software_execution_enabled": false
+  },
+  "boundaries": "Existing CLI physical measurements remain separate from GUI physical acceptance",
+  "fk_snapshot_check": "Pinocchio rotation/transform views copied per sample; regression verifies earlier snapshots survive later FK calls"
+}

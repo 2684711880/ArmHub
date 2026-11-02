@@ -1,0 +1,21 @@
+test_terminal_speed_cap_can_close_measured_lag_before_timeout (test_tracking_hold.TerminalArrivalTests) ... ERROR
+test_continuing_position_drift_cannot_confirm_hold (test_tracking_hold.TrackingHoldTests) ... ok
+test_position_stable_hold_is_confirmed_despite_velocity_spikes (test_tracking_hold.TrackingHoldTests) ... ok
+test_task_hold_returns_then_confirms_on_regular_feedback_ticks (test_tracking_hold.TrackingHoldTests) ... ok
+
+======================================================================
+ERROR: test_terminal_speed_cap_can_close_measured_lag_before_timeout (test_tracking_hold.TerminalArrivalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/a/ArmHub/tests/test_tracking_hold.py", line 86, in test_terminal_speed_cap_can_close_measured_lag_before_timeout
+    clock.sleep(.025);result=arm.advance_reference_trajectory()
+  File "/home/a/ArmHub/armhub/adapters/panthera_ht.py", line 391, in advance_reference_trajectory
+    return session.step(feedback=feedback)
+  File "/home/a/ArmHub/armhub/execution.py", line 71, in step
+    raise TimeoutError('平滑实物运动到位超时')
+TimeoutError: 平滑实物运动到位超时
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.046s
+
+FAILED (errors=1)

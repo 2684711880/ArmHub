@@ -1,0 +1,161 @@
+{
+  "status": "passed",
+  "mode": "offline_no_hardware",
+  "cases": [
+    {
+      "case": "home_historical_fixture",
+      "execution_backend": "ruckig_stream",
+      "duration_s": 10.702333541849967,
+      "reference_period_s": 0.05,
+      "reference_max_velocity_rad_s": [
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "reference_max_acceleration_rad_s2": [
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8
+      ],
+      "reference_max_jerk_rad_s3": [
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0
+      ],
+      "planned_reference_samples": 216,
+      "reference_start_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reference_end_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collision_check": {
+        "samples": 216,
+        "step_rad": 0.02,
+        "collision_pairs_checked": 17,
+        "scope": "ruckig_reference_self_collision_only"
+      },
+      "sampled_peak_velocity_rad_s": [
+        0.05206920863124931,
+        0.1,
+        0.04831128849230787,
+        0.053343076223138094,
+        0.04988663283043446,
+        0.0
+      ],
+      "sampled_peak_acceleration_rad_s2": [
+        0.45254679579510954,
+        0.631437678969151,
+        0.43879567521585616,
+        0.4602003422995527,
+        0.4439146200353755,
+        0.0
+      ],
+      "sampled_peak_jerk_rad_s3": [
+        4.000000000000143,
+        4.000000000000766,
+        4.000000000002384,
+        4.000000000000828,
+        4.000000000000475,
+        0.0
+      ]
+    },
+    {
+      "case": "move_to_z_plus_1cm_fixture",
+      "execution_backend": "ruckig_stream",
+      "duration_s": 2.0,
+      "reference_period_s": 0.05,
+      "reference_max_velocity_rad_s": [
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "reference_max_acceleration_rad_s2": [
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8
+      ],
+      "reference_max_jerk_rad_s3": [
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0
+      ],
+      "planned_reference_samples": 41,
+      "reference_start_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reference_end_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collision_check": {
+        "samples": 41,
+        "step_rad": 0.02,
+        "collision_pairs_checked": 17,
+        "scope": "ruckig_reference_self_collision_only"
+      },
+      "sampled_peak_velocity_rad_s": [
+        1.8027243369890528e-07,
+        0.01925994317577069,
+        0.020916002512443865,
+        0.0015095052622484948,
+        1.705363748667059e-07,
+        8.932177174713104e-09
+      ],
+      "sampled_peak_acceleration_rad_s2": [
+        0.0,
+        0.27712078938941875,
+        0.288494632817887,
+        0.07740940832515886,
+        0.0,
+        0.0
+      ],
+      "sampled_peak_jerk_rad_s3": [
+        0.0,
+        4.000000000001336,
+        4.000000000001336,
+        4.000000000001336,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "note": "实际固件速度为上限接口；离线参考约束通过不证明实物平顺性"
+}

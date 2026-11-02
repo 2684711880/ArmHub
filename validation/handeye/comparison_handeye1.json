@@ -1,0 +1,71 @@
+{
+  "official_xyz_mm": [
+    -89.2675602150106,
+    4.825041785322462,
+    64.09072416662598
+  ],
+  "new_xyz_mm": [
+    -84.9784,
+    13.2455,
+    58.796
+  ],
+  "delta_xyz_mm": [
+    4.2891602150106065,
+    8.420458214677538,
+    -5.2947241666259774
+  ],
+  "translation_difference_mm": 10.83213348772131,
+  "official_rpy_xyz_deg": [
+    -109.28895061232907,
+    -1.7687382272044265,
+    -86.2795580679465
+  ],
+  "new_rpy_xyz_deg": [
+    -109.05723946339812,
+    -0.16638659164354982,
+    -90.22183196113416
+  ],
+  "relative_rotation_deg": 4.2580342007450565,
+  "sample_count": 17,
+  "new_dataset_board_scatter": {
+    "official": {
+      "position_rms_mm": 11.143752584871693,
+      "position_max_mm": 16.080800179019917,
+      "angle_rms_deg": 2.0948809060488514,
+      "angle_max_deg": 3.4770583391231673
+    },
+    "new": {
+      "position_rms_mm": 5.629764980517439,
+      "position_max_mm": 10.45395608929163,
+      "angle_rms_deg": 1.3392116435367827,
+      "angle_max_deg": 2.5922180976046154
+    }
+  },
+  "new_T_tcp_camera": [
+    [
+      -0.0038716721098201456,
+      -0.32652076097144594,
+      0.9451821003434744,
+      -0.0849784
+    ],
+    [
+      -0.9999882884306535,
+      -0.0014806548304872602,
+      -0.004607674337958667,
+      0.0132455
+    ],
+    [
+      0.0029039897737024867,
+      -0.9451888701819866,
+      -0.3265112042908994,
+      0.058796
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "note": "Raw saved camera pose quaternion, normalized by scipy. Same gripper_center->optical frame. Board scatter is dataset consistency, not external absolute accuracy. Active calibration unchanged."
+}

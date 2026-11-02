@@ -1,0 +1,16 @@
+{
+  "source": "recorded_hardware_feedback_replay_only",
+  "hardware_connected_during_fix": false,
+  "run": "/home/a/ArmHub/logs/j6_identification/20261019T085244_322916Z",
+  "original_stop": true,
+  "trigger_joint": "joint4",
+  "reported_velocity_rad_s": -0.03769911080598831,
+  "old_gate_rad_s": 0.03,
+  "j6_position_span_rad": 0.0,
+  "max_joint_position_span_rad": 0.0006283195689320564,
+  "fix": "position-window static detection; raw velocity diagnostic only; bounded in-place window retry",
+  "replay_before": "spike_replay_before.log",
+  "tests_after": "spike_replay_after.log",
+  "retry_plan_preview": "retry_origin_preview/summary.json",
+  "physical_retry": "pending user execution"
+}

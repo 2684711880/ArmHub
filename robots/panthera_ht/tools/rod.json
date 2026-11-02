@@ -1,0 +1,8 @@
+{
+  "name": "rod_tip",
+  "parent_frame": "gripper_center",
+  "rod_length_m": 0.04,
+  "tcp_xyz_mm": [0, 0, 0],
+  "tcp_rpy_deg": [0, 0, 0],
+  "status": "reference_project_configuration_not_independently_validated"
+}

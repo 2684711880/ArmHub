@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "armhub"
+version = "0.1.0"
+description = "统一机械臂接口：机器人配置与执行后端分离"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+armhub = "armhub.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["armhub*", "apps*", "perception*"]
+
+[tool.setuptools.package-data]
+armhub = ["robots/*.json"]
+
+"apps.hole_approach" = ["config.yaml"]

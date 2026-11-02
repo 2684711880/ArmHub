@@ -1,0 +1,22 @@
+test_capture_uses_measured_torque_and_preserves_all_feedback (test_j6_collection.CollectionTests) ... ok
+test_complete_session_retains_both_directions_and_holdout_data (test_j6_collection.CollectionTests) ... ok
+test_continuous_position_motion_times_out_without_accepting_window (test_j6_collection.CollectionTests) ... ok
+test_hardware_trace_velocity_spike_retries_same_pose_and_recovers (test_j6_collection.CollectionTests) ... ok
+test_hold_failure_is_saved_and_never_claims_completion (test_j6_collection.CollectionTests) ... ok
+test_hold_targets_do_not_ratchet_toward_quantized_feedback (test_j6_collection.CollectionTests) ... ok
+test_interrupt_keeps_partial_files_and_confirms_hold (test_j6_collection.CollectionTests) ... [1/1] train J3偏移=+0° J6偏移=+0° positive：停稳采样
+ok
+test_limits_and_collisions_fail_before_any_motion (test_j6_collection.CollectionTests) ... ok
+test_near_limit_fault_stale_or_drift_cannot_be_reported_as_static (test_j6_collection.CollectionTests) ... ok
+test_parser_rejects_execute_with_offline_or_invalid_scan (test_j6_collection.CollectionTests) ... ok
+test_plan_has_opposite_approaches_and_separate_validation_group (test_j6_collection.CollectionTests) ... ok
+test_small_position_drift_discards_old_window_and_waits_in_place (test_j6_collection.CollectionTests) ...   drift_then_settle 位置窗口发生变化，在原位重新等待停稳（第1次）
+ok
+test_steps_reuse_bounded_single_axis_and_preserve_gripper_and_caps (test_j6_collection.CollectionTests) ... ok
+test_zero_boundary_noise_uses_fixed_legal_hold_without_zeroing_encoder (test_j6_collection.CollectionTests) ... ok
+test_payload_first_moment_features_match_pinocchio_added_mass (test_j6_collection.DynamicsFeatureTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.676s
+
+OK

@@ -1,0 +1,16 @@
+{
+  "status": "software_checks_passed",
+  "hardware_connected": false,
+  "physical_motion_executed": false,
+  "tests_passed": 11,
+  "saved_prepare_source": "hardware",
+  "prepare_uses_existing_settings": true,
+  "official_episode_time_s_inf_parse_verified": true,
+  "offline_view_test": {
+    "source": "synthetic_only",
+    "episode": 0,
+    "frames": 40,
+    "rrd": "validation/teaching_panel/official_trial_view.rrd"
+  },
+  "official_import_config_check": "passed"
+}

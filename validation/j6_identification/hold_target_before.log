@@ -1,0 +1,16 @@
+test_hold_targets_do_not_ratchet_toward_quantized_feedback (test_j6_collection.CollectionTests) ... ERROR
+
+======================================================================
+ERROR: test_hold_targets_do_not_ratchet_toward_quantized_feedback (test_j6_collection.CollectionTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/a/ArmHub/tests/test_j6_collection.py", line 95, in test_hold_targets_do_not_ratchet_toward_quantized_feedback
+    move_one_axis(arm,target,math.radians(2),Kinematics())
+  File "/home/a/ArmHub/examples/collect_j6_gravity.py", line 137, in move_one_axis
+    raise RuntimeError(f'运动前 J{i+1} 偏离计划保持角度')
+RuntimeError: 运动前 J4 偏离计划保持角度
+
+----------------------------------------------------------------------
+Ran 1 test in 0.036s
+
+FAILED (errors=1)

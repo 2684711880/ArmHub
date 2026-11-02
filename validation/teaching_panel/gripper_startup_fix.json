@@ -1,0 +1,24 @@
+{
+  "status": "software_checks_passed",
+  "tests_passed": 30,
+  "hardware_connected": false,
+  "physical_motion_executed": false,
+  "confirmed_error": "user reported initial feedback torque above 1 SDK Nm",
+  "idle_hold_zero_padding_regression": "reproduced then fixed",
+  "patch_roundtrip_and_hash": "passed",
+  "prepared_gripper": {
+    "target_rad": 1.6,
+    "speed_rad_s": 0.3,
+    "torque_cap_nm": 0.3
+  },
+  "recorded_target_simulation": {
+    "source": "recorded targets; synthetic delayed perfect tracking, zero feedback torque",
+    "frames": 602,
+    "initial_command_rad": 1.6,
+    "max_command_slew_rad_s": 0.30000000000000177,
+    "assist_start_s": 11.0,
+    "assist_end_s": 15.850000381469727,
+    "minimum_feedforward_nm": -0.1
+  },
+  "physical_grip_verified": false
+}

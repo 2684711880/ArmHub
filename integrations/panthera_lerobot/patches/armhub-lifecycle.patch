@@ -1,0 +1,369 @@
+--- a/Panthera-HT_robot_lerobot/src/lerobot_robot_panthera/panthera_dual_follower.py
++++ b/Panthera-HT_robot_lerobot/src/lerobot_robot_panthera/panthera_dual_follower.py
+@@ -125,7 +125,7 @@
+     left_param_path: str = "robot_param/LeftFollower.yaml"
+ 
+     right_param_path: str = "robot_param/Follower.yaml"
+-    cameras: dict[str, CameraConfig] = field(default_factory=default_cameras_factory)
++    cameras: dict[str, CameraConfig] = field(default_factory=dict)
+ 
+ class PantheraDualFollower(Robot):
+     """
+--- a/Panthera-HT_robot_lerobot/src/lerobot_robot_panthera/panthera_follower.py
++++ b/Panthera-HT_robot_lerobot/src/lerobot_robot_panthera/panthera_follower.py
+@@ -173,7 +173,7 @@
+     # Path to the Panthera specific config file (e.g. Follower.yaml)
+     # Can be absolute or relative to project root
+     param_path: str = "robot_param/Follower.yaml"
+-    cameras: dict[str, CameraConfig] = field(default_factory=default_cameras_factory)
++    cameras: dict[str, CameraConfig] = field(default_factory=dict)
+ 
+ class PantheraFollower(Robot):
+     """
+@@ -323,24 +323,8 @@
+         logger.info(f"{self} connected.")
+ 
+     def disconnect(self):
+-        if not self.is_connected:
+-            return
+-
+-        try:
+-            logger.info("Moving to zero position before disconnecting...")
+-            self.move_to_zero_position(duration_s=5.0)
+-        except Exception as e:
+-            logger.warning(f"Failed to move to zero position: {e}")
+-
+-        # Stop thread
+-        if self._thread:
+-            self._stop_event.set()
+-            self._thread.join(timeout=2.0)
+-            self._thread = None
+-
+-        self.bus.disconnect()
+-        for cam in self.cameras.values():
+-            cam.disconnect()
++        from armhub_lerobot_runtime import disconnect_device
++        disconnect_device(self)
+ 
+     @property
+     def is_calibrated(self):
+@@ -577,8 +561,12 @@
+                     # Capture hold position when first entering hold mode
+                     if hold_position is None:
+                         hold_position = list(current_pos)
+-                        if len(hold_position) < total_motors:
+-                            hold_position.extend([0.0] * (total_motors - len(hold_position)))
++                        # get_current_pos() returns six arm joints, not the gripper.
++                        # Capture its measured opening; padding zero would command a close.
++                        if len(hold_position) == total_motors - 1:
++                            hold_position.append(float(robot.get_current_pos_gripper()))
++                        if len(hold_position) != total_motors:
++                            raise RuntimeError("Idle hold requires all measured motor positions")
+                         logger.info("Entering position hold mode and holding the current pose")
+ 
+                     target_vel = [0.0] * total_motors
+@@ -637,13 +625,7 @@
+                 logger.error(f"Error in control loop: {e}")
+                 time.sleep(0.1)
+ 
+-        # Cleanup: zero torque
+-        try:
+-            for i in range(total_motors):
+-                robot.Motors[i].pos_vel_tqe_kp_kd(0, 0, 0, 0, 0)
+-            robot.motor_send_cmd()
+-        except:
+-            pass
++        # ArmHub disconnect_device owns shutdown and measured-pose hold.
+ 
+     def move_to_initial_position(self, duration_s=5.0):
+         """
+@@ -653,6 +635,8 @@
+         Args:
+             duration_s: Move duration in seconds; defaults to 5 seconds
+         """
++        logger.info("ArmHub: 自动准备位/回零已关闭，请在采集前手动确认姿态")
++        return
+ 
+         INITIAL_POSITION = [1.57, 1.57, 1.57, -1.57, 0.0, 0.0, 1.6]
+ 
+@@ -748,6 +732,8 @@
+         Args:
+             duration_s: Move duration in seconds; defaults to 5 seconds
+         """
++        logger.info("ArmHub: 自动准备位/回零已关闭，请在采集前手动确认姿态")
++        return
+         ZERO_POSITION = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.6]
+ 
+         logger.info(f"Moving smoothly to the zero position: {ZERO_POSITION} (duration {duration_s}s)")
+--- a/Panthera-HT_robot_lerobot/src/lerobot_robot_panthera/panthera_leader.py
++++ b/Panthera-HT_robot_lerobot/src/lerobot_robot_panthera/panthera_leader.py
+@@ -213,28 +213,8 @@
+         logger.info(f"{self} connected and started the gravity compensation thread.")
+ 
+     def disconnect(self):
+-        """
+-        Disconnect the Panthera leader and stop the gravity compensation thread.
+-
+-        Stops the background thread before disconnecting the motor bus.
+-        """
+-
+-        if not self.is_connected:
+-            return
+-
+-        try:
+-            logger.info("Leader Moving to zero position before disconnecting...")
+-            self.move_to_zero_position(duration_s=5.0)
+-        except Exception as e:
+-            logger.warning(f"Leader failed to move to zero position: {e}")
+-
+-        if self._thread:
+-            self._stop_event.set()
+-
+-            self._thread.join(timeout=2.0)
+-            self._thread = None
+-
+-        self.bus.disconnect()
++        from armhub_lerobot_runtime import disconnect_device
++        disconnect_device(self)
+ 
+     def calibrate(self):
+         """
+@@ -393,13 +373,7 @@
+                 time.sleep(0.1)
+ 
+ 
+-        try:
+-            zeros = [0.0] * num_motors
+-            robot.pos_vel_tqe_kp_kd(zeros, zeros, zeros, zeros, zeros)
+-
+-            robot.gripper_control_MIT(0.0, 0.0, 0.0, 0.0, 0.0)
+-        except Exception as e:
+-            logger.warning(f"Cleanup failed: {e}")
++        # ArmHub disconnect_device owns shutdown and measured-pose hold.
+ 
+     def move_to_initial_position(self, duration_s=5.0):
+         """
+@@ -409,6 +383,8 @@
+         Args:
+             duration_s: Move duration in seconds; defaults to 5 seconds
+         """
++        logger.info("ArmHub: 自动准备位/回零已关闭，请在采集前手动确认姿态")
++        return
+ 
+         INITIAL_POSITION = [1.57, 1.57, 1.57, -1.57, 0.0, 0.0, 1.6]
+ 
+@@ -495,6 +471,8 @@
+         Args:
+             duration_s: Move duration in seconds; defaults to 5 seconds
+         """
++        logger.info("ArmHub: 自动准备位/回零已关闭，请在采集前手动确认姿态")
++        return
+         ZERO_POSITION = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.6]
+ 
+         logger.info(f"Leader moving smoothly to the zero position: {ZERO_POSITION} (duration {duration_s}s)")
+--- a/lerobot/src/lerobot/datasets/lerobot_dataset.py
++++ b/lerobot/src/lerobot/datasets/lerobot_dataset.py
+@@ -509,9 +509,7 @@
+         """Creates metadata for a LeRobotDataset."""
+         obj = cls.__new__(cls)
+         obj.repo_id = repo_id
+-        #obj.root = Path(root) if root is not None else HF_LEROBOT_HOME / repo_id
+-        obj.root = Path(root) / repo_id if root is not None else HF_LEROBOT_HOME / repo_id
+-        print(f"DEBUG: root={root}, repo_id={repo_id}, obj.root={obj.root}")
++        obj.root = Path(root) if root is not None else HF_LEROBOT_HOME / repo_id
+         
+         obj.root.mkdir(parents=True, exist_ok=False)
+ 
+--- a/lerobot/src/lerobot/scripts/lerobot_record.py
++++ b/lerobot/src/lerobot/scripts/lerobot_record.py
+@@ -205,8 +205,12 @@
+     play_sounds: bool = True
+     # Resume recording on an existing dataset.
+     resume: bool = False
++    # ArmHub: explicit per-round preparation, start, keep/retry.
++    manual_review: bool = False
+ 
+     def __post_init__(self):
++        if self.manual_review and (self.teleop is not None or self.policy is not None):
++            raise ValueError("manual_review only supports single-arm manual teaching")
+         # HACK: We parse again the cli args here to get the pretrained path if there was one.
+         policy_path = parser.get_path_arg("policy")
+         if policy_path:
+@@ -400,7 +404,10 @@
+             dataset.add_frame(frame)
+ 
+         if display_data:
+-            log_rerun_data(observation=obs_processed, action=action_values)
++            preview = getattr(robot, "_armhub_continuous_preview", None)
++            shown_obs = ({k: v for k, v in obs_processed.items() if k not in robot.cameras}
++                         if preview is not None else obs_processed)
++            log_rerun_data(observation=shown_obs, action=action_values)
+ 
+         dt_s = time.perf_counter() - start_loop_t
+         precise_sleep(1 / fps - dt_s)
+@@ -410,6 +417,8 @@
+ 
+ @parser.wrap()
+ def record(cfg: RecordConfig) -> LeRobotDataset:
++    if cfg.manual_review and (cfg.teleop is not None or cfg.policy is not None or cfg.dataset.num_episodes < 1):
++        raise ValueError("manual_review requires manual single-arm teaching and a positive success goal")
+     init_logging()
+     logging.info(pformat(asdict(cfg)))
+     if cfg.display_data:
+@@ -437,8 +446,15 @@
+ 
+     dataset = None
+     listener = None
++    continuous_preview = None
+ 
+     try:
++        if cfg.manual_review and cfg.display_data:
++            from continuous_preview import ContinuousPreview
++            continuous_preview = ContinuousPreview(robot)
++        if cfg.manual_review:
++            from manual_review import prepare_review_dataset
++            cfg.resume = prepare_review_dataset(cfg.dataset.root, cfg.dataset.repo_id)
+         if cfg.resume:
+             dataset = LeRobotDataset(
+                 cfg.dataset.repo_id,
+@@ -482,7 +498,8 @@
+                 },
+             )
+ 
+-        robot.connect()
++        if not cfg.manual_review:
++            robot.connect()
+ 
+         if teleop is not None:
+             # 等待从臂串口稳定后再连接主臂，避免 CANboard Connection disconnected 错误
+@@ -497,7 +514,7 @@
+             teleop.move_to_initial_position(duration_s=5.0)  # 5秒平滑移动
+             logging.info("✓ Leader 已到达初始位置")
+ 
+-        if hasattr(robot, 'move_to_initial_position'):
++        if not cfg.manual_review and hasattr(robot, 'move_to_initial_position'):
+             logging.info("正在平滑移动 Follower（从臂）到初始位置...")
+             robot.move_to_initial_position(duration_s=5.0)  # 5秒平滑移动
+             logging.info("✓ Follower 已到达初始位置")
+@@ -508,7 +525,7 @@
+ 
+         # ==================== 新增：启用示教模式 ====================
+         # 如果没有 teleop 和 policy，启用机器人的示教模式
+-        if cfg.teleop is None and cfg.policy is None:
++        if not cfg.manual_review and cfg.teleop is None and cfg.policy is None:
+             if hasattr(robot, 'enable_teaching_mode'):
+                 robot.enable_teaching_mode()
+                 logging.info("✓ 已启用机器人示教模式：可以手动移动机器人进行数据采集")
+@@ -519,9 +536,14 @@
+         listener, events = init_keyboard_listener()
+ 
+         with VideoEncodingManager(dataset):
+-            recorded_episodes = 0
++            recorded_episodes = dataset.num_episodes if cfg.manual_review else 0
+             while recorded_episodes < cfg.dataset.num_episodes and not events["stop_recording"]:
+-                log_say(f"Recording episode {dataset.num_episodes}", cfg.play_sounds)
++                if cfg.manual_review:
++                    from manual_review import begin_round
++                    if not begin_round(robot, events, dataset.num_episodes, cfg.dataset.num_episodes):
++                        break
++                log_say(f"正在录制第 {dataset.num_episodes+1}/{cfg.dataset.num_episodes} 条" if cfg.manual_review
++                        else f"Recording episode {dataset.num_episodes}", cfg.play_sounds)
+                 record_loop(
+                     robot=robot,
+                     events=events,
+@@ -541,7 +563,20 @@
+ 
+                 # Execute a few seconds without recording to give time to manually reset the environment
+                 # Skip reset for the last episode to be recorded
+-                if not events["stop_recording"] and (
++                if cfg.manual_review:
++                    from manual_review import review_round, write_review_event, clear_events
++                    decision = review_round(robot, dataset, events)
++                    if decision != "keep":
++                        write_review_event(dataset, decision)
++                        dataset.clear_episode_buffer()
++                        if decision == "quit":
++                            break
++                        clear_events(events)
++                        from manual_review import reset_ready
++                        reset_ready(robot)
++                        continue
++
++                if not cfg.manual_review and not events["stop_recording"] and (
+                     (recorded_episodes < cfg.dataset.num_episodes - 1) or events["rerecord_episode"]
+                 ):
+                     log_say("Reset the environment", cfg.play_sounds)
+@@ -553,7 +588,7 @@
+                         teleop.move_to_initial_position(duration_s=5.0)
+                         logging.info("✓ Leader 已回到初始位置")
+ 
+-                    if hasattr(robot, 'move_to_initial_position'):
++                    if not cfg.manual_review and hasattr(robot, 'move_to_initial_position'):
+                         logging.info("正在回到初始位置（Follower 从臂）...")
+                         robot.move_to_initial_position(duration_s=5.0)
+                         logging.info("✓ Follower 已回到初始位置")
+@@ -578,9 +613,21 @@
+                     dataset.clear_episode_buffer()
+                     continue
+ 
++                kept_frames = dataset.episode_buffer["size"]
+                 dataset.save_episode()
++                if cfg.manual_review:
++                    write_review_event(dataset, "kept", frames=kept_frames)
++                    print(f"已保留成功回合：{dataset.num_episodes}/{cfg.dataset.num_episodes}", flush=True)
++                    from manual_review import reset_ready
++                    reset_ready(robot)
+                 recorded_episodes += 1
+     finally:
++        if continuous_preview is not None:
++            try:
++                if robot.bus.is_connected:
++                    robot.disconnect()
++            finally:
++                continuous_preview.close()
+         log_say("Stop recording", cfg.play_sounds, blocking=True)
+ 
+         if dataset:
+--- a/lerobot/src/lerobot/scripts/lerobot_replay.py
++++ b/lerobot/src/lerobot/scripts/lerobot_replay.py
+@@ -107,25 +107,27 @@
+ 
+     robot.connect()
+ 
+-    log_say("Replaying episode", cfg.play_sounds, blocking=True)
+-    for idx in range(len(episode_frames)):
+-        start_episode_t = time.perf_counter()
++    try:
++        log_say("Replaying episode", cfg.play_sounds, blocking=True)
++        for idx in range(len(episode_frames)):
++            start_episode_t = time.perf_counter()
+ 
+-        action_array = actions[idx][ACTION]
+-        action = {}
+-        for i, name in enumerate(dataset.features[ACTION]["names"]):
+-            action[name] = action_array[i]
++            action_array = actions[idx][ACTION]
++            action = {}
++            for i, name in enumerate(dataset.features[ACTION]["names"]):
++                action[name] = action_array[i]
+ 
+-        robot_obs = robot.get_observation()
++            robot_obs = robot.get_observation()
+ 
+-        processed_action = robot_action_processor((action, robot_obs))
++            processed_action = robot_action_processor((action, robot_obs))
+ 
+-        _ = robot.send_action(processed_action)
++            _ = robot.send_action(processed_action)
+ 
+-        dt_s = time.perf_counter() - start_episode_t
+-        precise_sleep(1 / dataset.fps - dt_s)
++            dt_s = time.perf_counter() - start_episode_t
++            precise_sleep(1 / dataset.fps - dt_s)
+ 
+-    robot.disconnect()
++    finally:
++        robot.disconnect()
+ 
+ 
+ def main():

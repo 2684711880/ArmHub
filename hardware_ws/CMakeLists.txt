@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.22)
+project(armhub_panthera_sdk)
+set(CMAKE_CXX_STANDARD 20)
+get_filename_component(ARMHUB_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/.." ABSOLUTE)
+set(SDK_ROOT "${ARMHUB_ROOT}/vendor/panthera/sdk")
+add_subdirectory("${SDK_ROOT}/native" sdk)
+find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
+find_package(pybind11 CONFIG REQUIRED)
+pybind11_add_module(_hightorque_robot "${SDK_ROOT}/bindings.cpp")
+target_link_libraries(_hightorque_robot PRIVATE hightorque_robot)
+set_target_properties(_hightorque_robot PROPERTIES
+    LIBRARY_OUTPUT_DIRECTORY "${SDK_ROOT}/python/hightorque_robot")

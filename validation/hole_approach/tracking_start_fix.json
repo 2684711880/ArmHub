@@ -1,0 +1,12 @@
+{
+  "status": "passed_offline",
+  "reproduction": "stable_feedback_then_tracking_start",
+  "before_preflight_duration_s": 1.1,
+  "after_preflight_duration_s": 0.049999999999272404,
+  "camera_lifetime_s": 0.7,
+  "first_reference_sent_to_fake_driver": true,
+  "stable_window_preserved_s": 0.5,
+  "fresh_observation_gap_limit_s": 0.15,
+  "full_tests_passed": 111,
+  "real_hardware_motion_attempted": false
+}

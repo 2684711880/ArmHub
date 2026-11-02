@@ -1,0 +1,118 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- Checking for module 'glib-2.0'
+--   Found glib-2.0, version 2.72.4
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__std_gnu99
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__std_gnu99 - Success
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Wall
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Wall - Success
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Wshadow
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Wshadow - Success
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Wuninitialized
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Wuninitialized - Success
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Wunused_variable
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Wunused_variable - Success
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Werror_return_type
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Werror_return_type - Success
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Wno_unused_parameter
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Wno_unused_parameter - Success
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Wno_format_zero_length
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Wno_format_zero_length - Success
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Wno_stringop_truncation
+-- Performing Test CMAKE_C_COMPILER_SUPPORTS__Wno_stringop_truncation - Success
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wall
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wall - Success
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wshadow
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wshadow - Success
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wuninitialized
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wuninitialized - Success
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wunused_variable
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wunused_variable - Success
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Werror_return_type
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Werror_return_type - Success
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wno_unused_parameter
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wno_unused_parameter - Success
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wno_format_zero_length
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wno_format_zero_length - Success
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wno_stringop_truncation
+-- Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wno_stringop_truncation - Success
+-- Building LCM 1.5.1 (ABI v1)
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Doxygen was not found; documentation generation will be incomplete
+-- CPack: Packages will be placed under /tmp/armhub-publication-clean-ec0gnexx/hardware_ws/build/packages
+-- Found ament_index_cpp: 1.4.1 (/opt/ros/humble/share/ament_index_cpp/cmake)
+-- Found libserialport library: /tmp/armhub-publication-clean-ec0gnexx/vendor/panthera/sdk/deps/usr/lib/x86_64-linux-gnu/libserialport.so
+-- pinocchio not found, skipping impedance control examples
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter Development Development.Module Development.Embed 
+-- Performing Test HAS_FLTO
+-- Performing Test HAS_FLTO - Success
+-- Found pybind11: /tmp/armhub-publication-clean-ec0gnexx/vendor/panthera/sdk/build_deps/pybind11/include (found version "2.13.6")
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    PYTHON_EXECUTABLE
+
+
+-- Build files have been written to: /tmp/armhub-publication-clean-ec0gnexx/hardware_ws/build
+[ 14%] Building CXX object sdk/third_party/serial_cmake/CMakeFiles/serial_cmake.dir/src/serial.cc.o
+[ 14%] Building C object sdk/third_party/lcm/lcm/CMakeFiles/lcm.dir/eventlog.c.o
+[ 14%] Building CXX object sdk/third_party/serial_cmake/CMakeFiles/serial_cmake.dir/src/impl/unix.cc.o
+[ 14%] Building CXX object sdk/third_party/serial_cmake/CMakeFiles/serial_cmake.dir/src/impl/list_ports/list_ports_linux.cc.o
+[ 17%] Building C object sdk/third_party/lcm/lcm/CMakeFiles/lcm.dir/lcm.c.o
+[ 21%] Building C object sdk/third_party/lcm/lcm/CMakeFiles/lcm.dir/lcm_file.c.o
+/tmp/armhub-publication-clean-ec0gnexx/vendor/panthera/sdk/native/third_party/serial_cmake/src/impl/unix.cc: In member function ‘void serial::Serial::SerialImpl::reconfigurePort()’:
+/tmp/armhub-publication-clean-ec0gnexx/vendor/panthera/sdk/native/third_party/serial_cmake/src/impl/unix.cc:458:28: warning: arithmetic between floating-point type ‘double’ and enumeration type ‘serial::stopbits_t’ is deprecated [-Wdeprecated-enum-float-conversion]
+  458 |     byte_time_ns_ += ((1.5 - stopbits_one_point_five) * bit_time_ns);
+      |                        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[ 25%] Building C object sdk/third_party/lcm/lcm/CMakeFiles/lcm.dir/lcm_memq.c.o
+[ 28%] Building C object sdk/third_party/lcm/lcm/CMakeFiles/lcm.dir/lcm_mpudpm.c.o
+[ 32%] Building C object sdk/third_party/lcm/lcm/CMakeFiles/lcm.dir/lcm_tcpq.c.o
+[ 35%] Building C object sdk/third_party/lcm/lcm/CMakeFiles/lcm.dir/lcm_udpm.c.o
+[ 39%] Building C object sdk/third_party/lcm/lcm/CMakeFiles/lcm.dir/ringbuffer.c.o
+[ 42%] Building C object sdk/third_party/lcm/lcm/CMakeFiles/lcm.dir/udpm_util.c.o
+[ 46%] Linking CXX shared library libserial_cmake.so
+[ 50%] Building C object sdk/third_party/lcm/lcm/CMakeFiles/lcm.dir/lcmtypes/channel_port_map_update_t.c.o
+[ 50%] Built target serial_cmake
+[ 53%] Building C object sdk/third_party/lcm/lcm/CMakeFiles/lcm.dir/lcmtypes/channel_to_port_t.c.o
+[ 57%] Linking C shared library liblcm.so
+[ 57%] Built target lcm
+[ 67%] Building CXX object sdk/CMakeFiles/hightorque_robot.dir/src/hardware/canport.cpp.o
+[ 67%] Building CXX object sdk/CMakeFiles/hightorque_robot.dir/src/hardware/motor.cpp.o
+[ 67%] Building CXX object sdk/CMakeFiles/hightorque_robot.dir/src/parse_robot_params.cpp.o
+[ 71%] Building CXX object sdk/CMakeFiles/hightorque_robot.dir/src/serial_driver.cpp.o
+[ 75%] Building CXX object sdk/CMakeFiles/hightorque_robot.dir/src/hardware/canboard.cpp.o
+[ 78%] Building CXX object sdk/CMakeFiles/hightorque_robot.dir/src/hardware/robot.cpp.o
+[ 82%] Building CXX object sdk/CMakeFiles/hightorque_robot.dir/src/crc/crc8.cpp.o
+[ 85%] Building CXX object sdk/CMakeFiles/hightorque_robot.dir/src/crc/crc16.cpp.o
+[ 89%] Building CXX object sdk/CMakeFiles/hightorque_robot.dir/src/panthera/Panthera.cpp.o
+[ 92%] Linking CXX shared library libhightorque_robot.so
+[ 92%] Built target hightorque_robot
+[ 96%] Building CXX object CMakeFiles/_hightorque_robot.dir/tmp/armhub-publication-clean-ec0gnexx/vendor/panthera/sdk/bindings.cpp.o
+[100%] Linking CXX shared module /tmp/armhub-publication-clean-ec0gnexx/vendor/panthera/sdk/python/hightorque_robot/_hightorque_robot.cpython-310-x86_64-linux-gnu.so
+lto-wrapper: warning: using serial compilation of 7 LTRANS jobs
+[100%] Built target _hightorque_robot

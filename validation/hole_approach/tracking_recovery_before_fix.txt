@@ -1,0 +1,26 @@
+test_feed_continues_through_target_loss_and_stale_camera (test_hole_controller.ControllerTests) ... ok
+test_go_locks_click_observation_and_ignores_later_hole_motion (test_hole_controller.ControllerTests) ... ok
+test_home_is_ruckig_reference_through_shared_runtime (test_hole_controller.ControllerTests) ... ok
+test_old_tracking_ik_cannot_interrupt_feed (test_hole_controller.ControllerTests) ... ok
+test_read_only_rejects_all_motion_keys (test_hole_controller.ControllerTests) ... ok
+test_settings_cancel_pending_motion (test_hole_controller.ControllerTests) ... ok
+test_status_explains_tracking_observation_readiness (test_hole_controller.ControllerTests) ... ok
+test_stop_discards_late_ik_result (test_hole_controller.ControllerTests) ... ok
+test_rest_recovery_starts_after_stationary_preflight (test_tracking_recovery.RecoveryBackendTests) ... ERROR
+test_lost_retracts_and_visible_stops_then_confirms (test_tracking_recovery.RecoveryWorkflowTests) ... ok
+test_stale_camera_holds_instead_of_blind_recovery (test_tracking_recovery.RecoveryWorkflowTests) ... ok
+
+======================================================================
+ERROR: test_rest_recovery_starts_after_stationary_preflight (test_tracking_recovery.RecoveryBackendTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/a/ArmHub/tests/test_tracking_recovery.py", line 22, in test_rest_recovery_starts_after_stationary_preflight
+    actual=arm.start_reference_trajectory(curve,replace=True,reference_started_at=started)
+  File "/home/a/ArmHub/armhub/adapters/panthera_ht.py", line 372, in start_reference_trajectory
+    raise RuntimeError('参考起始时刻已过期，拒绝采用旧时间轴')
+RuntimeError: 参考起始时刻已过期，拒绝采用旧时间轴
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.110s
+
+FAILED (errors=1)

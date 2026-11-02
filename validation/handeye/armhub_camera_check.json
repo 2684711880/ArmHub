@@ -1,0 +1,9 @@
+{
+  "images": 77,
+  "accepted_joint_messages": 0,
+  "marker23_checks_passed": 5,
+  "joint_age_s": null,
+  "image_age_s": 5.430200053524459e-05,
+  "no_motor_commands": true,
+  "timestamp_policy": "host receive; stationary sampling required"
+}

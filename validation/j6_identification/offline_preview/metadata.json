@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "robot": "panthera_ht",
+  "source": "offline_preview",
+  "created_utc": "2026-10-19T08:45:50.471738+00:00",
+  "start_rad": [
+    0.1,
+    0.5,
+    0.6,
+    -0.2,
+    0.3,
+    0.4
+  ],
+  "control": "position_hold_POS_VEL_MAX_TORQUE",
+  "gravity_world_m_s2": [
+    0.0,
+    0.0,
+    -9.81
+  ],
+  "payload_frame": "link6",
+  "regressor_parameters": [
+    "hy_kg_m",
+    "hz_kg_m",
+    "bias_nm"
+  ],
+  "regressor_equation": "measured_tau6 - model_G6 = -gz*hy + gy*hz + bias + residual",
+  "model_gripper_coordinates": "neutral; raw gripper motor rad is not prismatic m",
+  "torque_feedback": "SDK motor feedback decoded as Nm; physical calibration not verified",
+  "model_sha256": "9be065c5bfaf54159a12d74d9c8c0ce74b19e9693dbf0f48a26056ed549beefb",
+  "script_sha256": "dc267304cabe949dd226099d4e6e1db3422167cd2e325b4790b192868fe0574d",
+  "hardware_config": {
+    "device": "/dev/ttyACM0",
+    "motor_config": "motors.yaml",
+    "lower_rad": [
+      -2.4,
+      0.0,
+      0.0,
+      -1.6,
+      -1.7,
+      -2.5
+    ],
+    "upper_rad": [
+      2.4,
+      3.2,
+      4.0,
+      1.6,
+      1.7,
+      2.5
+    ],
+    "torque_caps_nm": [
+      21.0,
+      36.0,
+      36.0,
+      21.0,
+      10.0,
+      3.0
+    ],
+    "gripper_bounds_rad": [
+      0.0,
+      2.0
+    ],
+    "gripper_torque_cap_nm": 1.0,
+    "max_feedback_age_s": 0.15,
+    "feedback_query_period_s": 0.025,
+    "feedback_acquire_timeout_s": 0.6,
+    "stable_window_s": 0.5,
+    "stable_delta_rad": 0.003,
+    "max_step_rad": 0.0872664626,
+    "hold_speed_rad_s": 0.02,
+    "position_tolerance_rad": 0.01,
+    "position_guard_rad": 0.05,
+    "arrival_dwell_s": 0.3,
+    "motion_timeout_margin_s": 5.0,
+    "commissioning_only": true,
+    "gravity_compensation": {
+      "torque_caps_nm": [
+        15.0,
+        30.0,
+        30.0,
+        15.0,
+        5.0,
+        3.0
+      ],
+      "period_s": 0.005,
+      "query_period_s": 0.002,
+      "feedback_timeout_s": 0.05,
+      "max_command_gap_s": 0.1,
+      "max_velocity_rad_s": 2.0,
+      "log_period_s": 0.05
+    },
+    "cartesian": {
+      "start_tolerance_rad": 0.01,
+      "minimum_duration_s": 2.0,
+      "position_tolerance_m": 0.005,
+      "orientation_tolerance_rad": 0.03,
+      "collision_step_rad": 0.02
+    },
+    "home_joints_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "motion_smoothing": {
+      "control_period_s": 0.05,
+      "stream_min_speed_rad_s": 0.005,
+      "acceleration_limits_rad_s2": [
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8
+      ],
+      "jerk_limits_rad_s3": [
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0
+      ],
+      "max_tracking_error_rad": 0.15,
+      "max_cycle_gap_s": 0.2,
+      "feedback_timeout_s": 0.1
+    },
+    "velocity_limits_rad_s": [
+      1.68,
+      2.0,
+      2.0,
+      1.68,
+      1.48,
+      1.48
+    ],
+    "jog_max_speed_rad_s": 0.1
+  },
+  "options": {
+    "execute": false,
+    "offline_q": [
+      0.1,
+      0.5,
+      0.6,
+      -0.2,
+      0.3,
+      0.4
+    ],
+    "j3_offsets_deg": [
+      0.0,
+      10.0,
+      20.0
+    ],
+    "j6_offsets_deg": [
+      -30.0,
+      -20.0,
+      -10.0,
+      0.0,
+      10.0,
+      20.0,
+      30.0
+    ],
+    "approach_deg": 3.0,
+    "speed_deg_s": 2.0,
+    "sample_seconds": 2.0,
+    "settle_seconds": 0.6,
+    "settle_timeout": 10.0,
+    "sample_period": 0.025,
+    "max_static_speed": 0.03,
+    "min_samples": 20,
+    "output": "validation/j6_identification/offline_preview"
+  },
+  "preflight": {
+    "collision_samples": 564,
+    "collision_scope": "nominal_robot_self_collision_only; excludes camera, cables, external obstacles",
+    "train_design_rank": 3,
+    "train_design_condition_scaled": 36.10065135623482,
+    "train_singular_values_scaled": [
+      7.252070288158803,
+      1.780147426960393,
+      0.20088474904778478
+    ],
+    "condition_warning": false,
+    "sample_poses": 42,
+    "validation_poses": 14
+  },
+  "hardware_log": "None"
+}

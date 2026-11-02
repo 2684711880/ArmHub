@@ -1,0 +1,139 @@
+{
+  "robot": "nero7",
+  "backend": "simulation",
+  "checks": [
+    {
+      "name": "move_to",
+      "passed": true,
+      "result": {
+        "status": "succeeded",
+        "source": "simulation",
+        "final_positions": [
+          1.3562934587685689,
+          -0.6850674790453555,
+          1.448415163456204,
+          2.120277385373928,
+          1.7896873407565934,
+          -0.3830232707126342,
+          -0.89230162373536
+        ],
+        "detail": "MoveIt 规划、Gazebo 执行及末端 FK 反馈核对完成；路径未约束为直线",
+        "target_position_m": [
+          0.25,
+          0.0,
+          0.3
+        ],
+        "actual_position_m": [
+          0.2503444582544582,
+          0.0006387052715278287,
+          0.29992608203861204
+        ],
+        "position_error_m": 0.0007294242784262081,
+        "trajectory_points": 77
+      }
+    },
+    {
+      "name": "move_to",
+      "passed": true,
+      "result": {
+        "status": "succeeded",
+        "source": "simulation",
+        "final_positions": [
+          1.8000166885694036,
+          -0.7100476637852413,
+          1.0602626483258915,
+          2.101305284414149,
+          -0.905731804319057,
+          -0.7299494172542724,
+          -0.5288425468762226
+        ],
+        "detail": "MoveIt 规划、Gazebo 执行及末端 FK 反馈核对完成；路径未约束为直线",
+        "target_position_m": [
+          0.22,
+          0.08,
+          0.32
+        ],
+        "actual_position_m": [
+          0.22040723694651834,
+          0.07989692490654528,
+          0.32066110892395705
+        ],
+        "position_error_m": 0.0007832824617185821,
+        "trajectory_points": 86
+      }
+    },
+    {
+      "name": "unreachable_target_rejected",
+      "passed": true,
+      "reason": "动作未成功：status=6, error_code=99999",
+      "position_drift_m": 7.135936359693696e-16
+    },
+    {
+      "name": "colliding_start_rejected",
+      "passed": true,
+      "reason": "动作未成功：status=6, error_code=99999",
+      "position_drift_m": 5.748822300757345e-16
+    },
+    {
+      "name": "recovery_after_obstacle_removed",
+      "passed": true,
+      "result": {
+        "status": "succeeded",
+        "source": "simulation",
+        "final_positions": [
+          0.8727770867685445,
+          -1.5631887309361439,
+          1.0011166933065372,
+          2.0748022587176607,
+          -1.175027377282266,
+          0.19187168352634476,
+          1.0530361367129712
+        ],
+        "detail": "MoveIt 规划、Gazebo 执行及末端 FK 反馈核对完成；路径未约束为直线",
+        "target_position_m": [
+          0.25,
+          0.0,
+          0.3
+        ],
+        "actual_position_m": [
+          0.25069694395687564,
+          0.0004129623154872633,
+          0.2994076124943905
+        ],
+        "position_error_m": 0.001003589412977382,
+        "trajectory_points": 66
+      }
+    }
+  ],
+  "initial_pose": {
+    "frame_id": "base_link",
+    "tcp_frame": "gripper_base",
+    "position_m": [
+      1.8992634694947577e-05,
+      1.4416899273887002e-05,
+      0.7555099846967945
+    ],
+    "quaternion_xyzw": [
+      -0.00019397019617136243,
+      -0.00022132404177083753,
+      -9.455579704077405e-07,
+      0.999999956695168
+    ]
+  },
+  "final_pose": {
+    "frame_id": "base_link",
+    "tcp_frame": "gripper_base",
+    "position_m": [
+      0.2506969439568755,
+      0.0004129623154872509,
+      0.29940761249439096
+    ],
+    "quaternion_xyzw": [
+      0.1947004381812949,
+      -0.16877081407574623,
+      -0.3632457985133122,
+      0.8953550365919923
+    ]
+  },
+  "passed": true
+}

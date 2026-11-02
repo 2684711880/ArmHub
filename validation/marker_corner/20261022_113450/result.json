@@ -1,0 +1,190 @@
+{
+  "standoff_m": 0.1,
+  "tcp_offset_x_m": 0.0,
+  "orientation": "keep_current",
+  "calibration_status": "official_reference_pending_installation_validation",
+  "T_tcp_camera": [
+    [
+      0.06485742344192436,
+      -0.32774583437419763,
+      0.9425370988321022,
+      -0.0892675602150106
+    ],
+    [
+      -0.9974170850425397,
+      -0.05050608630127429,
+      0.05107145691843179,
+      0.004825041785322462
+    ],
+    [
+      0.03086540279532951,
+      -0.9434149687687223,
+      -0.3301749893819834,
+      0.06409072416662598
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_serial": "262622274345",
+  "marker_size_m": 0.1,
+  "corner_camera_m": [
+    -0.06142683022396254,
+    -0.1057563980442213,
+    0.46034651528446496
+  ],
+  "target_gripper_center_base_m": [
+    0.5230488584278921,
+    0.08068464298069856,
+    0.18894087894333728
+  ],
+  "reprojection_rms_px": 0.2329331800992875,
+  "plan": {
+    "start_pose": {
+      "frame_id": "base_link",
+      "tcp_frame": "gripper_center",
+      "position_m": [
+        0.2466346927718292,
+        -0.0067524733947542164,
+        0.17398058031455893
+      ],
+      "quaternion_xyzw": [
+        -0.015777126225098356,
+        -0.01117760852638708,
+        -0.007394528049324748,
+        0.9997857091950434
+      ]
+    },
+    "target_position_m": [
+      0.5230488584278921,
+      0.08068464298069856,
+      0.18894087894333728
+    ],
+    "target_quaternion_xyzw": [
+      -0.015777126225098356,
+      -0.01117760852638708,
+      -0.007394528049324748,
+      0.9997857091950434
+    ],
+    "target_joints_rad": [
+      0.24423997728883967,
+      1.9245701048290735,
+      0.8751195500978214,
+      1.0728117147497185,
+      0.2586097106145542,
+      -0.03737059632951914
+    ],
+    "ik_position_error_m": 9.03200307395822e-06,
+    "ik_orientation_error_rad": 1.5013982913267963e-06,
+    "orientation_policy": "explicit_quaternion",
+    "ik_seed_policy": "deterministic_interior_fallback",
+    "execution_backend": "ruckig_stream",
+    "duration_s": 10.072850524145364,
+    "reference_period_s": 0.05,
+    "reference_max_velocity_rad_s": [
+      0.168,
+      0.2,
+      0.2,
+      0.168,
+      0.148,
+      0.148
+    ],
+    "reference_max_acceleration_rad_s2": [
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8
+    ],
+    "reference_max_jerk_rad_s3": [
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0
+    ],
+    "planned_reference_samples": 203,
+    "reference_start_velocity_rad_s": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reference_end_velocity_rad_s": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source": "hardware_preview",
+    "start_joints_rad": [
+      -0.0691150426864624,
+      0.0,
+      -0.00251327408477664,
+      0.025132741779088974,
+      -0.05466371402144432,
+      -0.03015928901731968
+    ],
+    "translation_m": 0.2902995880645614,
+    "joint_delta_degrees": [
+      17.953920133822415,
+      110.26974438375633,
+      50.28465678780988,
+      60.027583435817725,
+      17.94924506525238,
+      0.4131774737608586
+    ],
+    "velocity_scale": 0.1,
+    "effective_max_speed_rad_s": 0.2,
+    "effective_max_speeds_rad_s": [
+      0.168,
+      0.2,
+      0.2,
+      0.168,
+      0.148,
+      0.148
+    ],
+    "collision_check": {
+      "samples": 203,
+      "step_rad": 0.02,
+      "collision_pairs_checked": 17,
+      "scope": "ruckig_reference_self_collision_only"
+    },
+    "motion_sent": false
+  },
+  "motion_sent": true,
+  "result": {
+    "status": "succeeded",
+    "source": "hardware",
+    "final_positions": [
+      0.24378760159015656,
+      1.9245396852493286,
+      0.8746194243431091,
+      1.0725396871566772,
+      0.25761058926582336,
+      -0.03644247353076935
+    ],
+    "detail": "\u5b98\u65b9 IK + Ruckig \u5e73\u6ed1\u53c2\u8003 + SDK\uff1b\u5230\u4f4d\u53cd\u9988\u5df2\u6838\u5bf9\uff1b\u53c2\u8003\u8f68\u8ff9\u81ea\u78b0\u649e\u68c0\u67e5\uff0c\u4e0d\u542b\u5916\u90e8\u969c\u788d\u7269",
+    "target_position_m": [
+      0.5230488584278921,
+      0.08068464298069856,
+      0.18894087894333728
+    ],
+    "actual_position_m": [
+      0.5230000535617124,
+      0.0806138842515138,
+      0.18868618826019046
+    ],
+    "position_error_m": 0.0002688048675162857,
+    "trajectory_points": 202
+  }
+}

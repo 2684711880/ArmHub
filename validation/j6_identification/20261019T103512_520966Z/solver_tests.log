@@ -1,0 +1,9 @@
+test_incomplete_run_is_not_reported_as_successful_experiment (test_j6_fit.FitTests) ... ok
+test_known_first_moments_and_directional_gap_are_recovered (test_j6_fit.FitTests) ... ok
+test_missing_direction_or_mixed_group_labels_are_rejected (test_j6_fit.FitTests) ... ok
+test_validation_torques_cannot_change_training_parameters (test_j6_fit.FitTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.020s
+
+OK

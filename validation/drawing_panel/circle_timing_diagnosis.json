@@ -1,0 +1,32 @@
+[
+  {
+    "name": "xy_circle_fwd",
+    "recorded_duration_s": 166.01652426779646,
+    "requested_speed_mm_s": 20.0,
+    "length_mm": 125.66330740070126,
+    "requested_duration_s": 6.2831653700350625,
+    "velocity_required_duration_s": 0.5947632334360895,
+    "acceleration_required_duration_s": 53.601959752173045,
+    "jerk_required_duration_s": 161.1810915222732,
+    "recomputed_final_duration_s": 166.0165242679414,
+    "peak_jerk_path_fraction": 0.0,
+    "peak_jerk_joint": 3,
+    "duration_if_jerk_10x_s": 77.05804452372816,
+    "duration_if_jerk_100x_s": 55.21001854473824
+  },
+  {
+    "name": "xy_circle_rev",
+    "recorded_duration_s": 120.91614838334628,
+    "requested_speed_mm_s": 20.0,
+    "length_mm": 125.66330740070126,
+    "requested_duration_s": 6.2831653700350625,
+    "velocity_required_duration_s": 0.42562170062109317,
+    "acceleration_required_duration_s": 39.21958693271962,
+    "jerk_required_duration_s": 117.39431881878279,
+    "recomputed_final_duration_s": 120.91614838334628,
+    "peak_jerk_path_fraction": 0.0,
+    "peak_jerk_joint": 2,
+    "duration_if_jerk_10x_s": 56.124304413960594,
+    "duration_if_jerk_100x_s": 40.39617454070121
+  }
+]

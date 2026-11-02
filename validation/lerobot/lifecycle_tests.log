@@ -1,0 +1,9 @@
+test_exit_stops_writer_before_hold_and_release (test_lerobot_integration.LifecycleTests) ... ok
+test_hold_failure_is_not_reported_as_success_and_releases_resources (test_lerobot_integration.LifecycleTests) ... ok
+test_live_writer_prevents_second_sender (test_lerobot_integration.LifecycleTests) ... ok
+test_preset_entrypoints_return_before_upstream_motion (test_lerobot_integration.LifecycleTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.014s
+
+OK

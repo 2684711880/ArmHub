@@ -1,0 +1,5648 @@
+{
+  "source": "logs/panthera_ht/20261019T053246_690515Z.jsonl",
+  "hold_command": {
+    "event": "command",
+    "monotonic_s": 16204.202820789,
+    "utc": "2026-10-19T05:33:08.285437+00:00",
+    "target_rad": [
+      -0.3455751836299896,
+      1.7322741746902466,
+      0.936194658279419,
+      0.5786814093589783,
+      -0.3694513142108917,
+      -0.05843362584710121
+    ],
+    "speed_caps_rad_s": [
+      0.02,
+      0.02,
+      0.02,
+      0.02,
+      0.02,
+      0.02
+    ],
+    "gripper_hold_rad": 0.0
+  },
+  "initial": {
+    "event": "feedback",
+    "monotonic_s": 16204.202633084,
+    "utc": "2026-10-19T05:33:08.285252+00:00",
+    "motors": [
+      {
+        "id": 1,
+        "position_rad": -0.3455751836299896,
+        "velocity_rad_s": 0.048694685101509094,
+        "torque_nm": 0.3802259862422943,
+        "fault": 0,
+        "mode": 10,
+        "sample_counter": 755,
+        "age_s": 0.02522754669189453
+      },
+      {
+        "id": 2,
+        "position_rad": 1.7322741746902466,
+        "velocity_rad_s": -0.16022123396396637,
+        "torque_nm": -6.959559917449951,
+        "fault": 0,
+        "mode": 10,
+        "sample_counter": 755,
+        "age_s": 0.025231361389160156
+      },
+      {
+        "id": 3,
+        "position_rad": 0.936194658279419,
+        "velocity_rad_s": -0.08482300490140915,
+        "torque_nm": 2.525209903717041,
+        "fault": 0,
+        "mode": 10,
+        "sample_counter": 755,
+        "age_s": 0.025233983993530273
+      },
+      {
+        "id": 4,
+        "position_rad": 0.5786814093589783,
+        "velocity_rad_s": -0.05497787520289421,
+        "torque_nm": 0.6271259784698486,
+        "fault": 0,
+        "mode": 10,
+        "sample_counter": 755,
+        "age_s": 0.02523660659790039
+      },
+      {
+        "id": 5,
+        "position_rad": -0.3694513142108917,
+        "velocity_rad_s": 0.02042035385966301,
+        "torque_nm": 0.07358399778604507,
+        "fault": 0,
+        "mode": 10,
+        "sample_counter": 755,
+        "age_s": 0.025238990783691406
+      },
+      {
+        "id": 6,
+        "position_rad": -0.05843362584710121,
+        "velocity_rad_s": 0.0,
+        "torque_nm": 0.08935199677944183,
+        "fault": 0,
+        "mode": 10,
+        "sample_counter": 755,
+        "age_s": 0.025242090225219727
+      },
+      {
+        "id": 7,
+        "position_rad": 0.0,
+        "velocity_rad_s": 0.0,
+        "torque_nm": 0.0045809997245669365,
+        "fault": 0,
+        "mode": 10,
+        "sample_counter": 755,
+        "age_s": 0.025244951248168945
+      }
+    ]
+  },
+  "frames": [
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.253293393,
+      "utc": "2026-10-19T05:33:08.335912+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3418053090572357,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 0.07900799810886383,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 758,
+          "age_s": 0.024888277053833008
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7178229093551636,
+          "velocity_rad_s": -0.032986726611852646,
+          "torque_nm": -3.4730098247528076,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 758,
+          "age_s": 0.02489161491394043
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9242565631866455,
+          "velocity_rad_s": -0.015707964077591896,
+          "torque_nm": 5.659719944000244,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 758,
+          "age_s": 0.024894237518310547
+        },
+        {
+          "id": 4,
+          "position_rad": 0.57365483045578,
+          "velocity_rad_s": -0.021991150453686714,
+          "torque_nm": 0.9925379753112793,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 757,
+          "age_s": 0.024896860122680664
+        },
+        {
+          "id": 5,
+          "position_rad": -0.3637964427471161,
+          "velocity_rad_s": 0.03769911080598831,
+          "torque_nm": -0.047304000705480576,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 756,
+          "age_s": 0.024899721145629883
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.08935199677944183,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 756,
+          "age_s": 0.0249025821685791
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 756,
+          "age_s": 0.02490520477294922
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.303959483,
+      "utc": "2026-10-19T05:33:08.386579+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3418053090572357,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": -0.09382199496030807,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 760,
+          "age_s": 0.025551795959472656
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7209644317626953,
+          "velocity_rad_s": 0.47595128417015076,
+          "torque_nm": -4.637449741363525,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 760,
+          "age_s": 0.025555849075317383
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9305397272109985,
+          "velocity_rad_s": 0.007853982038795948,
+          "torque_nm": 3.1141998767852783,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 760,
+          "age_s": 0.0255584716796875
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5742831826210022,
+          "velocity_rad_s": 0.004712388850748539,
+          "torque_nm": 0.9826619625091553,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 759,
+          "age_s": 0.02556133270263672
+        },
+        {
+          "id": 5,
+          "position_rad": -0.3663097023963928,
+          "velocity_rad_s": -0.02670353837311268,
+          "torque_nm": 0.047304000705480576,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 758,
+          "age_s": 0.02556443214416504
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.014137166552245617,
+          "torque_nm": 0.057815998792648315,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 758,
+          "age_s": 0.0505671501159668
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 758,
+          "age_s": 0.025570154190063477
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.354609873,
+      "utc": "2026-10-19T05:33:08.437237+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3424336314201355,
+          "velocity_rad_s": -0.028274333104491234,
+          "torque_nm": -0.138264000415802,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 762,
+          "age_s": 0.025196075439453125
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7234777212142944,
+          "velocity_rad_s": 0.025132741779088974,
+          "torque_nm": -5.348299980163574,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 762,
+          "age_s": 0.02520012855529785
+        },
+        {
+          "id": 3,
+          "position_rad": 0.927398145198822,
+          "velocity_rad_s": 0.21362830698490143,
+          "torque_nm": 4.576519966125488,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 762,
+          "age_s": 0.025202035903930664
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5742831826210022,
+          "velocity_rad_s": -0.012566370889544487,
+          "torque_nm": 1.101173996925354,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 760,
+          "age_s": 0.02520608901977539
+        },
+        {
+          "id": 5,
+          "position_rad": -0.3663097023963928,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.047304000705480576,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 760,
+          "age_s": 0.025208473205566406
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 761,
+          "age_s": 0.025211811065673828
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 760,
+          "age_s": 0.05021500587463379
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.40539608,
+      "utc": "2026-10-19T05:33:08.488017+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3424336314201355,
+          "velocity_rad_s": -0.018849555402994156,
+          "torque_nm": -0.07406999915838242,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 764,
+          "age_s": 0.02498626708984375
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7253626585006714,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": -5.646179676055908,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 764,
+          "age_s": 0.02499103546142578
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9286547899246216,
+          "velocity_rad_s": 0.012566370889544487,
+          "torque_nm": 5.1655097007751465,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 764,
+          "age_s": 0.0249936580657959
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5742831826210022,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": 1.3036320209503174,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 763,
+          "age_s": 0.02499675750732422
+        },
+        {
+          "id": 5,
+          "position_rad": -0.3675663471221924,
+          "velocity_rad_s": -0.09738937020301819,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 762,
+          "age_s": 0.05099987983703613
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.018849555402994156,
+          "torque_nm": 0.047304000705480576,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 762,
+          "age_s": 0.025002479553222656
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 762,
+          "age_s": 0.025005340576171875
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.456103318,
+      "utc": "2026-10-19T05:33:08.538722+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.015707964077591896,
+          "torque_nm": 0.029627999290823936,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 766,
+          "age_s": 0.025699615478515625
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7247344255447388,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": -4.854089736938477,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 766,
+          "age_s": 0.025702476501464844
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9305397272109985,
+          "velocity_rad_s": 0.018849555402994156,
+          "torque_nm": 4.833779811859131,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 766,
+          "age_s": 0.02570509910583496
+        },
+        {
+          "id": 4,
+          "position_rad": 0.575539767742157,
+          "velocity_rad_s": 0.012566370889544487,
+          "torque_nm": 1.3184459209442139,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 765,
+          "age_s": 0.025707721710205078
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": -0.03153599798679352,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 764,
+          "age_s": 0.025710344314575195
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.018849555402994156,
+          "torque_nm": 0.047304000705480576,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 764,
+          "age_s": 0.02571272850036621
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": 0.0,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 764,
+          "age_s": 0.05071544647216797
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.481510008,
+      "utc": "2026-10-19T05:33:08.564129+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3430619239807129,
+          "velocity_rad_s": 0.010995575226843357,
+          "torque_nm": -0.004937999881803989,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 767,
+          "age_s": 0.025103092193603516
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7259910106658936,
+          "velocity_rad_s": 0.021991150453686714,
+          "torque_nm": -4.975949764251709,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 767,
+          "age_s": 0.025107383728027344
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9305397272109985,
+          "velocity_rad_s": 0.015707964077591896,
+          "torque_nm": 4.8676300048828125,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 767,
+          "age_s": 0.02511000633239746
+        },
+        {
+          "id": 4,
+          "position_rad": 0.575539767742157,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.392516016960144,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 766,
+          "age_s": 0.02511286735534668
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 765,
+          "age_s": 0.0251157283782959
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.012566370889544487,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 765,
+          "age_s": 0.025118350982666016
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 765,
+          "age_s": 0.025120973587036133
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.532196526,
+      "utc": "2026-10-19T05:33:08.614816+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3430619239807129,
+          "velocity_rad_s": -0.007853982038795948,
+          "torque_nm": -0.029627999290823936,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 769,
+          "age_s": 0.02578902244567871
+        },
+        {
+          "id": 2,
+          "position_rad": 1.727247714996338,
+          "velocity_rad_s": -0.0062831854447722435,
+          "torque_nm": -4.833779811859131,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 769,
+          "age_s": 0.024793148040771484
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9324247241020203,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 4.806699752807617,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 769,
+          "age_s": 0.024796009063720703
+        },
+        {
+          "id": 4,
+          "position_rad": 0.575539767742157,
+          "velocity_rad_s": 0.02042035385966301,
+          "torque_nm": 1.4023919105529785,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 767,
+          "age_s": 0.025798797607421875
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.004712388850748539,
+          "torque_nm": -0.047304000705480576,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 767,
+          "age_s": 0.025801897048950195
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 768,
+          "age_s": 0.025804996490478516
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 767,
+          "age_s": 0.050807952880859375
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.582886031,
+      "utc": "2026-10-19T05:33:08.665506+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3430619239807129,
+          "velocity_rad_s": 0.018849555402994156,
+          "torque_nm": -0.049379996955394745,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 771,
+          "age_s": 0.02547931671142578
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7278759479522705,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": -4.840549945831299,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 771,
+          "age_s": 0.025482654571533203
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9324247241020203,
+          "velocity_rad_s": 0.0172787606716156,
+          "torque_nm": 5.097809791564941,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 771,
+          "age_s": 0.02548527717590332
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5774247646331787,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 1.2641279697418213,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 770,
+          "age_s": 0.02548813819885254
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 769,
+          "age_s": 0.0504910945892334
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.015707964077591896,
+          "torque_nm": 0.057815998792648315,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 769,
+          "age_s": 0.025494098663330078
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 769,
+          "age_s": 0.025496959686279297
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.633473492,
+      "utc": "2026-10-19T05:33:08.716092+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3430619239807129,
+          "velocity_rad_s": 0.014137166552245617,
+          "torque_nm": -0.049379996955394745,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 773,
+          "age_s": 0.025068998336791992
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7285043001174927,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -4.319260120391846,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 773,
+          "age_s": 0.025072097778320312
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9349380135536194,
+          "velocity_rad_s": 0.010995575226843357,
+          "torque_nm": 4.590059757232666,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 773,
+          "age_s": 0.02507472038269043
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5774247646331787,
+          "velocity_rad_s": 0.036128316074609756,
+          "torque_nm": 1.1653679609298706,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 771,
+          "age_s": 0.025077342987060547
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 771,
+          "age_s": 0.025080204010009766
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 771,
+          "age_s": 0.05008268356323242
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 772,
+          "age_s": 0.025084972381591797
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.684096731,
+      "utc": "2026-10-19T05:33:08.766715+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3430619239807129,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.05431799963116646,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 775,
+          "age_s": 0.025681495666503906
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7297608852386475,
+          "velocity_rad_s": 0.015707964077591896,
+          "torque_nm": -4.671299934387207,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 775,
+          "age_s": 0.025686264038085938
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.021991150453686714,
+          "torque_nm": 4.894710063934326,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 775,
+          "age_s": 0.025689363479614258
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.101173996925354,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 774,
+          "age_s": 0.02569293975830078
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.042047999799251556,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 773,
+          "age_s": 0.025696277618408203
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 773,
+          "age_s": 0.025700807571411133
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 773,
+          "age_s": 0.025705814361572266
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.734613859,
+      "utc": "2026-10-19T05:33:08.817232+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3430619239807129,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.06419400125741959,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 777,
+          "age_s": 0.02521824836730957
+        },
+        {
+          "id": 2,
+          "position_rad": 1.731645941734314,
+          "velocity_rad_s": -0.05026548355817795,
+          "torque_nm": -4.43435001373291,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 777,
+          "age_s": 0.025220394134521484
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.11938052624464035,
+          "torque_nm": 4.671299934387207,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 777,
+          "age_s": 0.025221586227416992
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.101173996925354,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 775,
+          "age_s": 0.0252227783203125
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 775,
+          "age_s": 0.02522420883178711
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.057815998792648315,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 775,
+          "age_s": 0.02522563934326172
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 776,
+          "age_s": 0.025227069854736328
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.785331376,
+      "utc": "2026-10-19T05:33:08.867953+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3430619239807129,
+          "velocity_rad_s": 0.02042035385966301,
+          "torque_nm": -0.06419400125741959,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 779,
+          "age_s": 0.024909496307373047
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 779,
+          "age_s": 0.02491283416748047
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": 0.09267698973417282,
+          "torque_nm": 4.116159915924072,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 779,
+          "age_s": 0.024914979934692383
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": 1.101173996925354,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 777,
+          "age_s": 0.0249178409576416
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 777,
+          "age_s": 0.024920225143432617
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.018849555402994156,
+          "torque_nm": 0.047304000705480576,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 778,
+          "age_s": 0.024933338165283203
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 777,
+          "age_s": 0.024937152862548828
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.836534843,
+      "utc": "2026-10-19T05:33:08.919155+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3430619239807129,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.08394599705934525,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 781,
+          "age_s": 0.025129318237304688
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 781,
+          "age_s": 0.025133132934570312
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.009424777701497078,
+          "torque_nm": 4.454659938812256,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 781,
+          "age_s": 0.02513575553894043
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0062831854447722435,
+          "torque_nm": 1.101173996925354,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 779,
+          "age_s": 0.050137996673583984
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 780,
+          "age_s": 0.025141000747680664
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0062831854447722435,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 779,
+          "age_s": 0.025143861770629883
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 779,
+          "age_s": 0.0251462459564209
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.887122685,
+      "utc": "2026-10-19T05:33:08.969741+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3430619239807129,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.08394599705934525,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 783,
+          "age_s": 0.025725126266479492
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.975949764251709,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 783,
+          "age_s": 0.025727272033691406
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.0518362820148468,
+          "torque_nm": 4.7796196937561035,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 783,
+          "age_s": 0.025728464126586914
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0062831854447722435,
+          "torque_nm": 1.096235990524292,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 781,
+          "age_s": 0.025730371475219727
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 781,
+          "age_s": 0.025731563568115234
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.047304000705480576,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 781,
+          "age_s": 0.025733470916748047
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 782,
+          "age_s": 0.025734901428222656
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.912460324,
+      "utc": "2026-10-19T05:33:08.995079+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3430619239807129,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.09382199496030807,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 784,
+          "age_s": 0.02505660057067871
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 784,
+          "age_s": 0.025059938430786133
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.14608405530452728,
+          "torque_nm": 4.109389781951904,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 784,
+          "age_s": 0.025061845779418945
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": 1.096235990524292,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 782,
+          "age_s": 0.02506399154663086
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 782,
+          "age_s": 0.025066375732421875
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 782,
+          "age_s": 0.025069236755371094
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 783,
+          "age_s": 0.02507162094116211
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16204.963286547,
+      "utc": "2026-10-19T05:33:09.045910+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3430619239807129,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1036980003118515,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 786,
+          "age_s": 0.025876522064208984
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 786,
+          "age_s": 0.02588057518005371
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.1837831735610962,
+          "torque_nm": 4.752540111541748,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 786,
+          "age_s": 0.025882244110107422
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.101173996925354,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 784,
+          "age_s": 0.02588486671447754
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 784,
+          "age_s": 0.0508878231048584
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.007853982038795948,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 784,
+          "age_s": 0.025890827178955078
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 785,
+          "age_s": 0.0258939266204834
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.014036856,
+      "utc": "2026-10-19T05:33:09.096657+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3430619239807129,
+          "velocity_rad_s": 0.004712388850748539,
+          "torque_nm": -0.11357399821281433,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 788,
+          "age_s": 0.025630950927734375
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.996259689331055,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 788,
+          "age_s": 0.025634765625
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.010995575226843357,
+          "torque_nm": 4.163549900054932,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 788,
+          "age_s": 0.025637388229370117
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.09129798412323,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 786,
+          "age_s": 0.05063962936401367
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 786,
+          "age_s": 0.02564239501953125
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.009424777701497078,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 786,
+          "age_s": 0.025645017623901367
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.004712388850748539,
+          "torque_nm": 0.0,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 787,
+          "age_s": 0.025647640228271484
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.064712815,
+      "utc": "2026-10-19T05:33:09.147332+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": -0.0062831854447722435,
+          "torque_nm": -0.11357399821281433,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 790,
+          "age_s": 0.02530360221862793
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.975949764251709,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 790,
+          "age_s": 0.02530813217163086
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.1869247704744339,
+          "torque_nm": 4.116159915924072,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 790,
+          "age_s": 0.02531123161315918
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.086359977722168,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 789,
+          "age_s": 0.0253145694732666
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 788,
+          "age_s": 0.02531743049621582
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.009424777701497078,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 788,
+          "age_s": 0.02532052993774414
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": 0.0,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 788,
+          "age_s": 0.02532362937927246
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.09014911,
+      "utc": "2026-10-19T05:33:09.172768+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3430619239807129,
+          "velocity_rad_s": 0.010995575226843357,
+          "torque_nm": -0.12838800251483917,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 791,
+          "age_s": 0.025739669799804688
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.989490032196045,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 791,
+          "age_s": 0.02574443817138672
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": -0.05340707674622536,
+          "torque_nm": 4.251559734344482,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 791,
+          "age_s": 0.025747299194335938
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.111050009727478,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 790,
+          "age_s": 0.025750160217285156
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 789,
+          "age_s": 0.025753498077392578
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0172787606716156,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 789,
+          "age_s": 0.0257565975189209
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 789,
+          "age_s": 0.025759458541870117
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.140803347,
+      "utc": "2026-10-19T05:33:09.223427+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.3430619239807129,
+          "velocity_rad_s": 0.012566370889544487,
+          "torque_nm": -0.12838800251483917,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 793,
+          "age_s": 0.02539229393005371
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": -4.996259689331055,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 793,
+          "age_s": 0.025397539138793945
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.14922566711902618,
+          "torque_nm": 3.838589906692505,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 793,
+          "age_s": 0.025399446487426758
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.106112003326416,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 791,
+          "age_s": 0.025402069091796875
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 791,
+          "age_s": 0.025404930114746094
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.004712388850748539,
+          "torque_nm": 0.06307199597358704,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 791,
+          "age_s": 0.02540755271911621
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 792,
+          "age_s": 0.02541041374206543
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.191426907,
+      "utc": "2026-10-19T05:33:09.274045+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": -0.13332599401474,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 795,
+          "age_s": 0.02502131462097168
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.975949764251709,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 795,
+          "age_s": 0.025025129318237305
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": 0.08011061698198318,
+          "torque_nm": 4.623909950256348,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 795,
+          "age_s": 0.025027751922607422
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": -0.0062831854447722435,
+          "torque_nm": 1.111050009727478,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 793,
+          "age_s": 0.05003070831298828
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03153599798679352,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 793,
+          "age_s": 0.025032997131347656
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": 0.057815998792648315,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 793,
+          "age_s": 0.025035858154296875
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.0,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 794,
+          "age_s": 0.025038480758666992
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.217211602,
+      "utc": "2026-10-19T05:33:09.299831+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.12838800251483917,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 796,
+          "age_s": 0.025804519653320312
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 796,
+          "age_s": 0.025809288024902344
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.06597345322370529,
+          "torque_nm": 3.9536800384521484,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 796,
+          "age_s": 0.02581191062927246
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": 1.111050009727478,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 794,
+          "age_s": 0.02581501007080078
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 794,
+          "age_s": 0.02581787109375
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 0.057815998792648315,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 794,
+          "age_s": 0.02582073211669922
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 795,
+          "age_s": 0.025823116302490234
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.267810895,
+      "utc": "2026-10-19T05:33:09.350430+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.012566370889544487,
+          "torque_nm": -0.13332599401474,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 798,
+          "age_s": 0.025404930114746094
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.969180107116699,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 798,
+          "age_s": 0.02540898323059082
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.1178097277879715,
+          "torque_nm": 4.454659938812256,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 798,
+          "age_s": 0.025411367416381836
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 1.101173996925354,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 797,
+          "age_s": 0.025413990020751953
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 796,
+          "age_s": 0.02541661262512207
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 796,
+          "age_s": 0.05041956901550293
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 796,
+          "age_s": 0.025421857833862305
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.293381414,
+      "utc": "2026-10-19T05:33:09.376008+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.009424777701497078,
+          "torque_nm": -0.14320199191570282,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 799,
+          "age_s": 0.024935483932495117
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.996259689331055,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 799,
+          "age_s": 0.024949073791503906
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.12880529463291168,
+          "torque_nm": 3.90628981590271,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 799,
+          "age_s": 0.024954557418823242
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.11598801612854,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 798,
+          "age_s": 0.024964570999145508
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 797,
+          "age_s": 0.024973392486572266
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.02042035385966301,
+          "torque_nm": 0.06307199597358704,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 797,
+          "age_s": 0.024978160858154297
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 797,
+          "age_s": 0.024983882904052734
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.318919903,
+      "utc": "2026-10-19T05:33:09.401540+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": -0.0062831854447722435,
+          "torque_nm": -0.14813999831676483,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 800,
+          "age_s": 0.025512218475341797
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.989490032196045,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 800,
+          "age_s": 0.02551555633544922
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.1759292036294937,
+          "torque_nm": 5.063960075378418,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 800,
+          "age_s": 0.025517940521240234
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.101173996925354,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 799,
+          "age_s": 0.025520801544189453
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": -0.03153599798679352,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 798,
+          "age_s": 0.025522947311401367
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 798,
+          "age_s": 0.025526046752929688
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 798,
+          "age_s": 0.025528907775878906
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.344324078,
+      "utc": "2026-10-19T05:33:09.426943+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.15307798981666565,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 801,
+          "age_s": 0.024913311004638672
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 801,
+          "age_s": 0.024918079376220703
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.19792035222053528,
+          "torque_nm": 3.9536800384521484,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 801,
+          "age_s": 0.02492213249206543
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 1.096235990524292,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 800,
+          "age_s": 0.024926185607910156
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 799,
+          "age_s": 0.024930238723754883
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 799,
+          "age_s": 0.024932861328125
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 799,
+          "age_s": 0.024935007095336914
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.394964188,
+      "utc": "2026-10-19T05:33:09.477583+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.0062831854447722435,
+          "torque_nm": -0.15307798981666565,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 803,
+          "age_s": 0.025559663772583008
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 803,
+          "age_s": 0.025563478469848633
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.1036725640296936,
+          "torque_nm": 5.294139862060547,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 803,
+          "age_s": 0.02556586265563965
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 1.09129798412323,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 801,
+          "age_s": 0.025568246841430664
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 801,
+          "age_s": 0.02557086944580078
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.010995575226843357,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 801,
+          "age_s": 0.0255734920501709
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 802,
+          "age_s": 0.025575876235961914
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.420378632,
+      "utc": "2026-10-19T05:33:09.502997+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.004712388850748539,
+          "torque_nm": -0.15307798981666565,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 804,
+          "age_s": 0.024975061416625977
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 804,
+          "age_s": 0.0249783992767334
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.21048671007156372,
+          "torque_nm": 3.831820011138916,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 804,
+          "age_s": 0.024980783462524414
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 1.106112003326416,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 802,
+          "age_s": 0.02498340606689453
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 802,
+          "age_s": 0.024985790252685547
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.010995575226843357,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 802,
+          "age_s": 0.024988174438476562
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 803,
+          "age_s": 0.024990320205688477
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.470921369,
+      "utc": "2026-10-19T05:33:09.553540+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": -0.018849555402994156,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 806,
+          "age_s": 0.02552509307861328
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.975949764251709,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 806,
+          "age_s": 0.025527477264404297
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.036128316074609756,
+          "torque_nm": 4.962409973144531,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 806,
+          "age_s": 0.025528430938720703
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 1.101173996925354,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 805,
+          "age_s": 0.025530099868774414
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 804,
+          "age_s": 0.025531291961669922
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.007853982038795948,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 804,
+          "age_s": 0.02553248405456543
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 804,
+          "age_s": 0.02553391456604004
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.496443978,
+      "utc": "2026-10-19T05:33:09.579064+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 807,
+          "age_s": 0.025036096572875977
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 807,
+          "age_s": 0.025040388107299805
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.21676990389823914,
+          "torque_nm": 3.7235000133514404,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 807,
+          "age_s": 0.025043010711669922
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": 1.106112003326416,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 806,
+          "age_s": 0.02504563331604004
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 805,
+          "age_s": 0.025048494338989258
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": 0.057815998792648315,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 805,
+          "age_s": 0.025051355361938477
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 805,
+          "age_s": 0.025054216384887695
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.52187325,
+      "utc": "2026-10-19T05:33:09.604493+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": -0.012566370889544487,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 808,
+          "age_s": 0.025465965270996094
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 808,
+          "age_s": 0.02547001838684082
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.19477874040603638,
+          "torque_nm": 4.74576997756958,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 808,
+          "age_s": 0.02547287940979004
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.106112003326416,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 807,
+          "age_s": 0.025475740432739258
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 806,
+          "age_s": 0.025478124618530273
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0062831854447722435,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 806,
+          "age_s": 0.025480985641479492
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 806,
+          "age_s": 0.02548384666442871
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.572467043,
+      "utc": "2026-10-19T05:33:09.655085+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": -0.004712388850748539,
+          "torque_nm": -0.15801599621772766,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 810,
+          "age_s": 0.025070667266845703
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 810,
+          "age_s": 0.025072574615478516
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.07225663214921951,
+          "torque_nm": 3.90628981590271,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 810,
+          "age_s": 0.025073766708374023
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.101173996925354,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 809,
+          "age_s": 0.025075435638427734
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.004712388850748539,
+          "torque_nm": -0.03153599798679352,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 808,
+          "age_s": 0.025077104568481445
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.02670353837311268,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 808,
+          "age_s": 0.025078535079956055
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 808,
+          "age_s": 0.0500795841217041
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.597853053,
+      "utc": "2026-10-19T05:33:09.680473+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 811,
+          "age_s": 0.02544689178466797
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 811,
+          "age_s": 0.025450706481933594
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.19949112832546234,
+          "torque_nm": 5.097809791564941,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 811,
+          "age_s": 0.02545309066772461
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": -0.0062831854447722435,
+          "torque_nm": 1.11598801612854,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 810,
+          "age_s": 0.025455951690673828
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 809,
+          "age_s": 0.025458812713623047
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.06307199597358704,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 809,
+          "age_s": 0.025461673736572266
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 809,
+          "age_s": 0.02546405792236328
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.648650312,
+      "utc": "2026-10-19T05:33:09.731270+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.1728300005197525,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 813,
+          "age_s": 0.02524256706237793
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 813,
+          "age_s": 0.02524709701538086
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": -0.11152654141187668,
+          "torque_nm": 4.217710018157959,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 813,
+          "age_s": 0.025249481201171875
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.111050009727478,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 811,
+          "age_s": 0.025252342224121094
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 811,
+          "age_s": 0.025255203247070312
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0062831854447722435,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 811,
+          "age_s": 0.02525806427001953
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 812,
+          "age_s": 0.02526068687438965
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.699543641,
+      "utc": "2026-10-19T05:33:09.782164+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": -0.1728300005197525,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 815,
+          "age_s": 0.025142669677734375
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -4.969180107116699,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 815,
+          "age_s": 0.025145292282104492
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.2010619342327118,
+          "torque_nm": 3.818279981613159,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 815,
+          "age_s": 0.025146961212158203
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": 1.106112003326416,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 813,
+          "age_s": 0.05114865303039551
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 814,
+          "age_s": 0.025150775909423828
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.014137166552245617,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 813,
+          "age_s": 0.02515244483947754
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 813,
+          "age_s": 0.02515435218811035
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.750168904,
+      "utc": "2026-10-19T05:33:09.832788+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 817,
+          "age_s": 0.024764299392700195
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.975949764251709,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 817,
+          "age_s": 0.02476811408996582
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.14294247329235077,
+          "torque_nm": 4.150010108947754,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 817,
+          "age_s": 0.024770498275756836
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.111050009727478,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 815,
+          "age_s": 0.05077314376831055
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 815,
+          "age_s": 0.024775266647338867
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 815,
+          "age_s": 0.024777889251708984
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 816,
+          "age_s": 0.0247805118560791
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.800808564,
+      "utc": "2026-10-19T05:33:09.883427+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 819,
+          "age_s": 0.02541184425354004
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 819,
+          "age_s": 0.025413990020751953
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.16336283087730408,
+          "torque_nm": 5.2399797439575195,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 819,
+          "age_s": 0.02541518211364746
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 1.111050009727478,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 817,
+          "age_s": 0.025417089462280273
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 818,
+          "age_s": 0.025418519973754883
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.014137166552245617,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 817,
+          "age_s": 0.025419950485229492
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 817,
+          "age_s": 0.0254213809967041
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.851367621,
+      "utc": "2026-10-19T05:33:09.933986+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.16295400261878967,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 821,
+          "age_s": 0.02496170997619629
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.989490032196045,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 821,
+          "age_s": 0.024965763092041016
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": -0.11309733241796494,
+          "torque_nm": 4.285409927368164,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 821,
+          "age_s": 0.02496814727783203
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": -0.004712388850748539,
+          "torque_nm": 1.120926022529602,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 820,
+          "age_s": 0.02497100830078125
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 819,
+          "age_s": 0.02497386932373047
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 819,
+          "age_s": 0.024976491928100586
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 819,
+          "age_s": 0.050978899002075195
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.876744815,
+      "utc": "2026-10-19T05:33:09.959364+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.15307798981666565,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 822,
+          "age_s": 0.025345325469970703
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.996259689331055,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 822,
+          "age_s": 0.025348186492919922
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.0062831854447722435,
+          "torque_nm": 4.962409973144531,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 822,
+          "age_s": 0.02534937858581543
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": -0.004712388850748539,
+          "torque_nm": 1.11598801612854,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 821,
+          "age_s": 0.025351524353027344
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.03153599798679352,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 820,
+          "age_s": 0.025352954864501953
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.014137166552245617,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 820,
+          "age_s": 0.025354862213134766
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 820,
+          "age_s": 0.025356054306030273
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.927310815,
+      "utc": "2026-10-19T05:33:10.009929+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": -0.004712388850748539,
+          "torque_nm": -0.14813999831676483,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 824,
+          "age_s": 0.024907588958740234
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.996259689331055,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 824,
+          "age_s": 0.024910688400268555
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.16493362188339233,
+          "torque_nm": 4.698379993438721,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 824,
+          "age_s": 0.02491283416748047
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.11598801612854,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 822,
+          "age_s": 0.024915456771850586
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 822,
+          "age_s": 0.0249178409576416
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.012566370889544487,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 822,
+          "age_s": 0.02492046356201172
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 823,
+          "age_s": 0.024922609329223633
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16205.952680905,
+      "utc": "2026-10-19T05:33:10.035300+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.15801599621772766,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 825,
+          "age_s": 0.025276660919189453
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.975949764251709,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 825,
+          "age_s": 0.025280237197875977
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": 0.06754424422979355,
+          "torque_nm": 4.7796196937561035,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 825,
+          "age_s": 0.025282621383666992
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.11598801612854,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 823,
+          "age_s": 0.02528524398803711
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 823,
+          "age_s": 0.025288105010986328
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.010995575226843357,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 823,
+          "age_s": 0.025290727615356445
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 824,
+          "age_s": 0.02529311180114746
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.003313762,
+      "utc": "2026-10-19T05:33:10.085933+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.15801599621772766,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 827,
+          "age_s": 0.024909496307373047
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 827,
+          "age_s": 0.02491307258605957
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.1696460098028183,
+          "torque_nm": 4.759309768676758,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 827,
+          "age_s": 0.024915218353271484
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.11598801612854,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 826,
+          "age_s": 0.024918079376220703
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 825,
+          "age_s": 0.02492046356201172
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 825,
+          "age_s": 0.024922847747802734
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 825,
+          "age_s": 0.02492547035217285
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.054282004,
+      "utc": "2026-10-19T05:33:10.136904+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34369024634361267,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.15801599621772766,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 829,
+          "age_s": 0.024877309799194336
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 829,
+          "age_s": 0.02488398551940918
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.05811946466565132,
+          "torque_nm": 3.987529993057251,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 829,
+          "age_s": 0.024886131286621094
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.111050009727478,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 827,
+          "age_s": 0.024887561798095703
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 827,
+          "age_s": 0.02489018440246582
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 827,
+          "age_s": 0.02489185333251953
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 828,
+          "age_s": 0.024893522262573242
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.10499901,
+      "utc": "2026-10-19T05:33:10.187635+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.14813999831676483,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 831,
+          "age_s": 0.025588274002075195
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.975949764251709,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 831,
+          "age_s": 0.025592565536499023
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": 0.1005309671163559,
+          "torque_nm": 4.508820056915283,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 831,
+          "age_s": 0.025595426559448242
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.111050009727478,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 829,
+          "age_s": 0.0505986213684082
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 829,
+          "age_s": 0.025601863861083984
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.015707964077591896,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 829,
+          "age_s": 0.02560567855834961
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 830,
+          "age_s": 0.025608539581298828
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.15573374,
+      "utc": "2026-10-19T05:33:10.238354+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.15307798981666565,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 833,
+          "age_s": 0.025324106216430664
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 833,
+          "age_s": 0.025328874588012695
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.2042035162448883,
+          "torque_nm": 5.050419807434082,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 833,
+          "age_s": 0.025331497192382812
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 1.120926022529602,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 832,
+          "age_s": 0.025334835052490234
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 831,
+          "age_s": 0.025337934494018555
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.010995575226843357,
+          "torque_nm": 0.047304000705480576,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 831,
+          "age_s": 0.025340795516967773
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 831,
+          "age_s": 0.025344133377075195
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.206446609,
+      "utc": "2026-10-19T05:33:10.289065+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.15801599621772766,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 835,
+          "age_s": 0.025041818618774414
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.989490032196045,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 835,
+          "age_s": 0.02504563331604004
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.12566371262073517,
+          "torque_nm": 4.3260297775268555,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 835,
+          "age_s": 0.025047779083251953
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.106112003326416,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 833,
+          "age_s": 0.02505040168762207
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 833,
+          "age_s": 0.025053024291992188
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.06832800060510635,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 834,
+          "age_s": 0.025055885314941406
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 833,
+          "age_s": 0.02505803108215332
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.257054418,
+      "utc": "2026-10-19T05:33:10.339674+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 837,
+          "age_s": 0.02564239501953125
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.975949764251709,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 837,
+          "age_s": 0.02564835548400879
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.18535397946834564,
+          "torque_nm": 3.8453598022460938,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 837,
+          "age_s": 0.02565145492553711
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.120926022529602,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 835,
+          "age_s": 0.05065512657165527
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 836,
+          "age_s": 0.02565908432006836
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0172787606716156,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 835,
+          "age_s": 0.025662660598754883
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 835,
+          "age_s": 0.025666236877441406
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.308077313,
+      "utc": "2026-10-19T05:33:10.390702+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1728300005197525,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 839,
+          "age_s": 0.02566218376159668
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 839,
+          "age_s": 0.025667905807495117
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": 0.06283185631036758,
+          "torque_nm": 4.847320079803467,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 839,
+          "age_s": 0.025670766830444336
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.111050009727478,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 838,
+          "age_s": 0.025674104690551758
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 837,
+          "age_s": 0.02567768096923828
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.010995575226843357,
+          "torque_nm": 0.057815998792648315,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 837,
+          "age_s": 0.0256807804107666
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 837,
+          "age_s": 0.050684213638305664
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.333689612,
+      "utc": "2026-10-19T05:33:10.416309+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": -0.1728300005197525,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 840,
+          "age_s": 0.025279521942138672
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 840,
+          "age_s": 0.025284290313720703
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.04084070771932602,
+          "torque_nm": 3.9265999794006348,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 840,
+          "age_s": 0.025287389755249023
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.120926022529602,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 839,
+          "age_s": 0.025290727615356445
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 838,
+          "age_s": 0.025293827056884766
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.007853982038795948,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 838,
+          "age_s": 0.025297164916992188
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 838,
+          "age_s": 0.025300264358520508
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.359137379,
+      "utc": "2026-10-19T05:33:10.441757+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 841,
+          "age_s": 0.025731801986694336
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 841,
+          "age_s": 0.02573561668395996
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.12409291416406631,
+          "torque_nm": 5.287369728088379,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 841,
+          "age_s": 0.025738000869750977
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": 1.120926022529602,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 840,
+          "age_s": 0.025740623474121094
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 839,
+          "age_s": 0.025743484497070312
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": 0.06307199597358704,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 839,
+          "age_s": 0.02574610710144043
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 839,
+          "age_s": 0.025748491287231445
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.38459263,
+      "utc": "2026-10-19T05:33:10.467211+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 842,
+          "age_s": 0.02518463134765625
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 842,
+          "age_s": 0.02518916130065918
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.24661503732204437,
+          "torque_nm": 3.7099599838256836,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 842,
+          "age_s": 0.0251922607421875
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.125864028930664,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 841,
+          "age_s": 0.02519512176513672
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.004712388850748539,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 840,
+          "age_s": 0.02519822120666504
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 840,
+          "age_s": 0.025201082229614258
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 840,
+          "age_s": 0.025203943252563477
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.435116811,
+      "utc": "2026-10-19T05:33:10.517735+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.16295400261878967,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 844,
+          "age_s": 0.024719953536987305
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 844,
+          "age_s": 0.02472233772277832
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.0518362820148468,
+          "torque_nm": 5.063960075378418,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 844,
+          "age_s": 0.024723529815673828
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.120926022529602,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 843,
+          "age_s": 0.024724960327148438
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 842,
+          "age_s": 0.024726390838623047
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0172787606716156,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 842,
+          "age_s": 0.024728059768676758
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 842,
+          "age_s": 0.05072927474975586
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.460467004,
+      "utc": "2026-10-19T05:33:10.543089+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.15801599621772766,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 845,
+          "age_s": 0.025064706802368164
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -4.996259689331055,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 845,
+          "age_s": 0.025067567825317383
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.14137166738510132,
+          "torque_nm": 3.818279981613159,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 845,
+          "age_s": 0.025068998336791992
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.11598801612854,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 844,
+          "age_s": 0.025070905685424805
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.03153599798679352,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 843,
+          "age_s": 0.025072813034057617
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 843,
+          "age_s": 0.025075197219848633
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 843,
+          "age_s": 0.025076866149902344
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.485994842,
+      "utc": "2026-10-19T05:33:10.568613+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.15801599621772766,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 846,
+          "age_s": 0.025590896606445312
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.989490032196045,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 846,
+          "age_s": 0.025594472885131836
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.23247785866260529,
+          "torque_nm": 4.969180107116699,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 846,
+          "age_s": 0.02559685707092285
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.11598801612854,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 845,
+          "age_s": 0.02559947967529297
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 844,
+          "age_s": 0.025601863861083984
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 844,
+          "age_s": 0.0256044864654541
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 844,
+          "age_s": 0.02560710906982422
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.536607101,
+      "utc": "2026-10-19T05:33:10.619232+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 848,
+          "age_s": 0.025203943252563477
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.996259689331055,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 848,
+          "age_s": 0.02520751953125
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.036128316074609756,
+          "torque_nm": 3.973989963531494,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 848,
+          "age_s": 0.025209426879882812
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.125864028930664,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 847,
+          "age_s": 0.025210857391357422
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 846,
+          "age_s": 0.025212526321411133
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 846,
+          "age_s": 0.025214195251464844
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 846,
+          "age_s": 0.050215959548950195
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.587218076,
+      "utc": "2026-10-19T05:33:10.669837+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 850,
+          "age_s": 0.024819135665893555
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 850,
+          "age_s": 0.024821996688842773
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.17749997973442078,
+          "torque_nm": 4.190629959106445,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 850,
+          "age_s": 0.02482318878173828
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.120926022529602,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 848,
+          "age_s": 0.024825096130371094
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 848,
+          "age_s": 0.0508265495300293
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0062831854447722435,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 848,
+          "age_s": 0.024828433990478516
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 849,
+          "age_s": 0.024829864501953125
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.612691822,
+      "utc": "2026-10-19T05:33:10.695317+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 851,
+          "age_s": 0.02527165412902832
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 851,
+          "age_s": 0.02527785301208496
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": -0.021991150453686714,
+          "torque_nm": 3.9536800384521484,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 851,
+          "age_s": 0.025281190872192383
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.125864028930664,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 849,
+          "age_s": 0.025285959243774414
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 849,
+          "age_s": 0.02528977394104004
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 849,
+          "age_s": 0.025294065475463867
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 850,
+          "age_s": 0.025297880172729492
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.663461268,
+      "utc": "2026-10-19T05:33:10.746080+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1728300005197525,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 853,
+          "age_s": 0.025056838989257812
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 853,
+          "age_s": 0.025060415267944336
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.19792035222053528,
+          "torque_nm": 3.8453598022460938,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 853,
+          "age_s": 0.02506256103515625
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.125864028930664,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 852,
+          "age_s": 0.02506542205810547
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03153599798679352,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 851,
+          "age_s": 0.025068044662475586
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 851,
+          "age_s": 0.025070905685424805
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 851,
+          "age_s": 0.02507305145263672
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.714226966,
+      "utc": "2026-10-19T05:33:10.796847+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.16295400261878967,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 855,
+          "age_s": 0.02481698989868164
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.962409973144531,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 855,
+          "age_s": 0.024821996688842773
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.1382300853729248,
+          "torque_nm": 5.226439952850342,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 855,
+          "age_s": 0.024825096130371094
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.1357399225234985,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 853,
+          "age_s": 0.02482771873474121
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.004712388850748539,
+          "torque_nm": -0.03153599798679352,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 853,
+          "age_s": 0.024831056594848633
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 853,
+          "age_s": 0.024834156036376953
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 854,
+          "age_s": 0.024837255477905273
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.739715821,
+      "utc": "2026-10-19T05:33:10.822335+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.16295400261878967,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 856,
+          "age_s": 0.025307416915893555
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.989490032196045,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 856,
+          "age_s": 0.025311946868896484
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.19634954631328583,
+          "torque_nm": 3.913059949874878,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 856,
+          "age_s": 0.025314807891845703
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.120926022529602,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 854,
+          "age_s": 0.025317668914794922
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 854,
+          "age_s": 0.025320768356323242
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.0062831854447722435,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 854,
+          "age_s": 0.02532362937927246
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 855,
+          "age_s": 0.02532649040222168
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.765174399,
+      "utc": "2026-10-19T05:33:10.847793+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.16295400261878967,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 857,
+          "age_s": 0.025767087936401367
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 857,
+          "age_s": 0.025771379470825195
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.18221236765384674,
+          "torque_nm": 4.630680084228516,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 857,
+          "age_s": 0.025774240493774414
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.125864028930664,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 855,
+          "age_s": 0.025777101516723633
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 855,
+          "age_s": 0.02577996253967285
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.018849555402994156,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 855,
+          "age_s": 0.02578282356262207
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 856,
+          "age_s": 0.02578568458557129
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.815937411,
+      "utc": "2026-10-19T05:33:10.898557+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 859,
+          "age_s": 0.025528669357299805
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 859,
+          "age_s": 0.025532960891723633
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.12252211570739746,
+          "torque_nm": 3.8724398612976074,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 859,
+          "age_s": 0.025536060333251953
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.1357399225234985,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 858,
+          "age_s": 0.025539159774780273
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": -0.03153599798679352,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 857,
+          "age_s": 0.05054211616516113
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.02356194518506527,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 857,
+          "age_s": 0.025545358657836914
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 857,
+          "age_s": 0.02554798126220703
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.84140665,
+      "utc": "2026-10-19T05:33:10.924027+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 860,
+          "age_s": 0.02499842643737793
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.996259689331055,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 860,
+          "age_s": 0.025002717971801758
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.2183406949043274,
+          "torque_nm": 5.077499866485596,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 860,
+          "age_s": 0.025005340576171875
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.125864028930664,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 859,
+          "age_s": 0.025008201599121094
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 858,
+          "age_s": 0.025011301040649414
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.007853982038795948,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 858,
+          "age_s": 0.025014400482177734
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 858,
+          "age_s": 0.025017261505126953
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.866873462,
+      "utc": "2026-10-19T05:33:10.949492+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1728300005197525,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 861,
+          "age_s": 0.025465726852416992
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 861,
+          "age_s": 0.02547001838684082
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": 0.15393805503845215,
+          "torque_nm": 4.332799911499023,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 861,
+          "age_s": 0.025472640991210938
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.125864028930664,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 860,
+          "age_s": 0.025475740432739258
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0031415927223861217,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 859,
+          "age_s": 0.02547907829284668
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.014137166552245617,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 859,
+          "age_s": 0.025482177734375
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 859,
+          "age_s": 0.02548503875732422
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.892288337,
+      "utc": "2026-10-19T05:33:10.974907+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1678919941186905,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 862,
+          "age_s": 0.024882793426513672
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.989490032196045,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 862,
+          "age_s": 0.024886369705200195
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.05026548355817795,
+          "torque_nm": 3.8724398612976074,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 862,
+          "age_s": 0.024888992309570312
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.1357399225234985,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 861,
+          "age_s": 0.02489161491394043
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 860,
+          "age_s": 0.02489447593688965
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.02042035385966301,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 860,
+          "age_s": 0.024897098541259766
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 0.0,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 860,
+          "age_s": 0.024899959564208984
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.942865629,
+      "utc": "2026-10-19T05:33:11.025485+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.17776799201965332,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 864,
+          "age_s": 0.02545952796936035
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.975949764251709,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 864,
+          "age_s": 0.025463581085205078
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.21205751597881317,
+          "torque_nm": 4.1703200340271,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 864,
+          "age_s": 0.025466203689575195
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.120926022529602,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 862,
+          "age_s": 0.025468826293945312
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 862,
+          "age_s": 0.05047154426574707
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.004712388850748539,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 862,
+          "age_s": 0.025474071502685547
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 863,
+          "age_s": 0.025476694107055664
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16206.96826268,
+      "utc": "2026-10-19T05:33:11.050883+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.1728300005197525,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 865,
+          "age_s": 0.024858713150024414
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.989490032196045,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 865,
+          "age_s": 0.024862051010131836
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 3.9536800384521484,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 865,
+          "age_s": 0.024864673614501953
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": 1.1308019161224365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 863,
+          "age_s": 0.024866819381713867
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": -0.042047999799251556,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 863,
+          "age_s": 0.024869441986083984
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.004712388850748539,
+          "torque_nm": 0.057815998792648315,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 863,
+          "age_s": 0.0248720645904541
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 864,
+          "age_s": 0.024874448776245117
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16207.0193149,
+      "utc": "2026-10-19T05:33:11.101943+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.17776799201965332,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 867,
+          "age_s": 0.0258941650390625
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 867,
+          "age_s": 0.02590036392211914
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.2214822918176651,
+          "torque_nm": 4.116159915924072,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 867,
+          "age_s": 0.02590322494506836
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 1.125864028930664,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 865,
+          "age_s": 0.05090641975402832
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.004712388850748539,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 865,
+          "age_s": 0.025909900665283203
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 865,
+          "age_s": 0.025913715362548828
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.004712388850748539,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 866,
+          "age_s": 0.02591681480407715
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16207.070434948,
+      "utc": "2026-10-19T05:33:11.153063+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.18270599842071533,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 869,
+          "age_s": 0.02600860595703125
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.975949764251709,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 869,
+          "age_s": 0.026015520095825195
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": 0.0691150426864624,
+          "torque_nm": 4.840549945831299,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 869,
+          "age_s": 0.026018619537353516
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.125864028930664,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 867,
+          "age_s": 0.05102396011352539
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 867,
+          "age_s": 0.026027202606201172
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 867,
+          "age_s": 0.026031017303466797
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 868,
+          "age_s": 0.026037216186523438
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16207.12141349,
+      "utc": "2026-10-19T05:33:11.204034+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": -0.004712388850748539,
+          "torque_nm": -0.1728300005197525,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 871,
+          "age_s": 0.025007247924804688
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.989490032196045,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 871,
+          "age_s": 0.025011539459228516
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": -0.2497566193342209,
+          "torque_nm": 5.179049968719482,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 871,
+          "age_s": 0.02501392364501953
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.120926022529602,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 870,
+          "age_s": 0.02501678466796875
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": -0.0015707963611930609,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 869,
+          "age_s": 0.05101943016052246
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": 0.015707964077591896,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 869,
+          "age_s": 0.025022029876708984
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 869,
+          "age_s": 0.0250244140625
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16207.146841499,
+      "utc": "2026-10-19T05:33:11.229461+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.16295400261878967,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 872,
+          "age_s": 0.0254361629486084
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.975949764251709,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 872,
+          "age_s": 0.025440216064453125
+        },
+        {
+          "id": 3,
+          "position_rad": 0.9355663061141968,
+          "velocity_rad_s": 0.16022123396396637,
+          "torque_nm": 4.43435001373291,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 872,
+          "age_s": 0.02544260025024414
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.1308019161224365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 871,
+          "age_s": 0.02544546127319336
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0031415927223861217,
+          "torque_nm": -0.03153599798679352,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 870,
+          "age_s": 0.025447845458984375
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.009424777701497078,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 870,
+          "age_s": 0.025450706481933594
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": 0.0,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 870,
+          "age_s": 0.02545332908630371
+        }
+      ]
+    },
+    {
+      "event": "feedback",
+      "monotonic_s": 16207.172318832,
+      "utc": "2026-10-19T05:33:11.254941+00:00",
+      "motors": [
+        {
+          "id": 1,
+          "position_rad": -0.34431856870651245,
+          "velocity_rad_s": 0.0015707963611930609,
+          "torque_nm": -0.1728300005197525,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 873,
+          "age_s": 0.02490830421447754
+        },
+        {
+          "id": 2,
+          "position_rad": 1.7322741746902466,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -4.982719898223877,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 873,
+          "age_s": 0.024913311004638672
+        },
+        {
+          "id": 3,
+          "position_rad": 0.936194658279419,
+          "velocity_rad_s": 0.04084070771932602,
+          "torque_nm": 3.980759859085083,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 873,
+          "age_s": 0.02491593360900879
+        },
+        {
+          "id": 4,
+          "position_rad": 0.5780530571937561,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 1.1406779289245605,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 872,
+          "age_s": 0.02491903305053711
+        },
+        {
+          "id": 5,
+          "position_rad": -0.36882299184799194,
+          "velocity_rad_s": 0.0,
+          "torque_nm": -0.03679199889302254,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 871,
+          "age_s": 0.02492213249206543
+        },
+        {
+          "id": 6,
+          "position_rad": -0.05843362584710121,
+          "velocity_rad_s": -0.009424777701497078,
+          "torque_nm": 0.052560001611709595,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 871,
+          "age_s": 0.02492499351501465
+        },
+        {
+          "id": 7,
+          "position_rad": 0.0,
+          "velocity_rad_s": 0.0,
+          "torque_nm": 0.0045809997245669365,
+          "fault": 0,
+          "mode": 10,
+          "sample_counter": 871,
+          "age_s": 0.024927616119384766
+        }
+      ]
+    }
+  ]
+}

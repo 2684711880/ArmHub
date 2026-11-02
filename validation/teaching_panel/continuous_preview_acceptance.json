@@ -1,0 +1,16 @@
+{
+  "hardware_executed": false,
+  "physical_cause": "not established; no terminal exception captured",
+  "changes": [
+    "capture and viewer publishers run on separate threads",
+    "reader retries through frame errors; stale/error frames rejected by recorder",
+    "camera status written once per second",
+    "save/prepare/wait preserve camera connection"
+  ],
+  "tests": {
+    "preview": 7,
+    "manual_review": 10,
+    "terminal_keys": 5
+  },
+  "status": "offline regression passed; physical restart required"
+}

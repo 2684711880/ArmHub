@@ -1,0 +1,40 @@
+{
+  "status": "software_checks_passed",
+  "hardware_connected": false,
+  "physical_motion_executed": false,
+  "tests_passed": 45,
+  "manual_review_tests": 10,
+  "success_goal_default": 50,
+  "manual_start": true,
+  "episode_time_limit": false,
+  "rejected_attempt_counts_toward_goal": false,
+  "old_dataset_preserved": "local/blue_to_box_01",
+  "real_dataset_fixture": {
+    "source": "synthetic_images_and_actions",
+    "rejected_attempts": 1,
+    "kept_episodes": 2,
+    "kept_frames": 16,
+    "decoded_image_shape": [
+      3,
+      32,
+      32
+    ]
+  },
+  "config_parse": "passed",
+  "patch_round_trip_and_hash": "passed",
+  "terminal_thread_tests": 5,
+  "new_dataset": "local/blue_to_box_clean_01",
+  "new_dataset_exists_before_user_start": false,
+  "save_then_return_ready": true,
+  "ready_waits_for_lowercase_n": true,
+  "success_save_survives_return_failure": true,
+  "progress_uses_one_based_round_number": true,
+  "terminal_input": {
+    "dedicated_thread": true,
+    "robot_commands_from_input_thread": false,
+    "phase_input_isolation": true,
+    "canonical_partial_key_flush_tested": true,
+    "requires_enter": true,
+    "shutdown_wakes_waiter": true
+  }
+}

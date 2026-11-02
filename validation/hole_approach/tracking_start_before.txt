@@ -1,0 +1,14 @@
+test_stable_streaming_feedback_does_not_expire_camera_on_start (test_tracking_startup.TrackingStartupTests) ... FAIL
+
+======================================================================
+FAIL: test_stable_streaming_feedback_does_not_expire_camera_on_start (test_tracking_startup.TrackingStartupTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/a/ArmHub/tests/test_tracking_startup.py", line 45, in test_stable_streaming_feedback_does_not_expire_camera_on_start
+    self.assertLess(clock.monotonic()-now,.7)
+AssertionError: 1.099999999983993 not less than 0.7
+
+----------------------------------------------------------------------
+Ran 1 test in 0.022s
+
+FAILED (failures=1)

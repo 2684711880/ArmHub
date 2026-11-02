@@ -1,0 +1,375 @@
+<robot name="armhub_panthera_ht">
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="5.789e-05 -0.00015938 0.02298649" />
+      <mass value="0.62922454" />
+      <inertia ixx="0.00061305" ixy="-1.32e-06" ixz="1.69e-06" iyy="0.00063876" iyz="-2.1e-07" izz="0.0007565" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/base_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00278873 -0.00094387 0.02491842" />
+      <mass value="0.28101551" />
+      <inertia ixx="0.00039386" ixy="3.75e-06" ixz="-3.733e-05" iyy="0.0002136" iyz="7.17e-06" izz="0.00037066" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/link1.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.0584" />
+    <parent link="base_link" />
+    <child link="link1" />
+    <axis xyz="0 0 1" />
+    <limit effort="21" lower="-2.4" upper="2.4" velocity="4.2" />
+  </joint>
+  <link name="link2">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.12936212 -0.00213339 7.183e-05" />
+      <mass value="1.5165092" />
+      <inertia ixx="0.00044711" ixy="3.071e-05" ixz="-5.119e-05" iyy="0.02261049" iyz="3.01e-06" izz="0.02272105" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/link2.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint2" type="revolute">
+    <origin rpy="0 0 0" xyz="0.018199 0 0.053" />
+    <parent link="link1" />
+    <child link="link2" />
+    <axis xyz="0 1 0" />
+    <limit effort="36" lower="0.0" upper="3.2" velocity="5" />
+  </joint>
+  <link name="link3">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.16343103 -0.00164646 0.05337427" />
+      <mass value="0.66917784" />
+      <inertia ixx="0.00061339" ixy="-1.439e-05" ixz="-0.00070321" iyy="0.00538615" iyz="-1.404e-05" izz="0.00532976" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/link3.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint3" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.26 0 0" />
+    <parent link="link2" />
+    <child link="link3" />
+    <axis xyz="0 -1 0" />
+    <limit effort="36" lower="0.0" upper="4.0" velocity="5" />
+  </joint>
+  <link name="link4">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.05240131 -0.00055249 0.04094177" />
+      <mass value="0.30780516" />
+      <inertia ixx="0.00025787" ixy="-1.011e-05" ixz="-0.00017337" iyy="0.00039454" iyz="-8.09e-06" izz="0.00035094" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/link4.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint4" type="revolute">
+    <origin rpy="0 0 0" xyz="0.23 0 0.06" />
+    <parent link="link3" />
+    <child link="link4" />
+    <axis xyz="0 -1 0" />
+    <limit effort="21" lower="-1.6" upper="1.6" velocity="4.2" />
+  </joint>
+  <link name="link5">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00303007 8.509e-05 -0.03624079" />
+      <mass value="0.23711139" />
+      <inertia ixx="4.815e-05" ixy="-3e-08" ixz="-1.5e-07" iyy="5.773e-05" iyz="-1e-08" izz="3.359e-05" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/link5.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint5" type="revolute">
+    <origin rpy="0 0 0" xyz="0.07 0 0.036319" />
+    <parent link="link4" />
+    <child link="link5" />
+    <axis xyz="0 0 -1" />
+    <limit effort="10" lower="-1.7" upper="1.7" velocity="3.7" />
+  </joint>
+  <link name="link6">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.002 0.00 0.00" />
+      <mass value="0.01" />
+      <inertia ixx="0.00107368" ixy="-1.25e-05" ixz="3e-07" iyy="0.00068998" iyz="2.517e-05" izz="0.00167551" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/link6.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint6" type="revolute">
+    <origin rpy="0 0 0" xyz="0.02345 0 -0.039" />
+    <parent link="link5" />
+    <child link="link6" />
+    <axis xyz="1 0 0" />
+    <limit effort="10" lower="-2.5" upper="2.5" velocity="3.7" />
+  </joint>
+  <link name="L_finger">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0685513053302154 0.016863783322054 -0.000510235194009112" />
+      <mass value="0.127457990512492" />
+      <inertia ixx="2.28803355388279E-05" ixy="-4.20099870625027E-06" ixz="3.42841892600802E-07" iyy="5.15650351948181E-05" iyz="-5.67310171718486E-10" izz="4.64985980845228E-05" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/L_finger.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/L_finger.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="L_finger_joint" type="prismatic">
+    <origin rpy="0 0 0" xyz="0.165 0 0" />
+    <parent link="link6" />
+    <child link="L_finger" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="0" upper="0.04" velocity="0.1" />
+  </joint>
+  <link name="R_finger">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0685513053307259 -0.0168637833221451 0.000510464525338844" />
+      <mass value="0.127457990511979" />
+      <inertia ixx="2.28803355389148E-05" ixy="4.20099870615578E-06" ixz="-3.42841892362391E-07" iyy="5.15650351903219E-05" iyz="-5.67310157866966E-10" izz="4.64985980799091E-05" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/R_finger.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/R_finger.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="R_finger_joint" type="prismatic">
+    <origin rpy="0 0 0" xyz="0.165 0 0" />
+    <parent link="link6" />
+    <child link="R_finger" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="-0.04" upper="0" velocity="0.1" />
+    <mimic joint="L_finger_joint" multiplier="-1" offset="0" />
+  </joint>
+  <link name="gripper_center">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.124818615882779 -4.88421114370448E-05 -3.8373269199643E-05" />
+      <mass value="0.0960375427712166" />
+      <inertia ixx="9.09311609578797E-05" ixy="2.21893449480774E-09" ixz="-4.1053650775334E-09" iyy="1.13385601698219E-05" iyz="4.83664470143672E-08" izz="8.46740055322188E-05" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/gripper_center.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://armhub_sim/vendor/panthera/description/meshes/gripper_center.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="gripper_center_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.165 0 0" />
+    <parent link="link6" />
+    <child link="gripper_center" />
+  </joint>
+  <link name="world" />
+  <joint name="armhub_mount" type="fixed">
+    <parent link="world" />
+    <child link="base_link" />
+    <origin xyz="0 0 0.75" />
+  </joint>
+  <link name="armhub_floor">
+    <visual>
+      <origin xyz="0 0 -0.025" />
+      <geometry>
+        <box size="8 8 0.05" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.025" />
+      <geometry>
+        <box size="8 8 0.05" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="armhub_floor_fixed" type="fixed">
+    <parent link="world" />
+    <child link="armhub_floor" />
+  </joint>
+  <ros2_control name="ArmHubGazeboSystem" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+    <joint name="joint1">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="joint2">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="joint3">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="joint4">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="joint5">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="joint6">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="L_finger_joint">
+      <command_interface name="position" />
+      <state_interface name="position">
+        <param name="initial_value">0.02</param>
+      </state_interface>
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="R_finger_joint">
+      <param name="mimic">L_finger_joint</param>
+      <param name="multiplier">-1.0</param>
+      <state_interface name="position">
+        <param name="initial_value">-0.02</param>
+      </state_interface>
+      <state_interface name="velocity" />
+    </joint>
+  </ros2_control>
+  <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <parameters>__CONTROLLERS_FILE__</parameters>
+    </plugin>
+  </gazebo>
+</robot>

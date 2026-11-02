@@ -1,0 +1,16 @@
+# Keep imported source snapshots byte-identical to their SHA256 manifests.
+/vendor/** -text -whitespace
+/calibration_ws/src/** -text -whitespace
+/validation/** -text -whitespace
+*.patch -text -whitespace
+
+# Geometry and captured media should not produce line-based diffs.
+*.dae binary
+*.stl binary
+*.STL binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.mp4 binary
+*.parquet binary
+*.npz binary

@@ -1,0 +1,30 @@
+# Python / local environments
+__pycache__/
+*.py[cod]
+.venv*/
+*.egg-info/
+.pytest_cache/
+
+# Generated builds and runtime output (third-party source stays versioned)
+build/
+dist/
+install/
+log/
+/logs/
+/datasets/
+/outputs/
+/vendor/panthera/sdk/python/hightorque_robot/*.so
+
+# Workstation/editor state
+/.claude/
+/.vscode/
+.DS_Store
+*.swp
+.env
+.env.*
+!.env.example
+
+# Synthetic recordings are regenerable; keep their acceptance reports
+/validation/teaching_panel/*/raw/
+/validation/teaching_panel/*/lerobot/
+*.export.lock

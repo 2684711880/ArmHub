@@ -1,0 +1,28 @@
+test_repeated_lost_recovery_reacquire_runs_through_real_backend (test_tracking_hold.ReacquireRuntimeChainTests) ... ERROR
+test_terminal_speed_cap_can_close_measured_lag_before_timeout (test_tracking_hold.TerminalArrivalTests) ... ok
+test_continuing_position_drift_cannot_confirm_hold (test_tracking_hold.TrackingHoldTests) ... ok
+test_position_stable_hold_is_confirmed_despite_velocity_spikes (test_tracking_hold.TrackingHoldTests) ... ok
+test_task_hold_returns_then_confirms_on_regular_feedback_ticks (test_tracking_hold.TrackingHoldTests) ... ok
+
+======================================================================
+ERROR: test_repeated_lost_recovery_reacquire_runs_through_real_backend (test_tracking_hold.ReacquireRuntimeChainTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/a/ArmHub/tests/test_tracking_hold.py", line 106, in test_repeated_lost_recovery_reacquire_runs_through_real_backend
+    frame(False)  # 再次丢洞：非阻塞保持结束后才能启动回收。
+  File "/home/a/ArmHub/tests/test_tracking_hold.py", line 84, in frame
+    c.tick(q)
+  File "/home/a/ArmHub/apps/hole_approach/controller.py", line 335, in tick
+    self.recovery(q); return
+  File "/home/a/ArmHub/apps/hole_approach/controller.py", line 299, in recovery
+    self.send({'target_joints_rad': target.tolist(), 'duration_s': duration}, 'RECOVER')
+  File "/home/a/ArmHub/apps/hole_approach/controller.py", line 250, in send
+    started=self.robot.start_trajectory(curve,started_at=now)
+  File "/home/a/ArmHub/armhub/task_runtime.py", line 76, in start_trajectory
+    if getattr(self,'hold_pending',False):raise RuntimeError('保持尚未确认，等待反馈后再规划')
+RuntimeError: 保持尚未确认，等待反馈后再规划
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.196s
+
+FAILED (errors=1)

@@ -1,0 +1,20 @@
+{
+  "status": "offline_candidate_only",
+  "enabled": false,
+  "automatically_applied": false,
+  "source_run": "/home/a/ArmHub/logs/j6_identification/20261019T103512_520966Z",
+  "frame": "link6",
+  "units": "kg*m conditional on SDK torque scale",
+  "hy": 0.00015112311823551255,
+  "hz": 0.013169816585518536,
+  "equation": "delta_G6 = -gravity_link6_z * hy + gravity_link6_y * hz",
+  "bias_applied": false,
+  "directional_term_applied": false,
+  "hardware_compensation_accuracy": "not tested",
+  "limitations": [
+    "Not an isolated camera mass or COM estimate",
+    "Directional hysteresis remains; static approach sign is not a validated moving-friction law",
+    "Parameters describe only J6; other joints have not been identified",
+    "SDK torque physical scale not independently verified"
+  ]
+}

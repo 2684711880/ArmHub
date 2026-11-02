@@ -1,0 +1,29 @@
+{
+  "robot": "nero7",
+  "planning_group": "arm",
+  "base_frame": "base_link",
+  "tcp_frame": "gripper_base",
+  "joint_names": [
+    "joint1",
+    "joint2",
+    "joint3",
+    "joint4",
+    "joint5",
+    "joint6",
+    "joint7"
+  ],
+  "joint_states_topic": "/joint_states",
+  "trajectory_action": "/arm_controller/follow_joint_trajectory",
+  "initial_positions": {
+    "joint1": 0.0,
+    "joint2": 0.0,
+    "joint3": 0.0,
+    "joint4": 0.0,
+    "joint5": 0.0,
+    "joint6": 0.0,
+    "joint7": 0.0,
+    "gripper_joint1": 0.02,
+    "gripper_joint2": -0.02
+  },
+  "model_name": "armhub_nero7"
+}

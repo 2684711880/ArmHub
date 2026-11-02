@@ -1,0 +1,70 @@
+{
+  "reference_project": "/home/a/Panthera-HT",
+  "files": [
+    {
+      "source": "/home/a/Panthera-HT/scripts/depth_hole_perception.py",
+      "destination": "perception/detectors/depth_hole.py",
+      "source_sha256": "a475d5a8a13b111e59cb5354ef9b1e56c9c3e62f7cc73c4c9d4db8b4d22c153e"
+    },
+    {
+      "source": "/home/a/Panthera-HT/scripts/hole_position_estimator.py",
+      "destination": "perception/tracking/hole_estimator.py",
+      "source_sha256": "7cf0ad5a337130ae037407d2f9769aa184ba8f2c3b576933f8cdc19044cb4b95"
+    },
+    {
+      "source": "/home/a/Panthera-HT/scripts/hole_overlay.py",
+      "destination": "apps/hole_approach/overlay.py",
+      "source_sha256": "81cd34eab90264ef72c737fc931df8cf8b732c20388f280b6cd15f74a99d0568"
+    },
+    {
+      "source": "/home/a/Panthera-HT/scripts/depth_hole_app.py",
+      "destination": "apps/hole_approach/app.py",
+      "source_sha256": "18f7dc603508618567af0afe6fb4113675e6021e0cff2c0a6d12aa56cf79b405"
+    },
+    {
+      "source": "/home/a/Panthera-HT/scripts/depth_hole_controller.py",
+      "destination": "apps/hole_approach/controller.py",
+      "source_sha256": "eb658372fc4d01091565481d082c53bbe34016830e0b077083fc92838cf2c1d6"
+    },
+    {
+      "source": "/home/a/Panthera-HT/scripts/depth_hole_workflow.py",
+      "destination": "apps/hole_approach/planning.py",
+      "source_sha256": "1be8451e360a492fc446ba73fd6cc696d916d9ed35e59b236acfa677aebfc426"
+    },
+    {
+      "source": "/home/a/Panthera-HT/scripts/tool_tcp.py",
+      "destination": "armhub/tools.py",
+      "source_sha256": "405c0e6ff4b4410ad75cb3568d478bd56ed4118c85d31696d2e59e904d01ac9b"
+    },
+    {
+      "source": "/home/a/Panthera-HT/scripts/smooth_arm_trajectory.py",
+      "destination": "armhub/trajectory.py",
+      "source_sha256": "e8894130f92d440ff0d60fde45b2215d96c3ca551876bd626c04bfd0ffef6e1b"
+    },
+    {
+      "source": "/home/a/Panthera-HT/hardware_ws/config/hand_eye_calibration.json",
+      "destination": "calibration/panthera_ht/wrist_camera/hand_eye.json",
+      "source_sha256": "3527c9507b5c88919dadc4d7c01d5a5544ae20d1dd1f6c39ecdf3e9668c27867"
+    },
+    {
+      "source": "/home/a/Panthera-HT/validation/wrist_camera_trial/refreshed_target_pose.json",
+      "destination": "validation/hole_approach/recorded_geometry.json",
+      "source_sha256": "2fdaf46dd4c6f9162d28dbd007a93df49782241d4b3049e55d9801d82f0d4bfc"
+    },
+    {
+      "source": "/home/a/Panthera-HT/validation/camera/live_current.npz",
+      "destination": "validation/hole_approach/recorded_rgbd.npz",
+      "source_sha256": "9f70814099bbb819946578046df3a0e445c5c4725312ec25b207bb7fae75ce90"
+    },
+    {
+      "source": "/home/a/Panthera-HT/validation/handeye/solved_111.json",
+      "destination": "calibration/panthera_ht/wrist_camera/evidence/solved_111.json",
+      "source_sha256": "4301ff116ebf18613e56e9e3dc97d27c361877317d18fb30d06781e76dc6cb4e"
+    },
+    {
+      "source": "/home/a/Panthera-HT/validation/handeye/corner_alignment_experiment.md",
+      "destination": "calibration/panthera_ht/wrist_camera/evidence/corner_alignment_experiment.md",
+      "source_sha256": "e6c4d5421e14179751f9510239c3253ef07e3a7577e0c577b5eb18c72fa392ad"
+    }
+  ]
+}

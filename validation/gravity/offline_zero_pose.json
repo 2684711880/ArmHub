@@ -1,0 +1,41 @@
+{
+  "robot": "panthera_ht",
+  "backend": "hardware",
+  "command": "gravity",
+  "motion_requested": false,
+  "status": "preview",
+  "q_source": "offline_zero_pose",
+  "q_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "requested_gravity_nm": [
+    0.0,
+    1.8868040470834544,
+    4.055027632387681,
+    0.9382479889311508,
+    0.0,
+    -4.6015535181190975e-05
+  ],
+  "torque_caps_nm": [
+    15.0,
+    30.0,
+    30.0,
+    15.0,
+    5.0,
+    3.0
+  ],
+  "applied_if_requested_nm": [
+    0.0,
+    1.8868040470834544,
+    4.055027632387681,
+    0.9382479889311508,
+    0.0,
+    -4.6015535181190975e-05
+  ],
+  "note": "离线模型计算；未连接设备、未发送力矩；实物启动需 --execute"
+}

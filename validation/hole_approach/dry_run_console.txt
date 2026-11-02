@@ -1,0 +1,9 @@
+机械臂=panthera_ht 标定状态=calibrated_pending_independent_measurement 运动许可=False
+杆尖 TCP 相对夹爪 XYZ(mm): [40.0, 0.0, 0.0] ；后端: ArmHub Ruckig + continuous Cartesian feed
+板面补偿 右/下(mm): [0.0, 0.0] ；负值为左/上
+
+目标 base_link XYZ(m): [0.27277, 0.0, 0.48929]
+目标 RPY(deg): [0.0, 0.0, -0.0]
+目标关节(rad): [0.0, 0.8, 1.49999, -0.7, 0.0, -0.0] 对准参考最短时长: 3.0 s
+按 g 锁定点击时目标并解算执行两段；p 只预览；r 回 home；空格保持；q 退出。
+离线完成：未打开相机或机械臂串口。

@@ -1,0 +1,29 @@
+{
+  "recorded_at_utc": "2026-10-19T01:49:13.201022+00:00",
+  "environment": "ROS 2 Humble / Gazebo Classic 11 / MoveIt 2",
+  "offline_tests": {
+    "passed": 11,
+    "failed": 0,
+    "log": "offline-tests.log"
+  },
+  "robots": {
+    "panthera_ht": {
+      "passed": true,
+      "checks": 5,
+      "max_endpoint_error_m": 0.0009886663324982139,
+      "report": "panthera_ht/acceptance.json"
+    },
+    "nero7": {
+      "passed": true,
+      "checks": 5,
+      "max_endpoint_error_m": 0.001003589412977382,
+      "report": "nero7/acceptance.json"
+    }
+  },
+  "limitations": [
+    "Only simulation; no hardware connection or motion",
+    "XYZ-only goals leave orientation unconstrained; move_to does not enforce straight-line paths",
+    "TCP errors are FK from simulated joint feedback, not independent measurement",
+    "MoveIt shutdown segmentation fault observed; switching succeeded"
+  ]
+}

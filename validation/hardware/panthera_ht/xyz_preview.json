@@ -1,0 +1,93 @@
+{
+  "robot": "panthera_ht",
+  "backend": "hardware",
+  "before": {
+    "frame_id": "base_link",
+    "tcp_frame": "gripper_center",
+    "position_m": [
+      0.24654950511831505,
+      0.005455941682383162,
+      0.17429356729603096
+    ],
+    "quaternion_xyzw": [
+      0.007980486698717102,
+      -0.011718928695262044,
+      0.021777675308484686,
+      0.9996622986791315
+    ]
+  },
+  "requested_position_m": [
+    0.24654950511831505,
+    0.005455941682383162,
+    0.18429356729603097
+  ],
+  "preview": {
+    "start_pose": {
+      "frame_id": "base_link",
+      "tcp_frame": "gripper_center",
+      "position_m": [
+        0.24654950511831505,
+        0.005455941682383162,
+        0.17429356729603096
+      ],
+      "quaternion_xyzw": [
+        0.007666433083273891,
+        -0.011725769776483425,
+        0.021773992623203665,
+        0.9996647564919818
+      ]
+    },
+    "target_position_m": [
+      0.24654950511831505,
+      0.005455941682383162,
+      0.18429356729603097
+    ],
+    "target_quaternion_xyzw": [
+      0.007666433083273891,
+      -0.011725769776483425,
+      0.021773992623203665,
+      0.9996647564919818
+    ],
+    "target_joints_rad": [
+      -0.0464959322008471,
+      0.03584698763690269,
+      0.03629378214173504,
+      0.02342901635993462,
+      -0.08984989500460955,
+      0.016964583489300678
+    ],
+    "ik_position_error_m": 9.903329800934582e-06,
+    "ik_orientation_error_rad": 2.9351883535969594e-07,
+    "orientation_policy": "hold_current",
+    "source": "hardware_preview",
+    "start_joints_rad": [
+      -0.04649557173252106,
+      0.0,
+      -0.00251327408477664,
+      0.026389379054307938,
+      -0.089849554002285,
+      0.01696460135281086
+    ],
+    "translation_m": 0.010000000000000009,
+    "joint_delta_degrees": [
+      2.065331373037943e-05,
+      2.0538810998521644,
+      2.2234805371060014,
+      0.16961628821556787,
+      1.953799400053643e-05,
+      1.0235037406881942e-06
+    ],
+    "duration_s": 2.0,
+    "velocity_scale": 0.15,
+    "effective_max_speed_rad_s": 0.1,
+    "collision_check": {
+      "samples": 3,
+      "step_rad": 0.02,
+      "collision_pairs_checked": 17,
+      "scope": "nominal_joint_interpolation_self_collision_only"
+    },
+    "motion_sent": false
+  },
+  "status": "succeeded",
+  "log_file": "/home/a/ArmHub/logs/panthera_ht/20261019T023222_055601Z.jsonl"
+}

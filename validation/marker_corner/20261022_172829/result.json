@@ -1,0 +1,190 @@
+{
+  "standoff_m": 0.1,
+  "tcp_offset_x_m": 0.04,
+  "orientation": "keep_current",
+  "calibration_status": "calibrated_pending_independent_measurement",
+  "T_tcp_camera": [
+    [
+      -0.0038716721098201456,
+      -0.32652076097144594,
+      0.9451821003434744,
+      -0.0849784
+    ],
+    [
+      -0.9999882884306535,
+      -0.0014806548304872602,
+      -0.004607674337958667,
+      0.0132455
+    ],
+    [
+      0.0029039897737024867,
+      -0.9451888701819866,
+      -0.3265112042908994,
+      0.058796
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_serial": "262622274345",
+  "marker_size_m": 0.1,
+  "corner_camera_m": [
+    -0.04744791813688148,
+    -0.11192045769182837,
+    0.4610642922054216
+  ],
+  "target_gripper_center_base_m": [
+    0.4944590153372455,
+    0.06601145677923209,
+    0.18368953103449345
+  ],
+  "reprojection_rms_px": 0.08268780594664872,
+  "plan": {
+    "start_pose": {
+      "frame_id": "base_link",
+      "tcp_frame": "gripper_center",
+      "position_m": [
+        0.246649,
+        0.0,
+        0.16871899999999998
+      ],
+      "quaternion_xyzw": [
+        -0.00031415925542936743,
+        0.0,
+        0.0,
+        0.9999999506519799
+      ]
+    },
+    "target_position_m": [
+      0.4944590153372455,
+      0.06601145677923209,
+      0.18368953103449345
+    ],
+    "target_quaternion_xyzw": [
+      -0.00031415925542936743,
+      0.0,
+      0.0,
+      0.9999999506519799
+    ],
+    "target_joints_rad": [
+      0.21246082639499406,
+      1.8263396941394325,
+      0.7338002921185065,
+      1.0925381865106611,
+      0.21246074424241415,
+      -0.0006280554610446667
+    ],
+    "ik_position_error_m": 9.457561935748926e-06,
+    "ik_orientation_error_rad": 1.1913476044718611e-06,
+    "orientation_policy": "explicit_quaternion",
+    "ik_seed_policy": "deterministic_interior_fallback",
+    "execution_backend": "ruckig_stream",
+    "duration_s": 9.581698470697159,
+    "reference_period_s": 0.05,
+    "reference_max_velocity_rad_s": [
+      0.168,
+      0.2,
+      0.2,
+      0.168,
+      0.148,
+      0.148
+    ],
+    "reference_max_acceleration_rad_s2": [
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8
+    ],
+    "reference_max_jerk_rad_s3": [
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0
+    ],
+    "planned_reference_samples": 193,
+    "reference_start_velocity_rad_s": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reference_end_velocity_rad_s": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source": "hardware_preview",
+    "start_joints_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.00062831852119416
+    ],
+    "translation_m": 0.256887977389011,
+    "joint_delta_degrees": [
+      12.17310866429484,
+      104.64155643140313,
+      42.04365974385735,
+      62.597827043937656,
+      12.173103957298736,
+      1.5072236324044478e-05
+    ],
+    "velocity_scale": 0.1,
+    "effective_max_speed_rad_s": 0.2,
+    "effective_max_speeds_rad_s": [
+      0.168,
+      0.2,
+      0.2,
+      0.168,
+      0.148,
+      0.148
+    ],
+    "collision_check": {
+      "samples": 193,
+      "step_rad": 0.02,
+      "collision_pairs_checked": 17,
+      "scope": "ruckig_reference_self_collision_only"
+    },
+    "motion_sent": false
+  },
+  "motion_sent": true,
+  "result": {
+    "status": "succeeded",
+    "source": "hardware",
+    "final_positions": [
+      0.21237167716026306,
+      1.825893759727478,
+      0.7332477569580078,
+      1.092017650604248,
+      0.21174335479736328,
+      0.0
+    ],
+    "detail": "\u5b98\u65b9 IK + Ruckig \u5e73\u6ed1\u53c2\u8003 + SDK\uff1b\u5230\u4f4d\u53cd\u9988\u5df2\u6838\u5bf9\uff1b\u53c2\u8003\u8f68\u8ff9\u81ea\u78b0\u649e\u68c0\u67e5\uff0c\u4e0d\u542b\u5916\u90e8\u969c\u788d\u7269",
+    "target_position_m": [
+      0.4944590153372455,
+      0.06601145677923209,
+      0.18368953103449345
+    ],
+    "actual_position_m": [
+      0.4943282115201516,
+      0.06607283113140588,
+      0.18354864145501434
+    ],
+    "position_error_m": 0.0002018076392926905,
+    "trajectory_points": 193
+  }
+}

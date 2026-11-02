@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "mode": "live_read_only_connection",
+  "reason": "USB/CAN board detected; motors 1-7 did not provide complete fresh feedback",
+  "driver_log": "/home/a/ArmHub/logs/panthera_ht/20261019T063059_445253Z.jsonl",
+  "motor_command_packets": 0,
+  "software_execution_enabled": false
+}

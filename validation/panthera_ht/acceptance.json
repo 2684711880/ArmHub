@@ -1,0 +1,136 @@
+{
+  "robot": "panthera_ht",
+  "backend": "simulation",
+  "checks": [
+    {
+      "name": "move_to",
+      "passed": true,
+      "result": {
+        "status": "succeeded",
+        "source": "simulation",
+        "final_positions": [
+          0.7215258486102698,
+          1.0979231306920738,
+          1.279836648246289,
+          -1.2704169389997837,
+          1.0658849075854144,
+          2.146771843643325
+        ],
+        "detail": "MoveIt 规划、Gazebo 执行及末端 FK 反馈核对完成；路径未约束为直线",
+        "target_position_m": [
+          0.25,
+          0.0,
+          0.3
+        ],
+        "actual_position_m": [
+          0.2497232803603979,
+          2.03439628870955e-05,
+          0.2994685678558364
+        ],
+        "position_error_m": 0.0005995062632014418,
+        "trajectory_points": 0
+      }
+    },
+    {
+      "name": "move_to",
+      "passed": true,
+      "result": {
+        "status": "succeeded",
+        "source": "simulation",
+        "final_positions": [
+          0.4134530843567745,
+          0.2291889944890455,
+          0.14415728522515803,
+          0.5291786803175684,
+          0.07937437324236107,
+          0.28525057915319874
+        ],
+        "detail": "MoveIt 规划、Gazebo 执行及末端 FK 反馈核对完成；路径未约束为直线",
+        "target_position_m": [
+          0.22,
+          0.08,
+          0.32
+        ],
+        "actual_position_m": [
+          0.21960257337798345,
+          0.0800317300143971,
+          0.3190952865628751
+        ],
+        "position_error_m": 0.0009886663324982139,
+        "trajectory_points": 72
+      }
+    },
+    {
+      "name": "unreachable_target_rejected",
+      "passed": true,
+      "reason": "动作未成功：status=6, result=moveit_msgs.action.MoveGroup_Result(error_code=moveit_msgs.msg.MoveItErrorCodes(val=99999), trajectory_start=moveit_msgs.msg.RobotState(joint_state=sensor_msgs.msg.JointState(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), name=[], position=[], velocity=[], effort=[]), multi_dof_joint_state=sensor_msgs.msg.MultiDOFJointState(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), joint_names=[], transforms=[], twist=[], wrench=[]), attached_collision_objects=[], is_diff=False), planned_trajectory=moveit_msgs.msg.RobotTrajectory(joint_trajectory=trajectory_msgs.msg.JointTrajectory(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), joint_names=[], points=[]), multi_dof_joint_trajectory=trajectory_msgs.msg.MultiDOFJointTrajectory(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), joint_names=[], points=[])), executed_trajectory=moveit_msgs.msg.RobotTrajectory(joint_trajectory=trajectory_msgs.msg.JointTrajectory(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), joint_names=[], points=[]), multi_dof_joint_trajectory=trajectory_msgs.msg.MultiDOFJointTrajectory(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), joint_names=[], points=[])), planning_time=0.0)",
+      "position_drift_m": 8.868764227826485e-16
+    },
+    {
+      "name": "colliding_start_rejected",
+      "passed": true,
+      "reason": "动作未成功：status=6, result=moveit_msgs.action.MoveGroup_Result(error_code=moveit_msgs.msg.MoveItErrorCodes(val=99999), trajectory_start=moveit_msgs.msg.RobotState(joint_state=sensor_msgs.msg.JointState(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), name=[], position=[], velocity=[], effort=[]), multi_dof_joint_state=sensor_msgs.msg.MultiDOFJointState(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), joint_names=[], transforms=[], twist=[], wrench=[]), attached_collision_objects=[], is_diff=False), planned_trajectory=moveit_msgs.msg.RobotTrajectory(joint_trajectory=trajectory_msgs.msg.JointTrajectory(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), joint_names=[], points=[]), multi_dof_joint_trajectory=trajectory_msgs.msg.MultiDOFJointTrajectory(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), joint_names=[], points=[])), executed_trajectory=moveit_msgs.msg.RobotTrajectory(joint_trajectory=trajectory_msgs.msg.JointTrajectory(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), joint_names=[], points=[]), multi_dof_joint_trajectory=trajectory_msgs.msg.MultiDOFJointTrajectory(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), joint_names=[], points=[])), planning_time=0.0)",
+      "position_drift_m": 3.1031676915590914e-17
+    },
+    {
+      "name": "recovery_after_obstacle_removed",
+      "passed": true,
+      "result": {
+        "status": "succeeded",
+        "source": "simulation",
+        "final_positions": [
+          -0.003086089345860188,
+          0.9920231072197812,
+          1.4088928152109945,
+          -1.1593421021773462,
+          -0.0025923738722397616,
+          -0.13870386956800207
+        ],
+        "detail": "MoveIt 规划、Gazebo 执行及末端 FK 反馈核对完成；路径未约束为直线",
+        "target_position_m": [
+          0.25,
+          0.0,
+          0.3
+        ],
+        "actual_position_m": [
+          0.2506016167987915,
+          -0.0002848467989579592,
+          0.30032764637478215
+        ],
+        "position_error_m": 0.0007419114626238283,
+        "trajectory_points": 69
+      }
+    }
+  ],
+  "initial_pose": {
+    "frame_id": "base_link",
+    "tcp_frame": "gripper_center",
+    "position_m": [
+      0.24972328036039818,
+      2.034396288728979e-05,
+      0.299468567855836
+    ],
+    "quaternion_xyzw": [
+      0.5481705809344273,
+      0.025975574297856862,
+      -0.35503056471295147,
+      0.7568273131022107
+    ]
+  },
+  "final_pose": {
+    "frame_id": "base_link",
+    "tcp_frame": "gripper_center",
+    "position_m": [
+      0.2506016167986683,
+      -0.00028484679983517005,
+      0.30032764637460363
+    ],
+    "quaternion_xyzw": [
+      -0.0635483534283547,
+      0.36191012748071894,
+      0.024908888857101436,
+      0.9297108225998766
+    ]
+  },
+  "passed": true
+}

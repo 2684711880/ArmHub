@@ -1,0 +1,36 @@
+{
+  "status": "passed_offline",
+  "source": "reference_project_current_python_sdk_yaml",
+  "joint_speed_limits_rad_s": [
+    1.68,
+    2.0,
+    2.0,
+    1.68,
+    1.48,
+    1.48
+  ],
+  "recovery_speed_rad_s": 0.6,
+  "hardware_default_velocity_scale": 1.0,
+  "reference_acceleration_limits_rad_s2": [
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8
+  ],
+  "reference_jerk_limits_rad_s3": [
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0
+  ],
+  "control_period_s": 0.05,
+  "tests_passed": 106,
+  "same_fixture_feed_duration_before_s": 7.591642701049248,
+  "same_fixture_feed_duration_after_s": 3.0876172566417774,
+  "motion_sent": false,
+  "hardware_speed_measured": false
+}

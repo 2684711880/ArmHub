@@ -1,0 +1,25 @@
+{
+  "status": "offline_checks_passed",
+  "hardware_connected": false,
+  "physical_motion_executed": false,
+  "source": "recorded_targets_with_synthetic_perfect_tracking_and_zero_feedback_torque",
+  "frames": 602,
+  "config": {
+    "torque_nm": 0.1,
+    "close_at_rad": 0.85,
+    "open_at_rad": 1.2,
+    "near_rad": 0.08,
+    "release_delta_rad": 0.08,
+    "closed_guard_rad": 0.1,
+    "ramp_s": 0.3,
+    "feedback_torque_limit_nm": 1.0,
+    "max_gap_s": 0.25
+  },
+  "assisted_frames": 122,
+  "first_assist_s": 9.800000190734863,
+  "last_assist_s": 15.850000381469727,
+  "minimum_feedforward_nm": -0.1,
+  "initial_closed_unassisted": true,
+  "final_open_unassisted": true,
+  "warning": "not a physical grip or contact validation"
+}

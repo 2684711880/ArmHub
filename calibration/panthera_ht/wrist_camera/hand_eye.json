@@ -1,0 +1,44 @@
+{
+  "T_tcp_camera": [
+    [
+      -0.0038716721098201456,
+      -0.32652076097144594,
+      0.9451821003434744,
+      -0.0849784
+    ],
+    [
+      -0.9999882884306535,
+      -0.0014806548304872602,
+      -0.004607674337958667,
+      0.0132455
+    ],
+    [
+      0.0029039897737024867,
+      -0.9451888701819866,
+      -0.3265112042908994,
+      0.058796
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "parent_frame": "gripper_center",
+  "child_frame": "handeye_color_optical",
+  "translation_unit": "m",
+  "status": "calibrated_pending_independent_measurement",
+  "camera_model": "Intel RealSense D405",
+  "camera_serial": "262622274345",
+  "source": "pose1.launch.py",
+  "timestamp": "2026-10-22",
+  "sample_count": 17,
+  "note": "User requested activation of measured D405 calibration. Same gripper_center -> optical frame. Independent corner validation pending; dataset board position RMS 5.63 mm, max 10.45 mm.",
+  "source_samples": "handeye1.yaml",
+  "method": "OpenCV/Tsai1989",
+  "dataset_board_scatter": {
+    "position_rms_mm": 5.629764980517439,
+    "position_max_mm": 10.45395608929163
+  }
+}

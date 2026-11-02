@@ -1,0 +1,33 @@
+robot_id: panthera_ht
+calibration: calibration/panthera_ht/wrist_camera/hand_eye.json
+tool: robots/panthera_ht/tools/rod.json
+camera:
+  source: live
+  width: 640
+  height: 480
+  fps: 30
+  serial: "262622274345"
+motion_parameters:
+  align_clearance_m: 0.20
+  feed_distance_m: 0.18
+  feed_duration_s: 2.0
+  approach_duration_s: 3.0
+  recovery_speed_rad_s: 0.6
+# No old +/-50 mm patch: the current reference calibration already replaced it.
+correction_right_down_mm: [0.0, 0.0]
+motion_smoothing:
+  tracking_replan_period_s: 0.3
+  state_filter_tau_s: 0.12
+  feed_ramp_fraction: 0.2
+hole_estimator:
+  measurement_std_m: 0.005
+  acceleration_noise: 0.005
+  initial_velocity_std: 0.05
+  max_prediction_s: 3.0
+  max_position_std_m: 0.025
+  max_prediction_displacement_m: 0.05
+  max_speed_m_s: 0.2
+  innovation_gate_squared: 16.0
+  min_prediction_samples: 5
+  prediction_replan_m: 0.02
+  normal_gate_deg: 15.0

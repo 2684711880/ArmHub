@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "scope": "Panthera hardware XY planar suite; encoder FK only",
+  "run": "/home/a/ArmHub/logs/movel/hardware_all_20261019",
+  "motions": 12,
+  "direction_pairs": 6,
+  "feedback_frames": 16805,
+  "completed_backend_segments": 37,
+  "max_tracking_error_rad": 0.0277684656977632,
+  "max_command_gap_s": 0.07607463499880396,
+  "final_joints_rad": [
+    0.0,
+    1.5205308198928833,
+    1.2120264768600464,
+    -1.2616636753082275,
+    0.0,
+    0.0
+  ],
+  "final_anchor_max_joint_error_rad": 0.0008438537573089988,
+  "failures": [],
+  "first_utc": "2026-10-19T05:50:32.330231+00:00",
+  "last_utc": "2026-10-19T06:07:19.869096+00:00",
+  "checks": "2 moveL tests + 8 existing guarded stream tests passed; NPZ/CSV/PNG verified for all 12 motions",
+  "limits": "No external metrology; no XZ/YZ hardware tests; no claim of original SDK timing equivalence"
+}

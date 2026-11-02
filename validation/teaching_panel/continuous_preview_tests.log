@@ -1,0 +1,21 @@
+ERROR:root:Rerun 显示异常；相机读取继续运行
+Traceback (most recent call last):
+  File "/home/a/ArmHub/integrations/panthera_lerobot/continuous_preview.py", line 104, in _display
+    self.publish(frame)
+  File "/home/a/ArmHub/integrations/panthera_lerobot/continuous_preview.py", line 174, in <lambda>
+    proxy = CachedCamera(camera, lambda frame, key=key: publish(key, frame), status_path)
+  File "/home/a/ArmHub/tests/test_continuous_preview.py", line 101, in publish
+    raise RuntimeError('viewer failure')
+RuntimeError: viewer failure
+.WARNING:root:D435 暂无新图像，后台继续尝试恢复：USB disconnected
+.正在回准备位并张开夹爪；此过程不录制。
+准备位与开爪已完成；等待 n 开始，不会自动录制。
+.WARNING:root:D435 暂无新图像，后台继续尝试恢复：USB disconnected
+WARNING:root:D435 暂无新图像，后台继续尝试恢复：USB disconnected
+...WARNING:root:D435 暂无新图像，后台继续尝试恢复：USB disconnected
+WARNING:root:D435 暂无新图像，后台继续尝试恢复：USB disconnected
+.
+----------------------------------------------------------------------
+Ran 7 tests in 6.939s
+
+OK

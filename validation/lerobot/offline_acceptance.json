@@ -1,0 +1,48 @@
+{
+  "scope": "offline integration acceptance; no arm connection or motion",
+  "sources": {
+    "sources": [
+      {
+        "directory": "Panthera-HT_lerobot",
+        "url": "https://github.com/HighTorque-Robotics/Panthera-HT_lerobot.git",
+        "commit": "def0e386544f089777b54eef60000051a1ba2020"
+      },
+      {
+        "directory": "Panthera-HT_SDK",
+        "url": "https://github.com/HighTorque-Robotics/Panthera-HT_SDK.git",
+        "commit": "3712b3a3c2a4e6cbbc836a5d0b228a79d1a185c3"
+      }
+    ],
+    "native_sdk": "ArmHub vendor/panthera/sdk/python; passive lifecycle and feedback snapshot fixes",
+    "patch": "patches/armhub-lifecycle.patch",
+    "patch_sha256": "649f6cd3ba9b0191aae1b9f275b67df8c9463158fb03be16b130e28869994201"
+  },
+  "checks": {
+    "dependency_imports": true,
+    "pip_check": true,
+    "record_config_decode": true,
+    "replay_config_decode": true,
+    "act_config_decode": true,
+    "official_model_nq": 6,
+    "gravity_finite": true,
+    "lifecycle_tests_passed": 4,
+    "record_help": true,
+    "replay_help": true,
+    "train_help": true,
+    "evaluate_help": true,
+    "source_patch_dry_run": true
+  },
+  "not_executed": [
+    "hardware connection",
+    "data collection",
+    "dataset replay",
+    "policy training",
+    "policy evaluation"
+  ],
+  "pending_configuration": [
+    "camera serials for image datasets",
+    "device identity before hardware use",
+    "leader device for optional leader/follower mode"
+  ],
+  "training_runtime": "PyTorch 2.7.1 CPU; NumPy 2.2.6; Pinocchio 3.8.0"
+}

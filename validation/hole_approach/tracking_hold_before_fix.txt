@@ -1,0 +1,65 @@
+test_continuing_position_drift_cannot_confirm_hold (test_tracking_hold.TrackingHoldTests) ... ERROR
+test_position_stable_hold_is_confirmed_despite_velocity_spikes (test_tracking_hold.TrackingHoldTests) ... ERROR
+ERROR
+test_task_hold_returns_then_confirms_on_regular_feedback_ticks (test_tracking_hold.TrackingHoldTests) ... ERROR
+
+======================================================================
+ERROR: test_continuing_position_drift_cannot_confirm_hold (test_tracking_hold.TrackingHoldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/a/ArmHub/armhub/adapters/panthera_ht.py", line 687, in close
+    self.stop()
+  File "/home/a/ArmHub/armhub/adapters/panthera_ht.py", line 681, in stop
+    raise RuntimeError('当前姿态保持指令已发出，但停止反馈未确认')
+RuntimeError: 当前姿态保持指令已发出，但停止反馈未确认
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/ArmHub/armhub/adapters/panthera_ht.py", line 707, in close
+    raise RuntimeError('关闭连接时未确认停止；请立即检查实物并使用物理急停') from error
+RuntimeError: 关闭连接时未确认停止；请立即检查实物并使用物理急停
+
+======================================================================
+ERROR: test_position_stable_hold_is_confirmed_despite_velocity_spikes (test_tracking_hold.TrackingHoldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/a/ArmHub/tests/test_tracking_hold.py", line 27, in test_position_stable_hold_is_confirmed_despite_velocity_spikes
+    arm.stop()
+  File "/home/a/ArmHub/armhub/adapters/panthera_ht.py", line 681, in stop
+    raise RuntimeError('当前姿态保持指令已发出，但停止反馈未确认')
+RuntimeError: 当前姿态保持指令已发出，但停止反馈未确认
+
+======================================================================
+ERROR: test_position_stable_hold_is_confirmed_despite_velocity_spikes (test_tracking_hold.TrackingHoldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/a/ArmHub/armhub/adapters/panthera_ht.py", line 687, in close
+    self.stop()
+  File "/home/a/ArmHub/armhub/adapters/panthera_ht.py", line 681, in stop
+    raise RuntimeError('当前姿态保持指令已发出，但停止反馈未确认')
+RuntimeError: 当前姿态保持指令已发出，但停止反馈未确认
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/ArmHub/armhub/adapters/panthera_ht.py", line 707, in close
+    raise RuntimeError('关闭连接时未确认停止；请立即检查实物并使用物理急停') from error
+RuntimeError: 关闭连接时未确认停止；请立即检查实物并使用物理急停
+
+======================================================================
+ERROR: test_task_hold_returns_then_confirms_on_regular_feedback_ticks (test_tracking_hold.TrackingHoldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/a/ArmHub/tests/test_tracking_hold.py", line 33, in test_task_hold_returns_then_confirms_on_regular_feedback_ticks
+    started=clock.monotonic();runtime.hold()
+  File "/home/a/ArmHub/armhub/task_runtime.py", line 83, in hold
+    if self.allow_motion:self.arm.stop()
+  File "/home/a/ArmHub/armhub/adapters/panthera_ht.py", line 681, in stop
+    raise RuntimeError('当前姿态保持指令已发出，但停止反馈未确认')
+RuntimeError: 当前姿态保持指令已发出，但停止反馈未确认
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.045s
+
+FAILED (errors=4)

@@ -1,0 +1,16 @@
+test_hardware_trace_velocity_spike_retries_same_pose_and_recovers (test_j6_collection.CollectionTests) ... ERROR
+
+======================================================================
+ERROR: test_hardware_trace_velocity_spike_retries_same_pose_and_recovers (test_j6_collection.CollectionTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/a/ArmHub/tests/test_j6_collection.py", line 132, in test_hardware_trace_velocity_spike_retries_same_pose_and_recovers
+    result = capture_pose(arm,node,synthetic_observations,options,raw,clock=clock)
+  File "/home/a/ArmHub/examples/collect_j6_gravity.py", line 208, in capture_pose
+    raise RuntimeError(f"{node['pose_id']} 采样期间静止窗口中断；原始数据已保留")
+RuntimeError: hardware_replay 采样期间静止窗口中断；原始数据已保留
+
+----------------------------------------------------------------------
+Ran 1 test in 0.006s
+
+FAILED (errors=1)

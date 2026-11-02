@@ -1,0 +1,24 @@
+{
+  "source": "user supplied files, 2026-10-19",
+  "files": [
+    {
+      "source_path": "/home/a/Downloads/moveL_trajectories.py",
+      "source_sha256": "882ad5b72954676cd5fe2e179b872bdd82a509b1f46e6be7d47abbc36953ec83",
+      "adapted_path": "apps/movel/moveL_trajectories.py",
+      "adapted_sha256": "13e2a4b547f5520ea3fbf534cc0ce6f112aefd7423b1dc64a9572b02ff66c15a"
+    },
+    {
+      "source_path": "/home/a/Downloads/moveL_pos_control.py",
+      "source_sha256": "d1911d9b41fcc771478dfbd320e2e96692ae9c692ffb2a4b09207b963e1a1712",
+      "adapted_path": "apps/movel/moveL_pos_control.py",
+      "adapted_sha256": "994795ee08c3937a2bbcbb9838d959bdb1c6e1d30301e2c985120e56f46f6008"
+    },
+    {
+      "source_path": "/home/a/Downloads/moveL_error_analysis.py",
+      "source_sha256": "fc4af4f8a3562aaf1a5029cefdeb7c1e42e40d567c8c37678bb4c3bfff111681",
+      "adapted_path": "apps/movel/moveL_error_analysis.py",
+      "adapted_sha256": "8ce476d58771bdf529368c7668ec323b512075a48979f342cbee9319094a0351"
+    }
+  ],
+  "adaptation": "Geometry and analysis retained; missing to_waypoints added; no Panthera construction; guarded ArmHub reference execution, strict IK and retimed quintic spline; preview before enable; no implicit home."
+}

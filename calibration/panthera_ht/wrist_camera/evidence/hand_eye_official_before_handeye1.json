@@ -1,0 +1,38 @@
+{
+  "T_tcp_camera": [
+    [
+      0.06485742344192436,
+      -0.32774583437419763,
+      0.9425370988321022,
+      -0.0892675602150106
+    ],
+    [
+      -0.9974170850425397,
+      -0.05050608630127429,
+      0.05107145691843179,
+      0.004825041785322462
+    ],
+    [
+      0.03086540279532951,
+      -0.9434149687687223,
+      -0.3301749893819834,
+      0.06409072416662598
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "parent_frame": "gripper_center",
+  "child_frame": "handeye_color_optical",
+  "translation_unit": "m",
+  "status": "official_reference_pending_installation_validation",
+  "camera_model": "Intel RealSense D405",
+  "camera_serial": "262622274345",
+  "source": "https://github.com/HighTorque-Robotics/Panthera_HT_SDK_Extensions/blob/main/Panthera-HT_vision_servo_sdk/panthera_python/scripts/hand_eye_calibration.json",
+  "timestamp": "2026-02-11 17:43:29",
+  "sample_count": 4,
+  "note": "Official D405 reference adopted for matching official mount at user request. Official calibration FK uses joint6 plus [0.165,0,0] m, identical to ArmHub gripper_center. Not independently validated on this installation. Previous parameters backed up in evidence/hand_eye_before_official_d405.json."
+}

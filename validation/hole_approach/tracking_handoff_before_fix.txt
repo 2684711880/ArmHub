@@ -1,0 +1,16 @@
+test_target_update_during_final_target_hold_is_not_stream_timeout (test_tracking_reference_handoff.TrackingReferenceHandoffTests) ... ERROR
+
+======================================================================
+ERROR: test_target_update_during_final_target_hold_is_not_stream_timeout (test_tracking_reference_handoff.TrackingReferenceHandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/a/ArmHub/tests/test_tracking_reference_handoff.py", line 26, in test_target_update_during_final_target_hold_is_not_stream_timeout
+    arm.start_reference_trajectory(second,replace=True)
+  File "/home/a/ArmHub/armhub/adapters/panthera_ht.py", line 368, in start_reference_trajectory
+    raise RuntimeError('轨迹替换检查超时，已请求当前位置保持')
+RuntimeError: 轨迹替换检查超时，已请求当前位置保持
+
+----------------------------------------------------------------------
+Ran 1 test in 0.228s
+
+FAILED (errors=1)
